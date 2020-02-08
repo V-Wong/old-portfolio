@@ -40,7 +40,7 @@ img {
 }
 
 .project-item {
-    border-top: 2px solid red;
+    border-top: 2px solid #ea86ae;
     background-color: #F5F5F5;
     height: 400px;
     margin-top: 1vh;
@@ -76,5 +76,9 @@ img {
 }
 
 .repo-link {
-    color: red;
+    color:#68b0f1;
+}
+
+.demo-link {
+    color: #5fc383;
 }
