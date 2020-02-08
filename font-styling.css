@@ -1,20 +1,16 @@
 a {
-    text-decoration: none;    
-}
-
-a:link {
     color: grey;
-    border-bottom: 1px solid;
-}
-
-a:visited {
-    color: grey;
+    text-decoration: none; 
     border-bottom: 1px solid;
 }
 
 h1, h2, h3, h4 {
     margin: auto;
     font-weight: 150;
+}
+
+h3 {
+    font-weight: 400;
 }
 
 p {

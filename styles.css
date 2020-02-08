@@ -10,7 +10,7 @@ header {
 @media (min-width: 800px) {
     .container {
         margin: auto;
-        max-width: 75%;
+        max-width: 80%;
     }
 }
 
@@ -40,5 +40,41 @@ img {
 }
 
 .project-item {
+    border-top: 2px solid red;
+    background-color: #F5F5F5;
+    height: 400px;
+    margin-top: 1vh;
+    padding: 2%;
     font-size: 12px;
+}
+
+@media (min-width: 800px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1vmin;
+        grid-row: auto;
+    }
+
+    .project-item {
+        background-color: #F5F5F5;
+        align-items: center;
+        height: 400px;
+        grid-row: auto;
+        margin-top: 1vh;
+        padding: 2%;
+        font-size: 12px;
+    }
+
+    .project-image {
+        display: block;
+        margin: auto;
+        margin-top: 1vh;
+        max-width: 100%;
+        max-height: 50%;
+    }
+}
+
+.repo-link {
+    color: red;
 }
