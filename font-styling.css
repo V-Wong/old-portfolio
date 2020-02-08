@@ -9,8 +9,13 @@ h1, h2, h3, h4 {
     font-weight: 150;
 }
 
-h3 {
+h1 {
+    font-size: 24px;
     font-weight: 400;
+}
+
+h3 {
+    font-weight: 550;
 }
 
 p {
