@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;    
+}
+
+a:link {
+    color: grey;
+    border-bottom: 1px solid;
+}
+
+a:visited {
+    color: grey;
+    border-bottom: 1px solid;
+}
+
+h1, h2, h3, h4 {
+    margin: auto;
+    font-weight: 150;
+}
+
+p {
+    margin: auto;
+}
+
+.project-link {
+    font-size: 14px;
+}
