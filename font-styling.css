@@ -1,7 +1,12 @@
 a {
     color: grey;
     text-decoration: none; 
-    border-bottom: 1px solid;
+    border-bottom: dotted 2px;
+}
+
+a:hover {
+    text-decoration: none; 
+    border-bottom: solid;
 }
 
 h1, h2, h3, h4 {
