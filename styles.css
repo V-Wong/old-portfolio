@@ -91,7 +91,7 @@ hr {
     .project-item {
         background-color: #F5F5F5;
         align-items: center;
-        height: 400px;
+        height: 350px;
         grid-row: auto;
         margin-top: 1vh;
         padding: 2%;
@@ -113,4 +113,17 @@ hr {
 
 .demo-link {
     color: #5fc383;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 3px;
+    vertical-align: text-top;
+    display: inline-block;
+    white-space: nowrap;
+    background-color:#ea86ae;
+    color: #fff;
+
 }
