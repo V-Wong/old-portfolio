@@ -20,18 +20,15 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
 }
 
 h3 {
-    font-weight: 550;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 p {
     margin: auto;
-}
-
-.project-link {
-    font-size: 14px;
 }
