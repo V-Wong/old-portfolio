@@ -79,10 +79,10 @@ hr {
     max-height: 50%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1080px) {
     .project-container {
         display: grid;
-        grid-template-columns: 49.5% 49.5%;
+        grid-template-columns: 1fr 1fr;
         column-gap: 1%;
         row-gap: 1%;
         grid-row: auto;
@@ -91,7 +91,7 @@ hr {
     .project-item {
         background-color: #F5F5F5;
         align-items: center;
-        height: 350px;
+        min-height: 300px;
         grid-row: auto;
         margin-top: 1vh;
         padding: 2%;
@@ -125,5 +125,4 @@ hr {
     white-space: nowrap;
     background-color:#ea86ae;
     color: #fff;
-
 }
