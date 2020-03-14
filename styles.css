@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: #fff;
+    background-color: #f0f3f7;
 }
 
 header {
@@ -63,12 +63,13 @@ hr {
 
 .project-item {
     border-top: 2px solid #ea86ae;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     min-height: 400px;
     margin-top: 1vh;
     padding: 2%;
     font-size: 12px;
-    box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
+    border-radius: 2px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .project-subheading {
@@ -93,7 +94,7 @@ hr {
     }
 
     .project-item {
-        background-color: #F5F5F5;
+        background-color: #ffffff;
         align-items: center;
         height: 450px;
         grid-row: auto;
