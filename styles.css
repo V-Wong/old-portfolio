@@ -56,11 +56,18 @@ hr {
   margin: auto;
   margin-top: 1vh;
 }
+.card .demo-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5fc383;
+}
 .card .repo-link {
+  font-size: 16px;
+  font-weight: 600;
   color: #68b0f1;
 }
-.card .demo-link {
-  color: #5fc383;
+.card .demo-link + .repo-link {
+  margin-left: 0.5vw;
 }
 .card .tag {
   font-weight: 400;

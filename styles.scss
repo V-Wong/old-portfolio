@@ -78,12 +78,20 @@ hr {
         margin-top: 1vh;
     }
 
+    .demo-link {
+        font-size: 16px;
+        font-weight: 600;
+        color: $green;
+    }
+
     .repo-link {
+        font-size: 16px;
+        font-weight: 600;
         color: $blue;
     }
-    
-    .demo-link {
-        color: $green;
+
+    .demo-link + .repo-link {
+        margin-left: 0.5vw;
     }
 
     .tag {
