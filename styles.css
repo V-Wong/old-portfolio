@@ -111,7 +111,7 @@ hr {
 @media (min-width: 1080px) {
   .container {
     margin: auto;
-    max-width: 90%;
+    max-width: 85%;
   }
   .personal-projects {
     display: grid;
@@ -167,5 +167,5 @@ h4 {
 }
 p {
   margin: auto;
-  font-size: 14px;
+  font-size: 15px;
 }
