@@ -1,0 +1,157 @@
+$tablet-breakpoint: 1080px;
+$white: #fff;
+$off-white: #f0f3f7;
+$pink: #ea86ae;
+$blue: #68b0f1;
+$green: #5fc383;
+
+// Tag styling
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: $off-white;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    margin-top: 1vh;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+// End tag styling
+
+// Custom element styling
+.profile {
+    .image {
+        max-height: 100px;
+        max-width: 100px;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 100vw;
+    }
+
+    .about-me {
+        font-size: 12px;
+    }
+}
+
+.project {
+    border-top: 2px solid $pink;
+    background-color: $white;
+    min-height: 400px;
+    margin-top: 2vh;
+    padding: 2%;
+    font-size: 12px;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+
+    .repo-link {
+        color: $blue;
+    }
+    
+    .demo-link {
+        color: $green;
+    }
+
+    .tag {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px 15px;
+        border-radius: 3px;
+        vertical-align: text-top;
+        display: inline-block;
+        white-space: nowrap;
+        background-color: $pink;
+        color: $white;
+    }
+}
+
+@media (min-width: $tablet-breakpoint) {
+    .container {
+        margin: auto;
+        max-width: 90%;
+    }
+
+    // Change to two column layout on larger displays
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1%;
+        row-gap: 1%;
+        grid-row: auto;
+    }
+
+    .project {
+        align-items: center;
+        height: 450px;
+        grid-row: auto;
+        margin-top: 1vh;
+
+        .image {
+            display: block;
+            margin: auto;
+            margin-top: 2vh;
+            max-width: 100%;
+            max-height: 60%;
+        }
+    }    
+}
+// End custom element styling
+
+// Font styling
+a {
+    color: grey;
+    text-decoration: none; 
+    border-bottom: dotted 2px;
+}
+
+a:hover {
+    text-decoration: none; 
+    border-bottom: solid 2px;
+}
+
+h1, h2, h3, h4 {
+    margin: auto;
+    font-weight: 150;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    margin: auto;
+}
+// End font styling
