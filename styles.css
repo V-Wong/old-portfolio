@@ -42,23 +42,26 @@ hr {
 .profile .about-me {
   font-size: 14px;
 }
-.project {
+.card {
   border-top: 2px solid #ea86ae;
   background-color: #fff;
-  min-height: 400px;
   margin-top: 2vh;
   padding: 2%;
   font-size: 14px;
   border-radius: 2px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
-.project .repo-link {
+.card .image {
+  display: block;
+  margin: auto;
+}
+.card .repo-link {
   color: #68b0f1;
 }
-.project .demo-link {
+.card .demo-link {
   color: #5fc383;
 }
-.project .tag {
+.card .tag {
   font-weight: 400;
   padding: 5px 15px;
   border-radius: 3px;
@@ -69,24 +72,60 @@ hr {
   color: #fff;
 }
 @media (min-width: 1080px) {
+  .collab-projects .card {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #fff;
+    height: 175px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 9fr;
+    padding: 1%;
+  }
+  .collab-projects .image-container {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    height: 100%;
+  }
+  .collab-projects .image {
+    position: relative;
+    top: 10%;
+    height: 100%;
+  }
+  .collab-projects .description {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    height: 100%;
+  }
+  .collab-projects .dotpoints {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    height: 100%;
+  }
+  .collab-projects .tags {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    height: 100%;
+  }
+}
+@media (min-width: 1080px) {
   .container {
     margin: auto;
     max-width: 90%;
   }
-  .projects {
+  .personal-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1%;
     row-gap: 1%;
     grid-row: auto;
   }
-  .project {
+  .card {
     align-items: center;
     height: 525px;
     grid-row: auto;
     margin-top: 1vh;
   }
-  .project .image {
+  .card .image {
     display: block;
     margin: auto;
     margin-top: 2vh;

@@ -63,15 +63,19 @@ hr {
     }
 }
 
-.project {
+.card {
     border-top: 2px solid $pink;
     background-color: $white;
-    min-height: 400px;
     margin-top: 2vh;
     padding: 2%;
     font-size: 14px;
     border-radius: 2px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+
+    .image {
+        display: block;
+        margin: auto;
+    }
 
     .repo-link {
         color: $blue;
@@ -94,13 +98,57 @@ hr {
 }
 
 @media (min-width: $tablet-breakpoint) {
+    .collab-projects {
+        .card {
+            display: grid;
+            grid-auto-flow: column;
+            background-color: $white;
+            height: 175px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 9fr;
+            padding: 1%;
+        }
+
+        .image-container {
+            grid-row-start: 1;
+            grid-row-end: 4;
+            height: 100%;
+        }
+    
+        .image {
+            position: relative;
+            top: 10%;
+            height: 100%;
+        }
+
+        .description {
+            grid-row-start: 1;
+            grid-column-start: 2;
+            height: 100%;
+        }
+
+        .dotpoints {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            height: 100%; 
+        }
+
+        .tags {
+            grid-row-start: 3;
+            grid-column-start: 2;
+            height: 100%; 
+        }
+    }
+}
+
+@media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;
         max-width: 90%;
     }
 
     // Change to two column layout on larger displays
-    .projects {
+    .personal-projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1%;
@@ -108,7 +156,7 @@ hr {
         grid-row: auto;
     }
 
-    .project {
+    .card {
         align-items: center;
         height: 525px;
         grid-row: auto;
