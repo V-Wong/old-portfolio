@@ -46,7 +46,7 @@ hr {
   border-top: 2px solid #ea86ae;
   background-color: #fff;
   margin-top: 2vh;
-  padding: 2%;
+  padding: 3%;
   font-size: 14px;
   border-radius: 2px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
@@ -54,6 +54,7 @@ hr {
 .card .image {
   display: block;
   margin: auto;
+  margin-top: 1vh;
 }
 .card .repo-link {
   color: #68b0f1;
