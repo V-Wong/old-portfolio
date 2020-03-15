@@ -28,6 +28,7 @@ ul {
     list-style-type: square;
     padding-left: 2%;
     padding-right: 2%;
+    font-size: 14px;
 }
 
 hr {
@@ -52,7 +53,7 @@ hr {
     }
 
     .about-me {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -62,7 +63,7 @@ hr {
     min-height: 400px;
     margin-top: 2vh;
     padding: 2%;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 2px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 
@@ -75,7 +76,6 @@ hr {
     }
 
     .tag {
-        font-size: 12px;
         font-weight: 400;
         padding: 5px 15px;
         border-radius: 3px;
@@ -104,7 +104,7 @@ hr {
 
     .project {
         align-items: center;
-        height: 450px;
+        height: 525px;
         grid-row: auto;
         margin-top: 1vh;
 
@@ -113,7 +113,7 @@ hr {
             margin: auto;
             margin-top: 2vh;
             max-width: 100%;
-            max-height: 60%;
+            max-height: 55%;
         }
     }    
 }
@@ -151,7 +151,12 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    font-size: 16px;
+}
+
 p {
     margin: auto;
+    font-size: 14px;
 }
 // End font styling
