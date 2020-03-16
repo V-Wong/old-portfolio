@@ -1,14 +1,27 @@
 $tablet-breakpoint: 1080px;
+
+// Light theme
 $white: #fff;
 $off-white: #f0f3f7;
 $pink: #ea86ae;
 $blue: #68b0f1;
 $green: #5fc383;
 
+// Dark theme
+$light-black: #11131f;
+$dark-black: #202020;
+$smoke: #A9A9A9;
+
 // Tag styling
 body {
     font-family: 'Nunito', sans-serif;
     background-color: $off-white;
+    color: black;
+}
+
+body.dark {
+    background-color: $light-black;
+    color: white;
 }
 
 header {
@@ -106,12 +119,16 @@ hr {
     }
 }
 
+.card.dark {
+    background-color: $dark-black;
+    color: white;
+}
+
 @media (min-width: $tablet-breakpoint) {
     .collab-projects {
         .card {
             display: grid;
             grid-auto-flow: column;
-            background-color: $white;
             height: 175px;
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 9fr;
@@ -192,6 +209,10 @@ a {
 a:hover {
     text-decoration: none; 
     border-bottom: solid 2px;
+}
+
+a.dark {
+    color: $smoke;
 }
 
 h1, h2, h3, h4 {

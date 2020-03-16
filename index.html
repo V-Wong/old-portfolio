@@ -161,5 +161,17 @@
 		<footer>
 			<p>Copyright © 2020 Vincent Wong</p>
 		</footer>
+		<script>
+			let toggleDarkTheme = () => {
+				document.body.classList.toggle("dark");
+				document.getElementsByClassName("profile")[0].classList.toggle("dark");
+				for (let element of document.getElementsByClassName("card")) {
+					element.classList.toggle("dark");
+				}
+				for (let element of document.getElementsByTagName("a")) {
+					element.classList.toggle("dark");
+				}
+			}
+		</script>
 	</body>
 </html>

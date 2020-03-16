@@ -1,6 +1,11 @@
 body {
   font-family: "Nunito", sans-serif;
   background-color: #f0f3f7;
+  color: black;
+}
+body.dark {
+  background-color: #11131f;
+  color: white;
 }
 header {
   text-align: center;
@@ -79,11 +84,14 @@ hr {
   background-color: #ea86ae;
   color: #fff;
 }
+.card.dark {
+  background-color: #202020;
+  color: white;
+}
 @media (min-width: 1080px) {
   .collab-projects .card {
     display: grid;
     grid-auto-flow: column;
-    background-color: #fff;
     height: 175px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 9fr;
@@ -149,6 +157,9 @@ a {
 a:hover {
   text-decoration: none;
   border-bottom: solid 2px;
+}
+a.dark {
+  color: #a9a9a9;
 }
 h1,
 h2,
