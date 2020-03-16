@@ -11,6 +11,7 @@
 	</head>
 	<body>
 		<div class="container">
+			<button class="dark-theme-button">☀</button>
 				<header class="profile">
 					<img class="profile image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
 				     alt="Portrait of Vincent Wong">
@@ -162,7 +163,9 @@
 			<p>Copyright © 2020 Vincent Wong</p>
 		</footer>
 		<script>
-			let toggleDarkTheme = () => {
+			let isDarkTheme = false;
+			let darkThemeToggleButton = document.getElementsByClassName("dark-theme-button")[0];
+			darkThemeToggleButton.addEventListener("click", () => {
 				document.body.classList.toggle("dark");
 				document.getElementsByClassName("profile")[0].classList.toggle("dark");
 				for (let element of document.getElementsByClassName("card")) {
@@ -171,7 +174,9 @@
 				for (let element of document.getElementsByTagName("a")) {
 					element.classList.toggle("dark");
 				}
-			}
+				darkThemeToggleButton.innerText = isDarkTheme ? "☀" : "☽"
+				isDarkTheme = !isDarkTheme;
+			})
 		</script>
 	</body>
 </html>
