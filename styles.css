@@ -112,7 +112,7 @@ hr {
   color: white;
 }
 @media (min-width: 1080px) {
-  .collab-projects .card {
+  .single-column .card {
     display: grid;
     grid-auto-flow: column;
     height: 175px;
@@ -120,27 +120,27 @@ hr {
     grid-template-columns: 1fr 9fr;
     padding: 1%;
   }
-  .collab-projects .image-container {
+  .single-column .image-container {
     grid-row-start: 1;
     grid-row-end: 4;
     height: 100%;
   }
-  .collab-projects .image {
+  .single-column .image {
     position: relative;
     top: 10%;
     height: 100%;
   }
-  .collab-projects .description {
+  .single-column .description {
     grid-row-start: 1;
     grid-column-start: 2;
     height: 100%;
   }
-  .collab-projects .dotpoints {
+  .single-column .dotpoints {
     grid-row-start: 2;
     grid-column-start: 2;
     height: 100%;
   }
-  .collab-projects .tags {
+  .single-column .tags {
     grid-row-start: 3;
     grid-column-start: 2;
     height: 100%;
@@ -151,7 +151,7 @@ hr {
     margin: auto;
     max-width: 85%;
   }
-  .personal-projects {
+  .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1%;
@@ -162,7 +162,7 @@ hr {
     align-items: center;
     height: 525px;
     grid-row: auto;
-    margin-top: 1vh;
+    margin-top: 0.25vh;
   }
   .card .image {
     display: block;

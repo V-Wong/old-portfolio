@@ -150,7 +150,7 @@ hr {
 }
 
 @media (min-width: $tablet-breakpoint) {
-    .collab-projects {
+    .single-column {
         .card {
             display: grid;
             grid-auto-flow: column;
@@ -199,7 +199,7 @@ hr {
     }
 
     // Change to two column layout on larger displays
-    .personal-projects {
+    .two-column {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1%;
@@ -211,7 +211,7 @@ hr {
         align-items: center;
         height: 525px;
         grid-row: auto;
-        margin-top: 1vh;
+        margin-top: 0.25vh;
 
         .image {
             display: block;
