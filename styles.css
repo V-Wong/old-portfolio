@@ -83,7 +83,7 @@ hr {
   display: block;
   margin: auto;
   margin-top: 1vh;
-  max-height: 25vh;
+  max-height: 50vw;
 }
 .card .demo-link {
   font-size: 16px;
