@@ -54,6 +54,9 @@ hr {
   justify-content: center;
   align-items: center;
 }
+.dark-theme-button img {
+  filter: invert(1);
+}
 .dark-theme-button:hover {
   opacity: 1;
 }

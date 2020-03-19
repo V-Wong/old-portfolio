@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<button class="dark-theme-button">☀</button>
+			<button class="dark-theme-button"><img src="./images/sun.svg"></button>
 				<header class="profile">
 					<img class="profile image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
 				     alt="Portrait of Vincent Wong">
@@ -204,7 +204,8 @@
 				for (let element of document.getElementsByTagName("a")) {
 					element.classList.toggle("dark");
 				}
-				darkThemeToggleButton.innerText = isDarkTheme ? "☀" : "☽"
+				darkThemeToggleButton.firstChild.src = 
+						isDarkTheme ? "./images/sun.svg" : "./images/moon.svg";
 				isDarkTheme = !isDarkTheme;
 			})
 		</script>
