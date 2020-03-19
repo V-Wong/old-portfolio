@@ -113,6 +113,10 @@ hr {
   color: white;
 }
 @media (min-width: 1080px) {
+  .container {
+    margin: auto;
+    max-width: 85%;
+  }
   .single-column .card {
     display: grid;
     grid-auto-flow: column;
@@ -130,6 +134,9 @@ hr {
     position: relative;
     top: 10%;
     height: 100%;
+    max-height: 55%;
+    margin: auto;
+    margin-top: 2vh;
   }
   .single-column .description {
     grid-row-start: 1;
@@ -146,12 +153,6 @@ hr {
     grid-column-start: 2;
     height: 100%;
   }
-}
-@media (min-width: 1080px) {
-  .container {
-    margin: auto;
-    max-width: 85%;
-  }
   .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,18 +160,18 @@ hr {
     row-gap: 1%;
     grid-row: auto;
   }
-  .card {
+  .two-column .card {
     align-items: center;
-    height: 525px;
+    height: 475px;
     grid-row: auto;
     margin-top: 0.25vh;
   }
-  .card .image {
+  .two-column .card .image {
     display: block;
     margin: auto;
     margin-top: 2vh;
     max-width: 100%;
-    max-height: 55%;
+    height: 250px;
   }
 }
 a {
