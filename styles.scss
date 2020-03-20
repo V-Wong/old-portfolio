@@ -115,6 +115,7 @@ hr {
     font-size: 14px;
     border-radius: 2px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    transition: transform .2s;
 
     .image {
         display: block;
@@ -149,6 +150,11 @@ hr {
         background-color: $pink;
         color: $white;
     }
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: 0 8px 10px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .card.dark {

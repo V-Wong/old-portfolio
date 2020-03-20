@@ -83,6 +83,7 @@ hr {
   font-size: 14px;
   border-radius: 2px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
 }
 .card .image {
   display: block;
@@ -112,6 +113,10 @@ hr {
   white-space: nowrap;
   background-color: #ea86ae;
   color: #fff;
+}
+.card:hover {
+  transform: scale(1.025);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .card.dark {
   background-color: #202020;
