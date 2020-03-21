@@ -75,7 +75,8 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
-.card {
+.card,
+.modal .content {
   border-top: 2px solid #ea86ae;
   background-color: #fff;
   margin-top: 2vh;
@@ -85,26 +86,31 @@ hr {
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
 }
-.card .image {
+.card .image,
+.modal .content .image {
   display: block;
   margin: auto;
   margin-top: 1vh;
   max-height: 50vw;
 }
-.card .demo-link {
+.card .demo-link,
+.modal .content .demo-link {
   font-size: 16px;
   font-weight: 600;
   color: #5fc383;
 }
-.card .repo-link {
+.card .repo-link,
+.modal .content .repo-link {
   font-size: 16px;
   font-weight: 600;
   color: #68b0f1;
 }
-.card .demo-link + .repo-link {
+.card .demo-link + .repo-link,
+.modal .content .demo-link + .repo-link {
   margin-left: 0.5vw;
 }
-.card .tag {
+.card .tag,
+.modal .content .tag {
   font-weight: 400;
   padding: 5px 15px;
   border-radius: 3px;
@@ -114,20 +120,44 @@ hr {
   background-color: #ea86ae;
   color: #fff;
 }
-.card:hover {
+.card:hover,
+.modal .content:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
 }
-.card.dark {
+.card.dark,
+.modal .dark.content {
   background-color: #202020;
   color: white;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal .content {
+  margin: auto;
+  width: 50%;
+  height: 60%;
+}
+.modal .content .image {
+  max-height: 350px !important;
 }
 @media (min-width: 1080px) {
   .container {
     margin: auto;
     max-width: 85%;
   }
-  .single-column .card {
+  .single-column .card,
+  .single-column .modal .content,
+  .modal .single-column .content {
     display: grid;
     grid-auto-flow: column;
     height: 175px;
@@ -170,13 +200,17 @@ hr {
     row-gap: 1%;
     grid-row: auto;
   }
-  .two-column .card {
+  .two-column .card,
+  .two-column .modal .content,
+  .modal .two-column .content {
     align-items: center;
     height: 475px;
     grid-row: auto;
     margin-top: 0.25vh;
   }
-  .two-column .card .image {
+  .two-column .card .image,
+  .two-column .modal .content .image,
+  .modal .two-column .content .image {
     display: block;
     margin: auto;
     margin-top: 2vh;
