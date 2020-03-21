@@ -124,6 +124,7 @@ hr {
 .modal .content:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .card.dark,
 .modal .dark.content {
@@ -152,6 +153,7 @@ hr {
 }
 .modal .content:hover {
   transform: none;
+  cursor: auto;
 }
 .modal .close {
   float: right;
