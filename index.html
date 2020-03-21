@@ -197,27 +197,25 @@
 			<p>Copyright © 2020 Vincent Wong</p>
 		</footer>
 		<script>
-			let isDarkTheme = false;
-			let darkThemeToggleButton = document.getElementsByClassName("dark-theme-button")[0];
-			darkThemeToggleButton.addEventListener("click", () => {
-				document.body.classList.toggle("dark");
-				document.getElementsByClassName("profile")[0].classList.toggle("dark");
-				for (let element of document.getElementsByClassName("card")) {
-					element.classList.toggle("dark");
-				}
-				for (let element of document.getElementsByTagName("a")) {
-					element.classList.toggle("dark");
-				}
-				darkThemeToggleButton.firstChild.src = 
-						isDarkTheme ? "./images/sun.svg" : "./images/moon.svg";
-				isDarkTheme = !isDarkTheme;
-			})
-
-			const closeModal = () => {
-				const modal = document.getElementsByClassName("modal")[0];
-				modal.style.display = "none";
-				modal.removeChild(modal.firstChild);
+			const toggleDarkTheme = () => {
+				let isDarkTheme = false;
+				let darkThemeToggleButton = document.getElementsByClassName("dark-theme-button")[0];
+				darkThemeToggleButton.addEventListener("click", () => {
+					document.body.classList.toggle("dark");
+					document.getElementsByClassName("profile")[0].classList.toggle("dark");
+					for (let element of document.getElementsByClassName("card")) {
+						element.classList.toggle("dark");
+					}
+					for (let element of document.getElementsByTagName("a")) {
+						element.classList.toggle("dark");
+					}
+					darkThemeToggleButton.firstChild.src = 
+							isDarkTheme ? "./images/sun.svg" : "./images/moon.svg";
+					isDarkTheme = !isDarkTheme;
+				})
 			}
+
+			toggleDarkTheme();
 
 			const createModal = () => {
 				const modal = document.getElementsByClassName("modal")[0];
@@ -226,14 +224,10 @@
 						let element = event.target;
 						while (![...element.classList].includes("card")) element = element.parentElement;
 						modal.style.display = "block";
-						const content = element.cloneNode(true);
-						content.classList.add("content");
-						const closeButton = document.createElement("span");
-						closeButton.innerHTML = "&times;";
-						closeButton.classList.add("close");
-						closeButton.addEventListener("click", closeModal)
-						content.prepend(closeButton);
-						modal.appendChild(content);
+						const closeButton = createCloseButton();
+						const modalContent = createModalContent(element);
+						modalContent.prepend(closeButton);
+						modal.appendChild(modalContent);
 					})
 				})
 
@@ -242,6 +236,26 @@
 						closeModal();
 					}
 				})
+			}
+
+			const createModalContent = (baseElement) => {
+				const modalContent = baseElement.cloneNode(true);
+				modalContent.classList.add("content");
+				return modalContent;
+			}
+
+			const createCloseButton = () => {
+				const closeButton = document.createElement("span");
+				closeButton.innerHTML = "&times;";
+				closeButton.classList.add("close");
+				closeButton.addEventListener("click", closeModal);
+				return closeButton;
+			}
+
+			const closeModal = () => {
+				const modal = document.getElementsByClassName("modal")[0];
+				modal.style.display = "none";
+				modal.removeChild(modal.firstChild);
 			}
 
 			createModal();
