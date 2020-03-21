@@ -147,6 +147,8 @@ hr {
   margin: auto;
   width: 50%;
   height: 60%;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
 }
 .modal .content .image {
   max-height: 350px !important;
@@ -163,6 +165,16 @@ hr {
 .modal .close:hover,
 .modal .close:focus {
   cursor: pointer;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 @media (min-width: 1080px) {
   .container {
