@@ -153,6 +153,15 @@ hr {
 .modal .content:hover {
   transform: none;
 }
+.modal .close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .close:hover,
+.modal .close:focus {
+  cursor: pointer;
+}
 @media (min-width: 1080px) {
   .container {
     margin: auto;

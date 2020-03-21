@@ -188,6 +188,17 @@ hr {
     .content:hover {
         transform: none;
     }
+
+    .close {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        cursor: pointer;
+    }
 }
  
 @media (min-width: $tablet-breakpoint) {

@@ -213,6 +213,12 @@
 				isDarkTheme = !isDarkTheme;
 			})
 
+			const closeModal = () => {
+				const modal = document.getElementsByClassName("modal")[0];
+				modal.style.display = "none";
+				modal.removeChild(modal.firstChild);
+			}
+
 			const createModal = () => {
 				const modal = document.getElementsByClassName("modal")[0];
 				[...document.getElementsByClassName("card")].map(card => {
@@ -222,14 +228,18 @@
 						modal.style.display = "block";
 						const content = element.cloneNode(true);
 						content.classList.add("content");
+						const closeButton = document.createElement("span");
+						closeButton.innerHTML = "&times;";
+						closeButton.classList.add("close");
+						closeButton.addEventListener("click", closeModal)
+						content.prepend(closeButton);
 						modal.appendChild(content);
 					})
 				})
 
 				document.body.addEventListener("click", event => {
 					if (event.target === modal) {
-						modal.style.display = "none";
-						modal.removeChild(modal.firstChild);
+						closeModal();
 					}
 				})
 			}
