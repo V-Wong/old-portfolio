@@ -221,7 +221,7 @@
 				const modal = document.getElementsByClassName("modal")[0];
 				[...document.getElementsByClassName("card")].map(card => {
 					card.addEventListener("click", event => {
-						if (event.target.tagName !== "A") {
+						if (event.target.tagName !== "A" && window.innerWidth >= 1080) {
 							let element = event.target;
 							while (![...element.classList].includes("card")) element = element.parentElement;
 							modal.style.display = "block";

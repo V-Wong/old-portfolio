@@ -152,12 +152,6 @@ hr {
     }
 }
 
-.card:hover {
-    transform: scale(1.025);
-    box-shadow: 0 8px 10px 0 hsla(0, 0%, 0%, 0.2);
-    cursor: pointer;
-}
-
 .card.dark {
     background-color: $dark-black;
     color: white;
@@ -214,6 +208,12 @@ hr {
     .container {
         margin: auto;
         max-width: 85%;
+    }
+
+    .card:hover {
+        transform: scale(1.025);
+        box-shadow: 0 8px 10px 0 hsla(0, 0%, 0%, 0.2);
+        cursor: pointer;
     }
 
     .single-column {
