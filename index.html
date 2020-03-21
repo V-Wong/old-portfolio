@@ -221,13 +221,15 @@
 				const modal = document.getElementsByClassName("modal")[0];
 				[...document.getElementsByClassName("card")].map(card => {
 					card.addEventListener("click", event => {
-						let element = event.target;
-						while (![...element.classList].includes("card")) element = element.parentElement;
-						modal.style.display = "block";
-						const closeButton = createCloseButton();
-						const modalContent = createModalContent(element);
-						modalContent.prepend(closeButton);
-						modal.appendChild(modalContent);
+						if (event.target.tagName !== "A") {
+							let element = event.target;
+							while (![...element.classList].includes("card")) element = element.parentElement;
+							modal.style.display = "block";
+							const closeButton = createCloseButton();
+							const modalContent = createModalContent(element);
+							modalContent.prepend(closeButton);
+							modal.appendChild(modalContent);
+						}
 					})
 				})
 
