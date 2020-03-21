@@ -141,6 +141,7 @@ hr {
   margin: auto;
   width: 50%;
   height: 60%;
+  overflow-y: scroll;
   animation-name: animatetop;
   animation-duration: 0.5s;
 }
