@@ -184,8 +184,12 @@ hr {
             max-height: 350px !important;
         }
     }
-}
 
+    .content:hover {
+        transform: none;
+    }
+}
+ 
 @media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;

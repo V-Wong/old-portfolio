@@ -150,6 +150,9 @@ hr {
 .modal .content .image {
   max-height: 350px !important;
 }
+.modal .content:hover {
+  transform: none;
+}
 @media (min-width: 1080px) {
   .container {
     margin: auto;
