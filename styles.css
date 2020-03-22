@@ -140,6 +140,8 @@ hr {
 .modal .content {
   margin: auto;
   width: 50%;
+  max-height: 75vh;
+  overflow-y: scroll;
   animation-name: animatetop;
   animation-duration: 0.5s;
 }
