@@ -238,6 +238,12 @@
 						closeModal();
 					}
 				})
+
+				document.body.addEventListener("keyup", event => {
+					if (event.key === "Escape") {
+						closeModal();
+					}
+				})
 			}
 
 			const createModalContent = (baseElement) => {
