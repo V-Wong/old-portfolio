@@ -246,16 +246,23 @@ hr {
   }
 }
 a {
-  color: grey;
+  color: #606060;
   text-decoration: none;
-  border-bottom: dotted 2px;
+  border-bottom: dotted 1.5px;
 }
 a:hover {
   text-decoration: none;
-  border-bottom: solid 2px;
+  border-bottom: solid 1.5px;
 }
 a.dark {
-  color: #a9a9a9;
+  color: white;
+}
+p a {
+  color: black;
+  border-bottom: dotted 1.5px;
+}
+p a.dark {
+  color: white;
 }
 h1,
 h2,
@@ -266,7 +273,7 @@ h4 {
 }
 h1 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 575;
 }
 h2 {
   font-size: 20px;
