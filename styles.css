@@ -142,8 +142,6 @@ hr {
   width: 50%;
   max-height: 75vh;
   overflow-y: scroll;
-  animation-name: animatetop;
-  animation-duration: 0.5s;
 }
 .modal .content .image {
   max-height: 350px !important;
@@ -161,16 +159,6 @@ hr {
 .modal .close:focus {
   cursor: pointer;
 }
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 @media (min-width: 1080px) {
   .container {
     margin: auto;
@@ -178,8 +166,8 @@ hr {
   }
   .card:hover,
   .modal .content:hover {
-    transform: scale(1.025);
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
   }
   .single-column .card,
