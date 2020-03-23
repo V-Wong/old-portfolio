@@ -85,6 +85,7 @@ hr {
   border-radius: 2px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
+  position: relative;
 }
 .card .image,
 .modal .content .image {
@@ -222,6 +223,7 @@ hr {
     height: 475px;
     grid-row: auto;
     margin-top: 0.25vh;
+    position: relative;
   }
   .two-column .card .image,
   .two-column .modal .content .image,
@@ -231,6 +233,12 @@ hr {
     margin-top: 2vh;
     max-width: 100%;
     height: 250px;
+  }
+  .two-column .card .tags,
+  .two-column .modal .content .tags,
+  .modal .two-column .content .tags {
+    position: absolute;
+    bottom: 3vh;
   }
 }
 a {
