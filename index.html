@@ -261,6 +261,14 @@
 			const createModalContent = (baseElement) => {
 				const modalContent = baseElement.cloneNode(true);
 				modalContent.classList.add("content");
+				while ([...modalContent.children].length > 1) {
+					for (let element of modalContent.children) {
+						if (![...element.classList].includes("image") 
+						 		&& ![...element.classList].includes("image-container")) {
+							modalContent.removeChild(element);
+						}
+					}
+				}
 				return modalContent;
 			}
 
