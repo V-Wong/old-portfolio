@@ -61,7 +61,6 @@ hr {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 100vw;
   font-size: 20px;
 }
 .profile .about-me {
@@ -275,8 +274,8 @@ h4 {
   font-weight: 150;
 }
 h1 {
-  font-size: 24px;
-  font-weight: 575;
+  font-size: 30px;
+  font-weight: 600;
 }
 h2 {
   font-size: 20px;

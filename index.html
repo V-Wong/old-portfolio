@@ -12,14 +12,13 @@
 	<body>
 		<div class="container">
 				<header class="profile">
-					<img class="profile image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-				     alt="Portrait of Vincent Wong">
 					<h1>Vincent Wong</h1>
+					<h2>Aspiring Web Developer</h2>
 					<nav class="links-container">
 						<div><a href="https://github.com/V-Wong">Github</a></div>
 						<div><a href="https://drive.google.com/file/d/10xEX7QGZpHkkvXxH7JiHdGAk76DYtOpT/view?usp=sharing">Resume</a></div>
 						<a href="https://www.linkedin.com/in/vincent-wc-wong/">LinkedIn</a>
-						<a class="dark-theme-button"><img src="./images/sun.svg">Theme</a>
+						<a class="dark-theme-button"><img src="./images/moon.svg"><div>Dark</div></a>
 					</nav>
 					<blockquote class="about-me card">
 						<h3>About Me</h3>
@@ -210,6 +209,7 @@
 			const toggleDarkTheme = () => {
 				let isDarkTheme = false;
 				let darkThemeToggleButton = document.getElementsByClassName("dark-theme-button")[0];
+				let darkThemeButtonText = darkThemeToggleButton.children[1];
 				darkThemeToggleButton.addEventListener("click", () => {
 					document.body.classList.toggle("dark");
 					document.getElementsByClassName("profile")[0].classList.toggle("dark");
@@ -220,7 +220,9 @@
 						element.classList.toggle("dark");
 					}
 					darkThemeToggleButton.firstChild.src = 
-							isDarkTheme ? "./images/sun.svg" : "./images/moon.svg";
+							isDarkTheme ? "./images/moon.svg": "./images/sun.svg";
+					darkThemeButtonText.innerText = 
+							isDarkTheme ? "Dark" : "Light";
 					isDarkTheme = !isDarkTheme;
 				})
 			}
