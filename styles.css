@@ -157,6 +157,12 @@ hr {
   transform: none;
   cursor: auto;
 }
+.modal .tags {
+  display: none;
+}
+.modal ul {
+  display: none;
+}
 .modal .close {
   float: right;
   font-size: 28px;
