@@ -146,7 +146,7 @@ hr {
 }
 .modal .content {
   margin: auto;
-  width: 50%;
+  width: 60%;
   max-height: 75vh;
   overflow-y: scroll;
 }
@@ -162,6 +162,9 @@ hr {
 }
 .modal ul {
   display: none;
+}
+.modal p {
+  text-align: center;
 }
 .modal .close {
   float: right;

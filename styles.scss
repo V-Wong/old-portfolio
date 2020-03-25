@@ -183,7 +183,7 @@ hr {
     .content {
         @extend .card;
         margin: auto;
-        width: 50%;
+        width: 60%;
         max-height: 75vh;
         overflow-y: scroll;
 
@@ -203,6 +203,10 @@ hr {
 
     ul {
         display: none;
+    }
+
+    p {
+        text-align: center;
     }
 
     .close {
