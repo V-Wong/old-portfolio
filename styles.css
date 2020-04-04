@@ -34,19 +34,6 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.dark-theme-button {
-  display: flex;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: dotted 1.5px;
-}
-.dark-theme-button img {
-  height: 20px;
-}
 .dark-theme-button.dark img {
   filter: invert(1);
 }
@@ -63,10 +50,25 @@ hr {
   flex-wrap: wrap;
   font-size: 20px;
 }
+.profile .links-container .link-container {
+  display: flex;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.profile .links-container .link-container img {
+  height: 20px;
+}
 .profile .about-me {
   font-size: 14px;
   margin-left: auto;
   margin-right: auto;
+}
+.profile.dark .links-container .link-container img {
+  filter: invert(100);
 }
 .card,
 .modal .content {

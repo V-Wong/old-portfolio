@@ -15,10 +15,22 @@
 					<h1>Vincent Wong</h1>
 					<h2>Aspiring Web Developer</h2>
 					<nav class="links-container">
-						<div><a href="https://github.com/V-Wong">Github</a></div>
-						<div><a href="https://drive.google.com/file/d/10xEX7QGZpHkkvXxH7JiHdGAk76DYtOpT/view?usp=sharing">Resume</a></div>
-						<a href="https://www.linkedin.com/in/vincent-wc-wong/">LinkedIn</a>
-						<a class="dark-theme-button"><img src="./images/moon.svg"><div>Dark</div></a>
+						<div class="link-container">
+							<img src="./images/github.svg">
+							<a href="https://github.com/V-Wong">Github</a>
+						</div>
+						<div class="link-container">
+							<img src="./images/resume.svg">
+							<a href="https://drive.google.com/file/d/10xEX7QGZpHkkvXxH7JiHdGAk76DYtOpT/view?usp=sharing">Resume</a>
+						</div>
+						<div class="link-container">
+							<img src="./images/linkedin.svg">
+							<a href="https://www.linkedin.com/in/vincent-wc-wong/">LinkedIn</a>
+						</div>
+						<div id="dark-theme-button" class="link-container">
+							<img src="./images/moon.svg">
+							<a>Dark</a>
+						</div>
 					</nav>
 					<blockquote class="about-me">
 						<h3>About Me</h3>
@@ -208,7 +220,8 @@
 		<script>
 			const toggleDarkTheme = () => {
 				let isDarkTheme = false;
-				let darkThemeToggleButton = document.getElementsByClassName("dark-theme-button")[0];
+				let darkThemeToggleButton = document.getElementById("dark-theme-button");
+				console.log(darkThemeToggleButton.firstChild)
 				let darkThemeButtonText = darkThemeToggleButton.children[1];
 				darkThemeToggleButton.addEventListener("click", () => {
 					document.body.classList.toggle("dark");
@@ -219,7 +232,7 @@
 					for (let element of document.getElementsByTagName("a")) {
 						element.classList.toggle("dark");
 					}
-					darkThemeToggleButton.firstChild.src = 
+					darkThemeToggleButton.children[0].src = 
 							isDarkTheme ? "./images/moon.svg": "./images/sun.svg";
 					darkThemeButtonText.innerText = 
 							isDarkTheme ? "Dark" : "Light";

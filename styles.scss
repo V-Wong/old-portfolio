@@ -59,21 +59,6 @@ hr {
 // End tag styling
 
 // Custom element styling
-.dark-theme-button {
-    display: flex;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    border-bottom: dotted 1.5px;
-
-    img {
-        height: 20px;
-    }
-}
-
 .dark-theme-button.dark {
     img {
         filter: invert(1);
@@ -95,12 +80,36 @@ hr {
         justify-content: space-evenly;
         flex-wrap: wrap;
         font-size: 20px;
+
+        .link-container {
+            display: flex;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+        
+            img {
+                height: 20px;
+            }
+        }
     }
 
     .about-me {
         font-size: 14px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+.profile.dark {
+    .links-container {
+        .link-container {
+            img {
+                filter: invert(100);
+            }
+        }
     }
 }
 
