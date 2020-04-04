@@ -235,7 +235,7 @@ hr {
   .two-column .modal .content,
   .modal .two-column .content {
     align-items: center;
-    height: 475px;
+    height: 490px;
     grid-row: auto;
     margin-top: 0.25vh;
     position: relative;
@@ -247,7 +247,7 @@ hr {
     margin: auto;
     margin-top: 2vh;
     max-width: 100%;
-    height: 275px;
+    height: 280px;
   }
   .two-column .card .tags,
   .two-column .modal .content .tags,
