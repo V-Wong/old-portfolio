@@ -241,57 +241,6 @@
 			}
 
 			toggleDarkTheme();
-
-			const createModal = () => {
-				const modal = document.getElementsByClassName("modal")[0];
-				[...document.getElementsByClassName("card")].map(card => {
-					card.addEventListener("click", event => {
-						if (event.target.tagName !== "A" && window.innerWidth >= 1080) {
-							let element = event.target;
-							while (![...element.classList].includes("card")) element = element.parentElement;
-							modal.style.display = "block";
-							const closeButton = createCloseButton();
-							const modalContent = createModalContent(element);
-							modalContent.prepend(closeButton);
-							modal.appendChild(modalContent);
-						}
-					})
-				})
-
-				document.body.addEventListener("click", event => {
-					if (event.target === modal) {
-						closeModal();
-					}
-				})
-
-				document.body.addEventListener("keyup", event => {
-					if (event.key === "Escape") {
-						closeModal();
-					}
-				})
-			}
-
-			const createModalContent = (baseElement) => {
-				const modalContent = baseElement.cloneNode(true);
-				modalContent.classList.add("content");
-				return modalContent;
-			}
-
-			const createCloseButton = () => {
-				const closeButton = document.createElement("span");
-				closeButton.innerHTML = "&times;";
-				closeButton.classList.add("close");
-				closeButton.addEventListener("click", closeModal);
-				return closeButton;
-			}
-
-			const closeModal = () => {
-				const modal = document.getElementsByClassName("modal")[0];
-				modal.style.display = "none";
-				modal.removeChild(modal.firstChild);
-			}
-
-			createModal();
 		</script>
 	</body>
 </html>
