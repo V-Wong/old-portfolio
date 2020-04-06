@@ -177,6 +177,9 @@ hr {
 .modal .close:focus {
   cursor: pointer;
 }
+#extracurriculars {
+  margin-top: 2vh;
+}
 @media (min-width: 1080px) {
   .container {
     margin: auto;
@@ -187,6 +190,9 @@ hr {
     box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
   }
+  #extracurriculars {
+    margin-top: 3.25vh;
+  }
   .single-column .card,
   .single-column .modal .content,
   .modal .single-column .content {
@@ -196,6 +202,7 @@ hr {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 9fr;
     padding: 1%;
+    margin-top: 0;
   }
   .single-column .image-container {
     grid-row-start: 1;
