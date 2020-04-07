@@ -263,6 +263,11 @@ hr {
     position: absolute;
     bottom: 3vh;
   }
+  .two-column .card.half-height,
+  .two-column .modal .half-height.content,
+  .modal .two-column .half-height.content {
+    height: 200px;
+  }
 }
 a {
   color: black;
