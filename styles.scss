@@ -236,7 +236,7 @@ hr {
 @media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;
-        max-width: 75%;
+        width: 0.90 * $tablet-breakpoint;
     }
 
     .card:hover {
