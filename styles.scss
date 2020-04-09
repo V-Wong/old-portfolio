@@ -304,7 +304,8 @@ hr {
 
         .card {
             align-items: center;
-            height: 525px;
+            height: auto;
+            padding-bottom: 10vh;
             grid-row: auto;
             margin-top: 0.25vh;
             position: relative;
