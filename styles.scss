@@ -1,4 +1,4 @@
-$tablet-breakpoint: 1080px;
+$tablet-breakpoint: 1000px;
 
 // Light theme
 $white: #fff;
@@ -236,7 +236,7 @@ hr {
 @media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;
-        width: 0.90 * $tablet-breakpoint;
+        width: $tablet-breakpoint;
     }
 
     .card:hover {

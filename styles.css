@@ -179,10 +179,10 @@ hr {
 #extracurriculars {
   margin-top: 2vh;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1000px) {
   .container {
     margin: auto;
-    width: 972px;
+    width: 1000px;
   }
   .card:hover,
   .modal .content:hover {
