@@ -197,7 +197,7 @@ hr {
   .modal .single-column .content {
     display: grid;
     grid-auto-flow: column;
-    height: 175px;
+    height: 210px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 7.5fr;
     padding: 1%;
