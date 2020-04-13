@@ -5,7 +5,7 @@ body {
 }
 body.dark {
   background-color: #11131f;
-  color: white;
+  color: #f0f3f7;
 }
 header {
   text-align: center;
@@ -139,13 +139,18 @@ hr {
 .modal .dark.content .tag {
   background-color: red;
 }
+.card.dark .tag:hover,
+.modal .dark.content .tag:hover {
+  background-color: #a01300;
+  transition: background-color 0.5s ease-out;
+}
 .card.dark .repo-link,
 .modal .dark.content .repo-link {
-  color: #00ffff;
+  color: #00ebeb;
 }
 .card.dark .demo-link,
 .modal .dark.content .demo-link {
-  color: #39ff14;
+  color: #3ff61d;
 }
 .modal {
   display: none;
