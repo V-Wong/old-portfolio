@@ -107,13 +107,27 @@ hr {
 .card .tag,
 .modal .content .tag {
   font-weight: 400;
-  padding: 5px 15px;
   border-radius: 3px;
   vertical-align: text-top;
   display: inline-block;
   white-space: nowrap;
   background-color: #ea86ae;
   color: #fff;
+  cursor: pointer;
+}
+.card .tag a,
+.modal .content .tag a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 5px 15px;
+  color: white;
+  border: none;
+}
+.card .tag:hover,
+.modal .content .tag:hover {
+  background-color: #d5256c;
+  transition: background-color 0.5s ease-out;
 }
 .card.dark,
 .modal .dark.content {

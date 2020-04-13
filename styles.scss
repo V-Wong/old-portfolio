@@ -5,6 +5,7 @@ $white: #fff;
 $off-white: #f0f3f7;
 $dark-grey: #606060;
 $pink: #ea86ae;
+$dark-pink: #d5256c;
 $blue: #68b0f1;
 $green: #5fc383;
 
@@ -148,13 +149,27 @@ hr {
 
     .tag {
         font-weight: 400;
-        padding: 5px 15px;
         border-radius: 3px;
         vertical-align: text-top;
         display: inline-block;
         white-space: nowrap;
         background-color: $pink;
         color: $white;
+        cursor: pointer;
+
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            padding: 5px 15px;
+            color: white;
+            border: none;
+        }
+    }
+    
+    .tag:hover {
+        background-color: $dark-pink;
+        transition: background-color 0.5s ease-out;
     }
 }
 
