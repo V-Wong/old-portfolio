@@ -182,7 +182,7 @@ hr {
 @media (min-width: 1000px) {
   .container {
     margin: auto;
-    width: 1000px;
+    width: 980px;
   }
   .card:hover,
   .modal .content:hover {
