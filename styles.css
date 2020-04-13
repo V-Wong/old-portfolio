@@ -197,7 +197,7 @@ hr {
   .two-column .card {
     align-items: center;
     height: auto;
-    padding-bottom: 8vh;
+    padding-bottom: 6vh;
     grid-row: auto;
     margin-top: 0.25vh;
     position: relative;
@@ -211,7 +211,7 @@ hr {
   }
   .two-column .card .tags {
     position: absolute;
-    bottom: 3vh;
+    bottom: 2.5vh;
   }
 }
 a {
