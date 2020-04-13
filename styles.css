@@ -69,8 +69,7 @@ hr {
 .profile.dark .links-container .link-container img {
   filter: invert(100);
 }
-.card,
-.modal .content {
+.card {
   border-top: 2px solid #ea86ae;
   background-color: #fff;
   margin-top: 2vh;
@@ -81,31 +80,26 @@ hr {
   transition: transform 0.2s;
   position: relative;
 }
-.card .image,
-.modal .content .image {
+.card .image {
   display: block;
   margin: auto;
   margin-top: 1vh;
   max-height: 50vw;
 }
-.card .demo-link,
-.modal .content .demo-link {
+.card .demo-link {
   font-size: 16px;
   font-weight: 600;
   color: #5fc383;
 }
-.card .repo-link,
-.modal .content .repo-link {
+.card .repo-link {
   font-size: 16px;
   font-weight: 600;
   color: #68b0f1;
 }
-.card .demo-link + .repo-link,
-.modal .content .demo-link + .repo-link {
+.card .demo-link + .repo-link {
   margin-left: 0.5vw;
 }
-.card .tag,
-.modal .content .tag {
+.card .tag {
   font-weight: 400;
   border-radius: 3px;
   vertical-align: text-top;
@@ -115,8 +109,7 @@ hr {
   color: #fff;
   cursor: pointer;
 }
-.card .tag a,
-.modal .content .tag a {
+.card .tag a {
   display: block;
   height: 100%;
   width: 100%;
@@ -124,76 +117,27 @@ hr {
   color: white;
   border: none;
 }
-.card .tag:hover,
-.modal .content .tag:hover {
+.card .tag:hover {
   background-color: #d5256c;
   transition: background-color 0.5s ease-out;
 }
-.card.dark,
-.modal .dark.content {
+.card.dark {
   border-top: 2px solid red;
   background-color: #202020;
   color: white;
 }
-.card.dark .tag,
-.modal .dark.content .tag {
+.card.dark .tag {
   background-color: red;
 }
-.card.dark .tag:hover,
-.modal .dark.content .tag:hover {
+.card.dark .tag:hover {
   background-color: #a01300;
   transition: background-color 0.5s ease-out;
 }
-.card.dark .repo-link,
-.modal .dark.content .repo-link {
+.card.dark .repo-link {
   color: #00ebeb;
 }
-.card.dark .demo-link,
-.modal .dark.content .demo-link {
+.card.dark .demo-link {
   color: #3ff61d;
-}
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 5vh;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.modal .content {
-  margin: auto;
-  width: 60%;
-  max-height: 75vh;
-  overflow-y: scroll;
-}
-.modal .content .image {
-  max-height: 350px !important;
-}
-.modal .content:hover {
-  transform: none;
-  cursor: auto;
-}
-.modal .tags {
-  display: none;
-}
-.modal ul {
-  display: none;
-}
-.modal p {
-  text-align: center;
-}
-.modal .close {
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.modal .close:hover,
-.modal .close:focus {
-  cursor: pointer;
 }
 #extracurriculars {
   margin-top: 2vh;
@@ -206,9 +150,7 @@ hr {
   #extracurriculars {
     margin-top: 3.25vh;
   }
-  .single-column .card,
-  .single-column .modal .content,
-  .modal .single-column .content {
+  .single-column .card {
     display: grid;
     grid-auto-flow: column;
     height: 210px;
@@ -252,9 +194,7 @@ hr {
     row-gap: 1%;
     grid-row: auto;
   }
-  .two-column .card,
-  .two-column .modal .content,
-  .modal .two-column .content {
+  .two-column .card {
     align-items: center;
     height: auto;
     padding-bottom: 8vh;
@@ -262,18 +202,14 @@ hr {
     margin-top: 0.25vh;
     position: relative;
   }
-  .two-column .card .image,
-  .two-column .modal .content .image,
-  .modal .two-column .content .image {
+  .two-column .card .image {
     display: block;
     margin: auto;
     margin-top: 2vh;
     max-width: 100%;
     max-height: 325px;
   }
-  .two-column .card .tags,
-  .two-column .modal .content .tags,
-  .modal .two-column .content .tags {
+  .two-column .card .tags {
     position: absolute;
     bottom: 3vh;
   }
@@ -322,16 +258,4 @@ h4 {
 p {
   margin: auto;
   font-size: 15px;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
