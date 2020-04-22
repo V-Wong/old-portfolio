@@ -78,7 +78,6 @@ hr {
   border-radius: 3px;
   border: 1px solid #cdcdcd;
   border-top: 2px solid #ea86ae;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
   position: relative;
 }
