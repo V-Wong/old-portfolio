@@ -32,6 +32,7 @@ hr {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
 }
 .dark-theme-button.dark img {
   filter: invert(1);
@@ -70,12 +71,13 @@ hr {
   filter: invert(100);
 }
 .card {
-  border-top: 2px solid #ea86ae;
   background-color: #fff;
   margin-top: 2vh;
   padding: 3%;
   font-size: 14px;
-  border-radius: 2px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+  border-top: 2px solid #ea86ae;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
   position: relative;
@@ -125,6 +127,9 @@ hr {
   border-top: 2px solid red;
   background-color: #202020;
   color: white;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 }
 .card.dark .tag {
   background-color: red;

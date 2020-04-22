@@ -4,6 +4,7 @@ $tablet-breakpoint: 1000px;
 $white: #fff;
 $off-white: #f0f3f7;
 $dark-grey: #606060;
+$light-grey: #CDCDCD;
 $pink: #ea86ae;
 $dark-pink: #d5256c;
 $blue: #68b0f1;
@@ -58,6 +59,7 @@ hr {
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
 }
 // End tag styling
 
@@ -117,12 +119,13 @@ hr {
 }
 
 .card {
-    border-top: 2px solid $pink;
     background-color: $white;
     margin-top: 2vh;
     padding: 3%;
     font-size: 14px;
-    border-radius: 2px;
+    border-radius: 3px;
+    border: 1px solid $light-grey;
+    border-top: 2px solid $pink;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     transition: transform .2s;
     position: relative;
@@ -180,6 +183,9 @@ hr {
     border-top: 2px solid red;
     background-color: $dark-black;
     color: white;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 
     .tag {
         background-color: red;
