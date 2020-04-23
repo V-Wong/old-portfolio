@@ -25,7 +25,7 @@ img {
 ul {
   padding-left: 2%;
   padding-right: 2%;
-  font-size: 14px;
+  font-size: 16px;
 }
 hr {
   border: 0;
@@ -55,7 +55,7 @@ hr {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
   justify-content: center;
   align-items: center;
 }
@@ -88,12 +88,12 @@ hr {
   max-height: 50vw;
 }
 .card .demo-link {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #5fc383;
 }
 .card .repo-link {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #68b0f1;
 }
@@ -149,7 +149,8 @@ hr {
 @media (min-width: 1000px) {
   .container {
     margin: auto;
-    width: 980px;
+    min-width: 980px;
+    max-width: 1200px;
   }
   #extracurriculars {
     margin-top: 3.25vh;
@@ -160,7 +161,8 @@ hr {
     height: 210px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 6fr;
-    padding: 1%;
+    padding: 1.25%;
+    padding-bottom: 2.75%;
     margin-top: 0;
   }
   .single-column .image-container {
@@ -245,21 +247,24 @@ h4 {
   font-weight: 150;
 }
 h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
 }
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
 }
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 h4 {
-  font-size: 16px;
+  font-size: 18px;
 }
 p {
   margin: auto;
-  font-size: 15px;
+  font-size: 18px;
+}
+li {
+  font-size: 16px;
 }

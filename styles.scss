@@ -51,7 +51,7 @@ img {
 ul {
     padding-left: 2%;
     padding-right: 2%;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 hr {
@@ -91,7 +91,7 @@ hr {
             border: none;
             outline: none;
             cursor: pointer;
-            font-size: 20px;
+            font-size: 24px;
             justify-content: center;
             align-items: center;
         
@@ -137,13 +137,13 @@ hr {
     }
 
     .demo-link {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         color: $green;
     }
 
     .repo-link {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         color: $blue;
     }
@@ -211,7 +211,8 @@ hr {
 @media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;
-        width: 0.98 * $tablet-breakpoint;
+        min-width: 0.98 * $tablet-breakpoint;
+        max-width: 1200px;
     }
 
     #extracurriculars {
@@ -225,7 +226,8 @@ hr {
             height: 210px;
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 6fr;
-            padding: 1%;
+            padding: 1.25%;
+            padding-bottom: 2.75%;
             margin-top: 0;
         }
 
@@ -328,26 +330,30 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 p {
     margin: auto;
-    font-size: 15px;
+    font-size: 18px;
+}
+
+li {
+    font-size: 16px;
 }
 // End font styling
