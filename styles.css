@@ -102,6 +102,7 @@ hr {
 }
 .card .tag {
   font-weight: 400;
+  font-size: 16px;
   border-radius: 3px;
   vertical-align: text-top;
   display: inline-block;
@@ -162,7 +163,7 @@ hr {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 6fr;
     padding: 1.25%;
-    padding-bottom: 2.75%;
+    padding-bottom: 3%;
     margin-top: 0;
   }
   .single-column .image-container {
