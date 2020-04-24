@@ -4,7 +4,7 @@ body {
   color: black;
 }
 body.dark {
-  background-color: #11131f;
+  background-color: #1d2029;
   color: #f0f3f7;
 }
 header {
@@ -132,7 +132,7 @@ hr {
 }
 .card.dark {
   border-top: 2px solid red;
-  background-color: #202020;
+  background-color: #252b43;
   color: white;
   border-left: none;
   border-right: none;
