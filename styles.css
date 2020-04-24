@@ -58,9 +58,16 @@ hr {
   font-size: 24px;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .profile .links-container .link-container img {
   height: 20px;
+}
+@media (max-width: 400px) {
+  .profile .links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .profile .about-me {
   font-size: 14px;

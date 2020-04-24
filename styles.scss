@@ -94,10 +94,19 @@ hr {
             font-size: 24px;
             justify-content: center;
             align-items: center;
+            height: 100%;
         
             img {
                 height: 20px;
             }
+        }
+    }
+
+    // Two rows for links when horizontal size of screen is too small.
+    @media (max-width: 400px) {
+        .links-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
 
