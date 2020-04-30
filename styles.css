@@ -1,11 +1,11 @@
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #f0f3f7;
+  background-color: #f6f8fa;
   color: black;
 }
 body.dark {
   background-color: #1d2029;
-  color: #f0f3f7;
+  color: #f6f8fa;
 }
 header {
   text-align: center;
