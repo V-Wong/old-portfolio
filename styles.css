@@ -70,8 +70,13 @@ hr {
 }
 .profile .about-me {
   font-size: 14px;
-  margin-left: auto;
-  margin-right: auto;
+}
+.profile .about-me a {
+  color: #007bff;
+  border: none;
+}
+.profile .about-me a:hover {
+  border-bottom: solid 1px;
 }
 .profile.dark .links-container .link-container img {
   filter: invert(100);
