@@ -321,12 +321,12 @@ hr {
 a {
     color: black;
     text-decoration: none; 
-    border-bottom: dotted 1.5px;
+    border-bottom: dashed 1px;
 }
 
 a:hover {
     text-decoration: none; 
-    border-bottom: solid 1.5px;
+    border-bottom: solid 1px;
 }
 
 a.dark {
@@ -336,7 +336,7 @@ a.dark {
 p {
     a {
         color: black;
-        border-bottom: dotted 1.5px;
+        border-bottom: dashed 1px;
     }
     a.dark {
         color: white;
