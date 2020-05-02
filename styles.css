@@ -30,6 +30,7 @@ ul {
 hr {
   border: 0;
   height: 0;
+  margin: 0;
 }
 .dark-theme-button.dark img {
   filter: invert(1);
@@ -230,6 +231,9 @@ hr {
     position: absolute;
     bottom: 2.5vh;
     font-size: 16px;
+  }
+  hr {
+    height: 5px;
   }
 }
 a {
