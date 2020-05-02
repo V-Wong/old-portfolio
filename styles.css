@@ -67,6 +67,7 @@ hr {
 }
 .profile .about-me {
   font-size: 14px;
+  margin: 0;
 }
 .profile .about-me a {
   color: #007bff;
