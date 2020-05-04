@@ -139,7 +139,7 @@ hr {
     padding: 3%;
     font-size: 14px;
     border-radius: 3px;
-    border: 1px solid $light-grey;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     border-top: 2px solid $pink;
     transition: transform .2s;
     position: relative;
