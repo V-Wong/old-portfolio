@@ -18,6 +18,13 @@ footer {
   line-height: 25px;
   font-size: 12px;
 }
+footer p a {
+  color: #007bff;
+  border: none;
+}
+footer p a:hover {
+  border-bottom: solid 1px;
+}
 img {
   max-width: 100%;
   max-height: 100%;
