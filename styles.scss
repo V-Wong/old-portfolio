@@ -272,6 +272,11 @@ hr {
             grid-row-start: 2;
             grid-column-start: 2;
             height: 100%; 
+
+            ul {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
         }
 
         .tags {

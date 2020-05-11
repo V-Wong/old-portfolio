@@ -200,6 +200,10 @@ hr {
     grid-column-start: 2;
     height: 100%;
   }
+  .single-column .dotpoints ul {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
   .single-column .tags {
     grid-row-start: 3;
     grid-column-start: 2;
