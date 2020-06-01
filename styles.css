@@ -1,15 +1,18 @@
 body {
-  font-family: "Nunito", sans-serif;
-  background-color: #f6f8fa;
+  font-family: 'Nunito', sans-serif;
+  background-color: #F6F8FA;
   color: black;
 }
+
 body.dark {
-  background-color: #1d2029;
-  color: #f6f8fa;
+  background-color: #1D2029;
+  color: #F6F8FA;
 }
+
 header {
   text-align: center;
 }
+
 footer {
   margin-top: 2vh;
   height: 50px;
@@ -18,42 +21,52 @@ footer {
   line-height: 25px;
   font-size: 12px;
 }
+
 footer p a {
   color: #007bff;
   border: none;
 }
+
 footer p a:hover {
   border-bottom: solid 1px;
 }
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
+
 ul {
   padding-left: 3%;
   padding-right: 3%;
   font-size: 16px;
 }
+
 hr {
   border: 0;
   height: 0;
   margin: 0;
 }
+
 .dark-theme-button.dark img {
   filter: invert(1);
 }
+
 .dark-theme-button:hover {
   opacity: 1;
 }
+
 .profile .image {
   max-height: 100px;
   max-width: 100px;
 }
+
 .profile .links-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 .profile .links-container .link-container {
   display: flex;
   border: none;
@@ -64,30 +77,36 @@ hr {
   align-items: center;
   height: 100%;
 }
+
 .profile .links-container .link-container img {
   height: 20px;
 }
+
 @media (max-width: 400px) {
-  .profile .links-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .profile #dark-theme-button {
+    display: none;
   }
 }
+
 .profile .about-me {
   font-size: 14px;
   margin: 0;
   margin-top: 5px;
 }
+
 .profile .about-me a {
   color: #007bff;
   border: none;
 }
+
 .profile .about-me a:hover {
   border-bottom: solid 1px;
 }
+
 .profile.dark .links-container .link-container img {
   filter: invert(100);
 }
+
 .card {
   background-color: #fff;
   margin-top: 2vh;
@@ -96,28 +115,33 @@ hr {
   border-radius: 3px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   border-top: 2px solid #ea86ae;
-  transition: transform 0.2s;
+  transition: transform .2s;
   position: relative;
 }
+
 .card .image {
   display: block;
   margin: auto;
   margin-top: 1vh;
   max-height: 50vw;
 }
+
 .card .demo-link {
   font-size: 18px;
   font-weight: 600;
   color: #5fc383;
 }
+
 .card .repo-link {
   font-size: 18px;
   font-weight: 600;
   color: #68b0f1;
 }
+
 .card .demo-link + .repo-link {
   margin-left: 0.5vw;
 }
+
 .card .tag {
   font-weight: 400;
   font-size: 16px;
@@ -129,6 +153,7 @@ hr {
   color: #fff;
   cursor: pointer;
 }
+
 .card .tag a {
   display: block;
   height: 100%;
@@ -137,10 +162,12 @@ hr {
   color: white;
   border: none;
 }
+
 .card .tag:hover {
   background-color: #d5256c;
   transition: background-color 0.5s ease-out;
 }
+
 .card.dark {
   border-top: 2px solid red;
   background-color: #252b43;
@@ -149,22 +176,28 @@ hr {
   border-right: none;
   border-bottom: none;
 }
+
 .card.dark .tag {
   background-color: red;
 }
+
 .card.dark .tag:hover {
   background-color: #a01300;
   transition: background-color 0.5s ease-out;
 }
+
 .card.dark .repo-link {
   color: #00ebeb;
 }
+
 .card.dark .demo-link {
   color: #3ff61d;
 }
+
 #extracurriculars {
   margin-top: 2vh;
 }
+
 @media (min-width: 1000px) {
   .container {
     margin: auto;
@@ -248,51 +281,60 @@ hr {
     height: 5px;
   }
 }
+
 a {
   color: black;
   text-decoration: none;
   border-bottom: dashed 1px;
 }
+
 a:hover {
   text-decoration: none;
   border-bottom: solid 1px;
 }
+
 a.dark {
   color: white;
 }
+
 p a {
   color: black;
   border-bottom: dashed 1px;
 }
+
 p a.dark {
   color: white;
 }
-h1,
-h2,
-h3,
-h4 {
+
+h1, h2, h3, h4 {
   margin: auto;
   font-weight: 150;
 }
+
 h1 {
   font-size: 36px;
   font-weight: 600;
 }
+
 h2 {
   font-size: 24px;
   font-weight: 400;
 }
+
 h3 {
   font-size: 20px;
   font-weight: 600;
 }
+
 h4 {
   font-size: 18px;
 }
+
 p {
   margin: auto;
   font-size: 18px;
 }
+
 li {
   font-size: 16px;
 }

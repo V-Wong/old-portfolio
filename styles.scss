@@ -112,9 +112,8 @@ hr {
 
     // Two rows for links when horizontal size of screen is too small.
     @media (max-width: 400px) {
-        .links-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        #dark-theme-button {
+            display: none;
         }
     }
 
