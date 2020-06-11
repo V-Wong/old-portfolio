@@ -10,7 +10,6 @@ body.dark {
 }
 
 header {
-  font-family: Lato, arial, verdana, helvetica, sans-serif;
   text-align: center;
 }
 
@@ -309,6 +308,10 @@ p a {
 
 p a.dark {
   color: white;
+}
+
+h1 {
+  font-family: Lato, arial, verdana, helvetica, sans-serif;
 }
 
 h1, h2, h3, h4 {
