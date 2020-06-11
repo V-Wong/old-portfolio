@@ -10,6 +10,7 @@ body.dark {
 }
 
 header {
+  font-family: Lato, arial, verdana, helvetica, sans-serif;
   text-align: center;
 }
 
@@ -105,6 +106,10 @@ hr {
 
 .profile.dark .links-container .link-container img {
   filter: invert(100);
+}
+
+.section-heading {
+  margin-top: 2vh;
 }
 
 .card {
@@ -304,10 +309,6 @@ p a {
 
 p a.dark {
   color: white;
-}
-
-h1 {
-  font-family: Lato, arial, verdana, helvetica, sans-serif;
 }
 
 h1, h2, h3, h4 {
