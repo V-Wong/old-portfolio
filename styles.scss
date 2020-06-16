@@ -23,6 +23,9 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: $off-white;
     color: black;
+
+    transition-property: background;
+    transition: background 500ms ease-in-out;
 }
 
 body.dark {
@@ -207,6 +210,9 @@ hr {
         background-color: $dark-pink;
         transition: background-color 0.5s ease-out;
     }
+
+    transition-property: background;
+    transition: background 500ms ease-in-out;
 }
 
 .card.dark {

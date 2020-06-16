@@ -2,6 +2,8 @@ body {
   font-family: 'Nunito', sans-serif;
   background-color: #F6F8FA;
   color: black;
+  transition-property: background;
+  transition: background 500ms ease-in-out;
 }
 
 body.dark {
@@ -122,6 +124,8 @@ hr {
   border-top: 2px solid #ea86ae;
   transition: transform .2s;
   position: relative;
+  transition-property: background;
+  transition: background 500ms ease-in-out;
 }
 
 .card .image {
