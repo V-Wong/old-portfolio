@@ -11,8 +11,8 @@ $blue: #68b0f1;
 $green: #5fc383;
 
 // Dark theme
-$light-black: #1D2029;
-$dark-black: #252b43;
+$light-black: #242424;
+$dark-black: #080808;
 $smoke: #A9A9A9;
 $dark-red: #a01300;
 $light-blue: #00ebeb;
@@ -29,7 +29,7 @@ body {
 }
 
 body.dark {
-    background-color: $light-black;
+    background-color: $dark-black;
     color: $off-white;
 }
 
@@ -217,7 +217,7 @@ hr {
 
 .card.dark {
     border-top: 2px solid red;
-    background-color: $dark-black;
+    background-color: $light-black;
     color: white;
     border-left: none;
     border-right: none;

@@ -7,7 +7,7 @@ body {
 }
 
 body.dark {
-  background-color: #1D2029;
+  background-color: #080808;
   color: #F6F8FA;
 }
 
@@ -179,7 +179,7 @@ hr {
 
 .card.dark {
   border-top: 2px solid red;
-  background-color: #252b43;
+  background-color: #242424;
   color: white;
   border-left: none;
   border-right: none;
