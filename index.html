@@ -331,27 +331,36 @@
 	
 		<script>
 			const toggleDarkTheme = () => {
-				let isDarkTheme = false;
+				document.body.classList.toggle("dark");
+				document.getElementsByClassName("profile")[0].classList.toggle("dark");
+				for (let element of document.querySelectorAll(".card, a")) {
+					element.classList.toggle("dark");
+				}
+
+				const darkThemeToggleButton = document.getElementById("dark-theme-button");
+				const darkThemeButtonText = darkThemeToggleButton.children[1];
+				darkThemeToggleButton.children[0].src = 
+						isDarkTheme ? "./images/moon.svg": "./images/sun.svg";
+				darkThemeButtonText.innerText = 
+						isDarkTheme ? "Dark" : "Light";
+			}
+
+			const addDarkThemeToggler = (isDarkTheme) => {
 				let darkThemeToggleButton = document.getElementById("dark-theme-button");
 				let darkThemeButtonText = darkThemeToggleButton.children[1];
 				darkThemeToggleButton.addEventListener("click", () => {
-					document.body.classList.toggle("dark");
-					document.getElementsByClassName("profile")[0].classList.toggle("dark");
-					for (let element of document.getElementsByClassName("card")) {
-						element.classList.toggle("dark");
-					}
-					for (let element of document.getElementsByTagName("a")) {
-						element.classList.toggle("dark");
-					}
-					darkThemeToggleButton.children[0].src = 
-							isDarkTheme ? "./images/moon.svg": "./images/sun.svg";
-					darkThemeButtonText.innerText = 
-							isDarkTheme ? "Dark" : "Light";
+					toggleDarkTheme();
 					isDarkTheme = !isDarkTheme;
+					sessionStorage.setItem("vwong-theme", isDarkTheme);
 				})
 			}
 
-			toggleDarkTheme();
+			const isDarkTheme = sessionStorage.getItem("vwong-theme") === "true";
+			if (isDarkTheme) {
+				toggleDarkTheme();
+			}
+
+			addDarkThemeToggler(isDarkTheme);
 		</script>
 	</body>
 </html>
