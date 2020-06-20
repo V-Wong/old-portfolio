@@ -25,7 +25,7 @@ body {
     color: black;
 
     transition-property: background;
-    transition: background 500ms ease-in-out;
+    transition: background 250ms ease-in-out;
 }
 
 body.dark {
@@ -109,6 +109,8 @@ hr {
         
             img {
                 height: 20px;
+                transition-property: filter;
+                transition: 250ms ease-in-out;
             }
         }
     }
@@ -204,6 +206,9 @@ hr {
             color: white;
             border: none;
         }
+
+        transition-property: background;
+        transition: background 250ms ease-in-out;
     }
     
     .tag:hover {
@@ -211,8 +216,8 @@ hr {
         transition: background-color 0.5s ease-out;
     }
 
-    transition-property: background;
-    transition: background 500ms ease-in-out;
+    transition-property: background, border-top;
+    transition: background 250ms ease-in-out, border-top 250ms ease-in-out;
 }
 
 .card.dark {
@@ -347,6 +352,11 @@ hr {
 // End custom element styling
 
 // Font styling
+a, p, h1, h2, h3, h4, h5, h6, li {
+    transition-property: color;
+    transition: 250ms ease-in-out;
+}
+
 a {
     color: black;
     text-decoration: none; 
