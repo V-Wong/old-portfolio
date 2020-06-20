@@ -74,7 +74,7 @@ hr {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -93,7 +93,6 @@ hr {
 }
 
 .profile .about-me {
-  font-size: 14px;
   margin: 0;
   margin-top: 5px;
 }
@@ -298,6 +297,7 @@ hr {
 a, p, h1, h2, h3, h4, h5, h6, li {
   transition-property: color;
   transition: 250ms ease-in-out;
+  opacity: 0.95;
 }
 
 a {
