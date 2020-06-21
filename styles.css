@@ -112,12 +112,13 @@ hr {
 
 .section-heading {
   font-family: Lato, arial, verdana, helvetica, sans-serif;
-  margin-top: 3vh;
+  margin-top: 1.5rem;
+  font-weight: 600;
 }
 
 .card {
   background-color: #fff;
-  margin-top: 2vh;
+  margin-top: 0.5rem;
   padding: 3%;
   font-size: 14px;
   border-radius: 3px;
