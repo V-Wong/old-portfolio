@@ -269,7 +269,7 @@ hr {
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 5fr;
             padding: 1.25%;
-            padding-bottom: 3%;
+            padding-bottom: 2rem;
             margin-top: 0;
         }
 
@@ -324,7 +324,7 @@ hr {
         .card {
             align-items: center;
             height: auto;
-            padding-bottom: 6vh;
+            padding-bottom: 3rem;
             grid-row: auto;
             margin-top: 0.25vh;
             position: relative;
@@ -339,7 +339,6 @@ hr {
 
             .tags {
                 position: absolute;
-                bottom: 2.5vh;
                 font-size: 16px;
             }
         }
