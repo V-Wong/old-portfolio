@@ -67,8 +67,6 @@ hr {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 0.33rem;
-  margin-bottom: 0.33rem;
 }
 
 .profile .links-container .link-container {
