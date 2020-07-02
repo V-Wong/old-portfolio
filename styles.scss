@@ -159,8 +159,7 @@ hr {
     padding: 3%;
     font-size: 14px;
     border-radius: 3px;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-    border-top: 2px solid $pink;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: transform .2s;
     position: relative;
 
@@ -221,7 +220,6 @@ hr {
 }
 
 .card.dark {
-    border-top: 2px solid red;
     background-color: $light-black;
     color: white;
     border-left: none;
