@@ -160,6 +160,7 @@ hr {
     font-size: 14px;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     transition: transform .2s;
     position: relative;
 
@@ -215,16 +216,14 @@ hr {
         transition: background-color 0.5s ease-out;
     }
 
-    transition-property: background, border-top;
-    transition: background 250ms ease-in-out, border-top 250ms ease-in-out;
+    transition-property: background, border;
+    transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
 
 .card.dark {
     background-color: $light-black;
     color: white;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border: 1px solid rgba(55, 55, 55, 0.9);
 
     .tag {
         background-color: red;

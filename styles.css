@@ -123,10 +123,11 @@ hr {
   font-size: 14px;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   transition: transform .2s;
   position: relative;
-  transition-property: background, border-top;
-  transition: background 250ms ease-in-out, border-top 250ms ease-in-out;
+  transition-property: background, border;
+  transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
 
 .card .image {
@@ -183,9 +184,7 @@ hr {
 .card.dark {
   background-color: #242424;
   color: white;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  border: 1px solid rgba(55, 55, 55, 0.9);
 }
 
 .card.dark .tag {
