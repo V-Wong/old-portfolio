@@ -156,7 +156,7 @@ hr {
 .card {
     background-color: $white;
     margin-top: 0.5rem;
-    padding: 3%;
+    padding: 1rem;
     font-size: 14px;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -251,7 +251,7 @@ hr {
     .container {
         margin: auto;
         min-width: 0.98 * $tablet-breakpoint;
-        max-width: 1000px;
+        max-width: $tablet-breakpoint;
     }
 
     #extracurriculars {
@@ -265,7 +265,7 @@ hr {
             height: 210px;
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 5fr;
-            padding: 1.25%;
+            padding: 1%;
             padding-bottom: 2rem;
             margin-top: 0;
         }
