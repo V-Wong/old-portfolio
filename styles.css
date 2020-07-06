@@ -208,11 +208,11 @@ hr {
   margin-top: 2vh;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 960px) {
   .container {
     margin: auto;
-    min-width: 980px;
-    max-width: 1000px;
+    min-width: 940.8px;
+    max-width: 960px;
   }
   #extracurriculars {
     margin-top: 3.25vh;
