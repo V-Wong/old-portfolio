@@ -1,6 +1,6 @@
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #F6F8FA;
+  background-color: #F5F5F5;
   color: black;
   transition-property: background;
   transition: background 250ms ease-in-out;
@@ -8,7 +8,7 @@ body {
 
 body.dark {
   background-color: #080808;
-  color: #F6F8FA;
+  color: #F5F5F5;
 }
 
 header {
@@ -121,7 +121,7 @@ hr {
   margin-top: 0.5rem;
   padding: 1rem;
   font-size: 14px;
-  border-radius: 3px;
+  border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: none;
   transition: transform .2s;

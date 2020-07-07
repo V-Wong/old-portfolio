@@ -2,7 +2,7 @@ $tablet-breakpoint: 960px;
 
 // Light theme
 $white: #fff;
-$off-white: #F6F8FA;
+$off-white: #F5F5F5;
 $dark-grey: #606060;
 $light-grey: #CDCDCD;
 $pink: #ea86ae;
@@ -158,7 +158,7 @@ hr {
     margin-top: 0.5rem;
     padding: 1rem;
     font-size: 14px;
-    border-radius: 3px;
+    border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: none;
     transition: transform .2s;
