@@ -239,7 +239,7 @@ hr {
 @media (min-width: 960px) {
   .container {
     margin: auto;
-    min-width: 940.8px;
+    min-width: 936px;
     max-width: 960px;
   }
   #extracurriculars {

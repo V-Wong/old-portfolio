@@ -279,7 +279,7 @@ hr {
 @media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;
-        min-width: 0.98 * $tablet-breakpoint;
+        min-width: 0.975 * $tablet-breakpoint;
         max-width: $tablet-breakpoint;
     }
 
