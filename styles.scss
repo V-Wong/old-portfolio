@@ -153,7 +153,7 @@ hr {
 
     .about-me {
         margin: 0;
-        margin-top: 5px;
+        margin-top: 1.5rem;
 
         a {
             color: #007bff;
@@ -201,6 +201,7 @@ hr {
     }
 
     .demo-link {
+        transition: border 250ms ease-in-out;
         font-size: 18px;
         font-weight: 600;
         color: $green;
