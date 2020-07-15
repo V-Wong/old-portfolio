@@ -114,8 +114,19 @@ hr {
   transition: 250ms ease-in-out;
 }
 
-@media (max-width: 400px) {
-  .profile #dark-theme-button {
+@media (min-width: 960px) {
+  .profile {
+    padding-top: 1rem;
+  }
+  .profile .top-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile .top-bar h1 {
+    margin-left: 0;
+    font-size: 30px;
+  }
+  .profile .top-bar h2 {
     display: none;
   }
 }
@@ -125,13 +136,8 @@ hr {
   margin-top: 1.5rem;
 }
 
-.profile .about-me a {
-  color: #007bff;
-  border: none;
-}
-
-.profile .about-me a:hover {
-  border-bottom: solid 1px;
+.profile .about-me p {
+  font-size: 24px;
 }
 
 .profile.dark .links-container .link-container img {
