@@ -137,6 +137,10 @@ footer .footer-links .link-container a {
   transition: 250ms ease-in-out;
 }
 
+.profile .links-container .link-container a {
+  border-bottom: dashed 1px;
+}
+
 @media (min-width: 960px) {
   .profile {
     padding-top: 1rem;
@@ -199,12 +203,14 @@ footer .footer-links .link-container a {
   font-size: 18px;
   font-weight: 600;
   color: #5fc383;
+  border-bottom: dashed 1px;
 }
 
 .card .repo-link {
   font-size: 18px;
   font-weight: 600;
   color: #68b0f1;
+  border-bottom: dashed 1px;
 }
 
 .card .demo-link + .repo-link {
@@ -358,7 +364,6 @@ a, p, h1, h2, h3, h4, h5, h6, li {
 a {
   color: black;
   text-decoration: none;
-  border-bottom: dashed 1px;
 }
 
 a:hover {
