@@ -197,14 +197,8 @@ footer {
     }
 }
 
-.profile.dark {
-    .links-container {
-        .link-container {
-            img {
-                filter: invert(100);
-            }
-        }
-    }
+.social-icon.dark {
+    filter: invert(100);
 }
 
 .section-heading {

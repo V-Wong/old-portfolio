@@ -31,19 +31,19 @@
 				<h2>Full Stack Software Engineer</h2>
 					<nav class="links-container">
 						<div class="link-container">
-							<img src="./images/github.svg" alt="Black and white GitHub logo icon">
+							<img class="social-icon" src="./images/github.svg" alt="Black and white GitHub logo icon">
 							<a href="https://github.com/V-Wong" target="_blank">Github</a>
 						</div>
 						<div class="link-container">
-							<img src="./images/resume.svg" alt="Black and white icon with silhouette of person">
+							<img class="social-icon" src="./images/resume.svg" alt="Black and white icon with silhouette of person">
 							<a href="https://drive.google.com/file/d/1mqRF7QdBDXfDD7TLQ3OuanALxHxd_D2f/view?usp=sharing" target="_blank">Resume</a>
 						</div>
 						<div class="link-container">
-							<img src="./images/linkedin.svg" alt="Black and white LinkIn logo icon">
+							<img class="social-icon" src="./images/linkedin.svg" alt="Black and white LinkIn logo icon">
 							<a href="https://www.linkedin.com/in/vincent-wc-wong/" target="_blank">LinkedIn</a>
 						</div>
 						<div id="dark-theme-button" class="link-container">
-							<img src="./images/moon.svg" alt="Black and white moon icon">
+							<img class="social-icon" src="./images/moon.svg" alt="Black and white moon icon">
 							<a>Dark</a>
 						</div>
 					</nav>
@@ -437,13 +437,13 @@
 				</p>
 				<div class="footer-links">
 					<div class="link-container">
-						<a href="https://github.com/V-Wong" target="_blank"><img src="./images/github.svg" alt="Black and white GitHub logo icon"></a>
+						<a href="https://github.com/V-Wong" target="_blank"><img class="social-icon" src="./images/github.svg" alt="Black and white GitHub logo icon"></a>
 					</div>
 					<div class="link-container">
-						<a href="https://drive.google.com/file/d/1mqRF7QdBDXfDD7TLQ3OuanALxHxd_D2f/view?usp=sharing" target="_blank"><img src="./images/resume.svg" alt="Black and white icon with silhouette of person"></a>
+						<a href="https://drive.google.com/file/d/1mqRF7QdBDXfDD7TLQ3OuanALxHxd_D2f/view?usp=sharing" target="_blank"><img class="social-icon" src="./images/resume.svg" alt="Black and white icon with silhouette of person"></a>
 					</div>
 					<div class="link-container">
-						<a href="https://www.linkedin.com/in/vincent-wc-wong/" target="_blank"><img src="./images/linkedin.svg" alt="Black and white LinkIn logo icon"></a>
+						<a href="https://www.linkedin.com/in/vincent-wc-wong/" target="_blank"><img class="social-icon" src="./images/linkedin.svg" alt="Black and white LinkIn logo icon"></a>
 					</div>
 				</div>
 			</footer>
@@ -453,7 +453,7 @@
 			const toggleDarkTheme = (isDarkTheme) => {
 				document.body.classList.toggle("dark");
 				document.getElementsByClassName("profile")[0].classList.toggle("dark");
-				for (let element of document.querySelectorAll(".card, a")) {
+				for (let element of document.querySelectorAll(".card, a, .social-icon")) {
 					element.classList.toggle("dark");
 				}
 
