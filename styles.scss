@@ -37,26 +37,6 @@ header {
     text-align: center;
 }
 
-footer {
-    margin-top: 2vh;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
-    font-size: 12px;
-
-    p {
-        a {
-            color: #007bff;
-            border: none;
-        }
-    
-        a:hover {
-            border-bottom: solid 1px;
-        }
-    }
-}
-
 img {
     max-width: 100%;
     max-height: 100%;
@@ -72,6 +52,50 @@ hr {
     border: 0;
     height: 0;
     margin: 0;
+}
+
+footer {
+    display: grid;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    @media (max-width: $tablet-breakpoint) {
+        p {
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-top: 0.5rem;
+        }
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+        grid-template-columns: 4fr 2fr;
+    }
+
+    p {
+        a {
+            border-bottom: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            border-bottom: solid 1px;
+        }
+    }
+
+    .footer-links {
+        float: right;
+        display: flex;
+        justify-content: space-evenly;
+        
+        .link-container {
+            a {
+                border-bottom: none;
+                line-height: unset;
+            }
+        }
+    }
 }
 // End tag styling
 
