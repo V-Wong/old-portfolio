@@ -1,0 +1,104 @@
+@media (min-width: $tablet-breakpoint) {
+    .container {
+        margin: auto;
+        min-width: 0.975 * $tablet-breakpoint;
+        max-width: $tablet-breakpoint;
+    }
+
+    #extracurriculars {
+        margin-top: 3.25vh;
+    }
+
+    .single-column {
+        .card {
+            display: grid;
+            grid-auto-flow: column;
+            height: 210px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 5fr;
+            padding: 1%;
+            padding-bottom: 2rem;
+            margin-top: 0;
+        }
+
+        .image-container {
+            grid-row-start: 1;
+            grid-row-end: 4;
+            height: 100%;
+        }
+    
+        .image {
+            position: relative;
+            top: 10%;
+            height: 100%;
+            max-height: 60%;
+            margin: auto;
+            margin-top: 2vh;
+        }
+
+        .description {
+            grid-row-start: 1;
+            grid-column-start: 2;
+            height: 100%;
+        }
+
+        .dotpoints {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            height: 100%; 
+
+            ul {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+
+        .tags {
+            grid-row-start: 3;
+            grid-column-start: 2;
+            height: 100%; 
+            font-size: 16px;
+        }
+    }
+
+    // Change to two column layout on larger displays
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1%;
+        row-gap: 1%;
+        grid-row: auto;
+
+        .card {
+            align-items: center;
+            height: auto;
+            padding-bottom: 3rem;
+            grid-row: auto;
+            margin-top: 0.25vh;
+            position: relative;
+    
+            .image {
+                display: block;
+                margin: auto;
+                margin-top: 2vh;
+                max-width: 100%;
+                max-height: 325px;
+            }
+
+            .tags {
+                position: absolute;
+                font-size: 16px;
+            }
+        }
+    }
+
+    hr {
+        height: 5px;
+    }
+}
+
+.section-heading {
+    font-family: Lato, arial, verdana, helvetica, sans-serif;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}

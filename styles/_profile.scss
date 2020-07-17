@@ -1,0 +1,70 @@
+.profile {
+    .image {
+        max-height: 100px;
+        max-width: 100px;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .link-container {
+            display: flex;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        
+            img {
+                height: 20px;
+                transition-property: filter;
+                transition: 250ms ease-in-out;
+            }
+        }
+    }
+
+    // Two rows for links when horizontal size of screen is too small.
+    @media (min-width: $tablet-breakpoint) {
+        padding-top: 1rem;
+
+        .top-bar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h1 {
+                margin-left: 0;
+                font-size: 30px;
+            }
+
+            h2 {
+                display: none;
+            }
+        }
+    }
+
+    .about-me {
+        margin: 0;
+        margin-top: 1.5rem;
+        p {
+            font-size: 24px;
+        }
+    }
+}
+
+.dark-theme-button.dark {
+    img {
+        filter: invert(1);
+    }
+}
+
+.dark-theme-button:hover {
+    opacity: 1;
+}
+
+.social-icon.dark {
+    filter: invert(100);
+}

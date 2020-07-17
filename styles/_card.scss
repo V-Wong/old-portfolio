@@ -1,0 +1,94 @@
+
+.card {
+    background-color: $white;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    transition: transform .2s;
+    position: relative;
+
+    .image {
+        display: block;
+        margin: auto;
+        margin-top: 1vh;
+        max-height: 50vw;
+    }
+
+    .demo-link {
+        transition: border 250ms ease-in-out;
+        font-size: 18px;
+        font-weight: 600;
+        color: $green;
+        border-bottom: dashed 1px;
+    }
+
+    .repo-link {
+        font-size: 18px;
+        font-weight: 600;
+        color: $blue;
+        border-bottom: dashed 1px;
+    }
+
+    .demo-link + .repo-link {
+        margin-left: 0.5vw;
+    }
+
+    .tag {
+        font-weight: 400;
+        font-size: 16px;
+        border-radius: 3px;
+        vertical-align: text-top;
+        display: inline-block;
+        white-space: nowrap;
+        background-color: $pink;
+        color: $white;
+        cursor: pointer;
+
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            padding: 5px 15px;
+            color: white;
+            border: none;
+        }
+
+        transition-property: background;
+        transition: background 250ms ease-in-out;
+    }
+    
+    .tag:hover {
+        background-color: $dark-pink;
+        transition: background-color 0.5s ease-out;
+    }
+
+    transition-property: background, border;
+    transition: background 250ms ease-in-out, border 250ms ease-in-out;
+}
+
+.card.dark {
+    background-color: $light-black;
+    color: white;
+    border: 1px solid rgba(55, 55, 55, 0.9);
+
+    .tag {
+        background-color: red;
+    }
+
+    .tag:hover {
+        background-color: $dark-red;
+        transition: background-color 0.5s ease-out;
+    }
+
+    .repo-link {
+        color: $light-blue;
+    }
+
+    .demo-link {
+        color: $light-green;
+    }
+}
+

@@ -1,0 +1,75 @@
+a, p, h1, h2, h3, h4, h5, h6, li {
+    transition-property: color;
+    transition: 250ms ease-in-out;
+
+    opacity: 0.95;
+}
+
+a {
+    color: black;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none; 
+    border-bottom: solid 1px;
+}
+
+a.dark {
+    color: white;
+}
+
+a.underline {
+    border-bottom: dashed 1px;
+}
+
+a.underline:hover {
+    border-bottom: solid 1px;
+}
+
+p {
+    a {
+        color: black;
+        border-bottom: dashed 1px;
+    }
+    a.dark {
+        color: white;
+    }
+}
+
+h1 {
+    font-family: Lato, arial, verdana, helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin: auto;
+    font-weight: 150;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    margin: auto;
+    font-size: 18px;
+}
+
+li {
+    font-size: 16px;
+}
