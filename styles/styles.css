@@ -1,5 +1,5 @@
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #F5F5F5;
   color: black;
   transition-property: background;
@@ -37,7 +37,6 @@ footer {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-
 @media (max-width: 960px) {
   footer p {
     text-align: center;
@@ -46,24 +45,20 @@ footer {
     margin-top: 0.5rem;
   }
 }
-
 @media (min-width: 960px) {
   footer {
     grid-template-columns: 4fr 2fr;
   }
 }
-
 footer p a {
   border-bottom: none;
   color: #007bff;
 }
-
 footer .footer-links {
   float: right;
   display: flex;
   justify-content: space-evenly;
 }
-
 footer .footer-links .link-container a {
   border-bottom: none;
   line-height: unset;
@@ -78,36 +73,30 @@ footer .footer-links .link-container a {
     max-width: 540px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
-
 .profile .image {
   max-height: 100px;
   max-width: 100px;
 }
-
 .profile .links-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .profile .links-container .link-container {
   display: flex;
   border: none;
@@ -118,13 +107,11 @@ footer .footer-links .link-container a {
   align-items: center;
   height: 100%;
 }
-
 .profile .links-container .link-container img {
   height: 20px;
   transition-property: filter;
   transition: 250ms ease-in-out;
 }
-
 @media (min-width: 960px) {
   .profile {
     padding-top: 1rem;
@@ -141,12 +128,10 @@ footer .footer-links .link-container a {
     display: none;
   }
 }
-
 .profile .about-me {
   margin: 0;
   margin-top: 1.5rem;
 }
-
 .profile .about-me p {
   font-size: 24px;
 }
@@ -171,19 +156,17 @@ footer .footer-links .link-container a {
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: none;
-  transition: transform .2s;
+  transition: transform 0.2s;
   position: relative;
   transition-property: background, border;
   transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
-
 .card .image {
   display: block;
   margin: auto;
-  margin-top: 1vh;
+  margin-top: 1rem;
   max-height: 50vw;
 }
-
 .card .demo-link {
   transition: border 250ms ease-in-out;
   font-size: 18px;
@@ -191,18 +174,15 @@ footer .footer-links .link-container a {
   color: #5fc383;
   border-bottom: dashed 1px;
 }
-
 .card .repo-link {
   font-size: 18px;
   font-weight: 600;
   color: #68b0f1;
   border-bottom: dashed 1px;
 }
-
 .card .demo-link + .repo-link {
   margin-left: 0.5vw;
 }
-
 .card .tag {
   font-weight: 400;
   font-size: 16px;
@@ -216,7 +196,6 @@ footer .footer-links .link-container a {
   transition-property: background;
   transition: background 250ms ease-in-out;
 }
-
 .card .tag a {
   display: block;
   height: 100%;
@@ -225,7 +204,6 @@ footer .footer-links .link-container a {
   color: white;
   border: none;
 }
-
 .card .tag:hover {
   background-color: #d5256c;
   transition: background-color 0.5s ease-out;
@@ -236,20 +214,16 @@ footer .footer-links .link-container a {
   color: white;
   border: 1px solid rgba(55, 55, 55, 0.9);
 }
-
 .card.dark .tag {
   background-color: red;
 }
-
 .card.dark .tag:hover {
   background-color: #a01300;
   transition: background-color 0.5s ease-out;
 }
-
 .card.dark .repo-link {
   color: #00ebeb;
 }
-
 .card.dark .demo-link {
   color: #3ff61d;
 }
@@ -260,9 +234,11 @@ footer .footer-links .link-container a {
     min-width: 936px;
     max-width: 960px;
   }
+
   #extracurriculars {
     margin-top: 3.25vh;
   }
+
   .single-column .card {
     display: grid;
     grid-auto-flow: column;
@@ -284,7 +260,7 @@ footer .footer-links .link-container a {
     height: 100%;
     max-height: 60%;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 1rem;
   }
   .single-column .description {
     grid-row-start: 1;
@@ -306,6 +282,7 @@ footer .footer-links .link-container a {
     height: 100%;
     font-size: 16px;
   }
+
   .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -324,7 +301,7 @@ footer .footer-links .link-container a {
   .two-column .card .image {
     display: block;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 1rem;
     max-width: 100%;
     max-height: 325px;
   }
@@ -332,11 +309,11 @@ footer .footer-links .link-container a {
     position: absolute;
     font-size: 16px;
   }
+
   hr {
     height: 5px;
   }
 }
-
 .section-heading {
   font-family: Lato, arial, verdana, helvetica, sans-serif;
   margin-top: 1.5rem;
@@ -375,7 +352,6 @@ p a {
   color: black;
   border-bottom: dashed 1px;
 }
-
 p a.dark {
   color: white;
 }
@@ -416,3 +392,5 @@ p {
 li {
   font-size: 16px;
 }
+
+/*# sourceMappingURL=styles.css.map */
