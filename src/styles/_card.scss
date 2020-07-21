@@ -1,4 +1,3 @@
-
 .card {
     background-color: $white;
     margin-top: 0.5rem;
@@ -34,6 +33,10 @@
 
     .demo-link + .repo-link {
         margin-left: 0.5vw;
+    }
+
+    .tag + .tag {
+        margin-left: 5px;
     }
 
     .tag {

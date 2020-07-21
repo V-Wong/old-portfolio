@@ -59,6 +59,10 @@
             height: 100%; 
             font-size: 16px;
         }
+
+        .card + .card {
+            margin-top: 1.5%;
+        }
     }
 
     // Change to two column layout on larger displays
