@@ -6,6 +6,7 @@ import { SingleColumn, TwoColumn } from "../components/layout"
 import { LongCard, ShortCard } from "../components/card"
 import Footer from "../components/footer"
 
+import favicon from "../images/favicon.ico"
 import linkUpProjectImage from "../images/linkup.svg"
 import cubeProjectImage from "../images/cube.webp"
 import huffmanProjectImage from "../images/huffman.webp"
@@ -22,7 +23,7 @@ const IndexPage = () => (
                                         Current student of Computer Science and Mathematics at UNSW."/>
       <meta name="author" content="Vincent Wong"/>
       <meta name="keywords" content="vwong, VWong, v-wong, V-Wong"/>
-      <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
+      <link rel="icon" type="image/x-icon" href={favicon}/>
     </Helmet>
 
     <div class="container">
