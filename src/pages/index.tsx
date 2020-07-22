@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 import Header from "../components/header"
-import { SingleColumn, TwoColumn } from "../components/layout"
+import { Layout, SingleColumn, TwoColumn } from "../components/layout"
 import { LongCard, ShortCard } from "../components/card"
 import Footer from "../components/footer"
 
@@ -26,7 +26,7 @@ const IndexPage = () => (
       <link rel="icon" type="image/x-icon" href={favicon}/>
     </Helmet>
 
-    <div className="container">
+    <Layout>
       <Header/>
 
       <SingleColumn title="Collaborative Projects">
@@ -40,8 +40,8 @@ const IndexPage = () => (
                       "Actively working with UNSW societies to better support student academic and social life.",
                       "Development team consists of UNSW Computer Science and Software Engineering students."]}
           tags={[{link: "https://reactjs.org/", title: "React"},
-                {link: "https://getbootstrap.com/", title: "Bootstrap"},
-                {link: "https://expressjs.com/", title: "Express.js"}]}
+                 {link: "https://getbootstrap.com/", title: "Bootstrap"},
+                 {link: "https://expressjs.com/", title: "Express.js"}]}
         />
       </SingleColumn>
 
@@ -55,7 +55,7 @@ const IndexPage = () => (
                       "Generates solutions for any given state of the cube specified using the standard beginner's method.",
                       "Built in Python with Pygame for visuals and controls."]}
           tags={[{link: "https://www.python.org/", title: "Python"},
-                {link: "https://www.pygame.org/news", title: "Pygame"}]}
+                 {link: "https://www.pygame.org/news", title: "Pygame"}]}
         />
 
         <ShortCard
@@ -68,7 +68,7 @@ const IndexPage = () => (
                       "Draws the traceback encoding path for a certain symbol when a specific symbol is selected by the user.",
                       "Built in Javascript with HTML5 Canvas for visuals."]}
           tags={[{link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", title: "Javascript"},
-                {link: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API", title: "Canvas"}]}
+                 {link: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API", title: "Canvas"}]}
         />
       </TwoColumn>
 
@@ -81,7 +81,7 @@ const IndexPage = () => (
                       "Creates a template project with the necessary files and workflow integration entirely from the command line.",
                       "Built in Perl and Shell while utilising the GitHub API."]}
           tags={[{link: "https://www.perl.org/", title: "Perl"},
-                {link: "https://developer.github.com/v3/", title: "GitHub API"}]}
+                 {link: "https://developer.github.com/v3/", title: "GitHub API"}]}
         />
 
         <ShortCard
@@ -92,7 +92,7 @@ const IndexPage = () => (
                       "Speeds up user interface development by modifying existing components rather than rewriting from scratch.",
                       "Written in Typescript with React-Bootstrap for styling."]}
           tags={[{link: "https://reactjs.org/", title: "React"},
-                {link: "https://getbootstrap.com/", title: "Bootstrap"}]}
+                 {link: "https://getbootstrap.com/", title: "Bootstrap"}]}
         />
       </TwoColumn>
 
@@ -139,7 +139,7 @@ const IndexPage = () => (
                       "Utilises techniques from various programming paradigmssuch as brute force, divide and conquer, greedy method, linear and dynamic programming.",
                       "Documents my studies in common algorithms from within the fields of Computer Science and Mathematics."]}
           tags={[{link: "https://www.python.org/", title: "Python"},
-                {link: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821", title: "Programming Techniques"}]}
+                 {link: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821", title: "Programming Techniques"}]}
         />
 
         <ShortCard
@@ -151,7 +151,7 @@ const IndexPage = () => (
                       "Includes a wide variety of problems involving common algorithms and manipulation of common data structures such as arrays, hashmaps, graphs, trees and heaps.",
                       "Documents my practice in problem solving and ability to write and explain code in easy and simple language. "]}
           tags={[{link: "https://www.python.org/", title: "Python"},
-                {link: "https://leetcode.com/", title: "Problem Solving"}]}
+                 {link: "https://leetcode.com/", title: "Problem Solving"}]}
         />
       </TwoColumn>
 
@@ -166,7 +166,7 @@ const IndexPage = () => (
                         "Help existing speedcubers to improve and optimise their solves by hosting workshops.",
                         "Currently working with the World Cube Association to organise official competitions."]}
             tags={[{link: "https://www.rubiks.com/en-us/" , title: "Rubiks Cubes"},
-                  {link: "https://www.worldcubeassociation.org/", title: "Speedcubing"}]}
+                   {link: "https://www.worldcubeassociation.org/", title: "Speedcubing"}]}
         />
 
         <LongCard
@@ -179,12 +179,12 @@ const IndexPage = () => (
                       "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
                       "Developed video resources to teach viewers solving techniques and how to improve."]}
           tags={[{link: "https://www.rubiks.com/en-us/" , title: "Rubiks Cubes"},
-                {link: "https://www.worldcubeassociation.org/", title: "Speedcubing"}]}
+                 {link: "https://www.worldcubeassociation.org/", title: "Speedcubing"}]}
         />
       </SingleColumn>
 
       <Footer/>
-    </div>
+    </Layout>
   </>
 )
 

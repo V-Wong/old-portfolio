@@ -29,15 +29,9 @@ const Header = () => (
       </nav>
     </div>
     <blockquote className="about-me">
-      <p>
-        Computer Science, Mathematics and Statistics student at UNSW in Sydney.
-      </p>
-      <p>
-        Active in full stack web development and native mobile app development.
-      </p>
-      <p>
-        Interested in algorithms, theoretical computer science and pure maths.
-      </p>
+      <p>Computer Science, Mathematics and Statistics student at UNSW in Sydney.</p>
+      <p>Active in full stack web development and native mobile app development.</p>
+      <p>Interested in algorithms, theoretical computer science and pure maths.</p>
     </blockquote>
 	</header>
 )
