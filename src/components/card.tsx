@@ -3,9 +3,9 @@ import React from "react"
 const LongCard = (props: {
   title: string,
   subheading: string,
-  link1: {url: string, title: string},
-  link2: {url: string, title: string},
-  image: string,
+  link1?: {url: string, title: string},
+  link2?: {url: string, title: string},
+  image?: string,
   dotpoints: Array<string>,
   tags: Array<{link: string, title: string}>
 }) => {
@@ -43,9 +43,9 @@ const LongCard = (props: {
 const ShortCard = (props: {
   title: string,
   subheading: string,
-  link1: {url: string, title: string},
-  link2: {url: string, title: string},
-  image: string,
+  link1?: {url: string, title: string},
+  link2?: {url: string, title: string},
+  image?: string,
   dotpoints: Array<string>,
   tags: Array<{link: string, title: string}>
 }) => {
