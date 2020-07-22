@@ -1,9 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import "../styles/styles.css"
+import DarkThemeToggle from "./dark-theme-toggle";
 
-import darkThemeImage from "../images/moon.svg";
 import githubImage from "../images/github.svg"
 import resumeImage from "../images/resume.svg"
 import linkedinImage from "../images/linkedin.svg"
@@ -26,10 +25,7 @@ const Header = () => (
           <img class="social-icon" src={linkedinImage} alt="Black and white LinkIn logo icon"/>
           <a class="underline" href="https://www.linkedin.com/in/vincent-wc-wong/" target="_blank">LinkedIn</a>
         </div>
-        <div id="dark-theme-button" class="link-container">
-          <img class="social-icon" src={darkThemeImage} alt="Black and white moon icon"/>
-          <a class="underline">Dark</a>
-        </div>
+        <DarkThemeToggle/>
       </nav>
     </div>
     <blockquote class="about-me">
