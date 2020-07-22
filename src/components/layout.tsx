@@ -10,7 +10,7 @@ export default function Layout({ children }) {
 
 const SingleColumn = (props: {
   title: string,
-  children: Array<Element>
+  children: React.ReactNode
 }) => {
   return (
     <>
@@ -25,7 +25,7 @@ const SingleColumn = (props: {
 
 const TwoColumn = (props: {
   title: string,
-  children: Array<Element>
+  children: React.ReactNode
 }) => {
   return (
     <>
