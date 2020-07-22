@@ -26,7 +26,7 @@ const IndexPage = () => (
       <link rel="icon" type="image/x-icon" href={favicon}/>
     </Helmet>
 
-    <div class="container">
+    <div className="container">
       <Header/>
 
       <SingleColumn title="Collaborative Projects">
@@ -97,15 +97,15 @@ const IndexPage = () => (
       </TwoColumn>
 
       <TwoColumn title="Skillset">
-        <div class="card" style={{paddingBottom: "2%"}}>
+        <div className="card" style={{paddingBottom: "2%"}}>
           <h3>Web Development Skillset</h3>
-          <h4 class="project-subheading">Frontend</h4>
+          <h4 className="project-subheading">Frontend</h4>
           <ul style={{marginTop: "1vh"}}>
             <li><b>Languages</b>: Javascript, Typescript, HTML, CSS.</li>
             <li><b>Frameworks/Libraries</b>: React, Bootstrap, Canvas.</li>
             <li><b>Other</b>: accessible, performant and responsive design.</li>
           </ul>
-          <h4 class="project-subheading">Backend</h4>
+          <h4 className="project-subheading">Backend</h4>
           <ul style={{marginTop: "1vh"}}>
             <li><b>Languages</b>: Python, Javascript, Typescript, SQL.</li>
             <li><b>Frameworks/Libraries</b>: Flask, Express.js, SocketIO.</li>
@@ -113,15 +113,15 @@ const IndexPage = () => (
           </ul>
         </div>
 
-        <div class="card" style={{paddingBottom: "2%"}}>
+        <div className="card" style={{paddingBottom: "2%"}}>
           <h3>Other Skillset</h3>
-          <h4 class="project-subheading">Languages</h4>
+          <h4 className="project-subheading">Languages</h4>
           <ul style={{marginTop: "1vh"}}>
             <li><b>C</b>: low level access for high performance programs.</li>
             <li><b>Haskell</b>: mathematically based functional programming.</li>
             <li><b>R</b>: statistical computing for data science and analysis.</li>
           </ul>
-          <h4 class="project-subheading">Software Engineering Tools</h4>
+          <h4 className="project-subheading">Software Engineering Tools</h4>
           <ul style={{marginTop: "1vh"}}>
             <li><b>Git</b>: version control system for tracking code changes.</li>
             <li><b>Pytest</b>: unit testing framework for Python programs.</li>
@@ -170,17 +170,17 @@ const IndexPage = () => (
         />
 
         <LongCard
-            title="Competitive Rubik's Cube Speedsolver"
-            subheading="Participant in WCA competitions"
-            link1={{ url: "https://www.worldcubeassociation.org/persons/2014WONG08", title: "WCA Profile" }}
-            image={compCubeImage}
-            dotpoints={["Actively participated in speedcubing competitions across Australia since 2014.",
-                        "Held numerous Sydney and Australian national championship podium titles.",
-                        "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
-                        "Developed video resources to teach viewers solving techniques and how to improve."]}
-            tags={[{link: "https://www.rubiks.com/en-us/" , title: "Rubiks Cubes"},
-                  {link: "https://www.worldcubeassociation.org/", title: "Speedcubing"}]}
-          />
+          title="Competitive Rubik's Cube Speedsolver"
+          subheading="Participant in WCA competitions"
+          link1={{ url: "https://www.worldcubeassociation.org/persons/2014WONG08", title: "WCA Profile" }}
+          image={compCubeImage}
+          dotpoints={["Actively participated in speedcubing competitions across Australia since 2014.",
+                      "Held numerous Sydney and Australian national championship podium titles.",
+                      "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
+                      "Developed video resources to teach viewers solving techniques and how to improve."]}
+          tags={[{link: "https://www.rubiks.com/en-us/" , title: "Rubiks Cubes"},
+                {link: "https://www.worldcubeassociation.org/", title: "Speedcubing"}]}
+        />
       </SingleColumn>
 
       <Footer/>
