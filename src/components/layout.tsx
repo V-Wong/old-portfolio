@@ -29,7 +29,7 @@ const TwoColumn = (props: {
 }) => {
   return (
     <>
-      <h2 className="section-heading">Personal Projects</h2>
+      <h2 className="section-heading">{props.title}</h2>
       <hr/>
       <section className="two-column">
         {props.children}
