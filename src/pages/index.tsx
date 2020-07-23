@@ -32,7 +32,7 @@ const IndexPage = () => (
           title="LinkUp - Australian University Event Tracker"
           subheading="Full Stack Developer"
           link1={{ url: "https://linkup.website", title: "Live Demo" }}
-          image={linkUpProjectImage}
+          image="linkup"
           dotpoints={["Centralised source of events across Australian universities including UNSW, USyd and UniMelb.",
                       "Helps students discover new societies and consequently allows societies to gain exposure.",
                       "Actively working with UNSW societies to better support student academic and social life.",
@@ -158,7 +158,7 @@ const IndexPage = () => (
             title="UNSW Rubik Society"
             subheading="Executive - Events Director"
             link1={{ url: "https://www.facebook.com/UNSWRubikSoc/", title: "Society Page" }}
-            image={rubikSocImage}
+            image="rubiksoc"
             dotpoints={["Help organise Rubik's Cube tutorials and unofficial competitions at UNSW in Sydney.",
                         "Encourage students to find an interest and hobby in Rubik's Cubes and speedsolving.",
                         "Help existing speedcubers to improve and optimise their solves by hosting workshops.",
@@ -171,7 +171,7 @@ const IndexPage = () => (
           title="Competitive Rubik's Cube Speedsolver"
           subheading="Participant in WCA competitions"
           link1={{ url: "https://www.worldcubeassociation.org/persons/2014WONG08", title: "WCA Profile" }}
-          image={compCubeImage}
+          image="compcube"
           dotpoints={["Actively participated in speedcubing competitions across Australia since 2014.",
                       "Held numerous Sydney and Australian national championship podium titles.",
                       "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",

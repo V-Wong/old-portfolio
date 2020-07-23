@@ -18,7 +18,7 @@ const LongCard = (props: {
       {props.link2 ? <a className="repo-link underline" href={props.link2.url} target="_blank" rel="noopener noreferrer">{props.link2.title}</a> : null}
     </div>
     <div className="image-container">
-      <img className="image" src={props.image}/>
+      <Image image={props.image}/>
     </div>
     <div className="dotpoints">
       <ul>

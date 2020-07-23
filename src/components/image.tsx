@@ -30,10 +30,29 @@ const Image = ({ image }) => {
           }
         }
       },
+      linkup: file(relativePath: { eq: "linkup.svg" }) {
+        extension
+        publicURL
+      },
+      compcube: file(relativePath: { eq: "comp-cube.svg" }) {
+        extension
+        publicURL
+      },
+      rubiksoc: file(relativePath: { eq: "rubiksoc.webp" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
     }
   `)
 
-  return <Img className="image" fluid={data[image].childImageSharp.fluid} />
+  if (data[image].extension === "svg") {
+    return <img className="image" src={data[image].publicURL}/>
+  } else {
+    return <Img className="image" imgStyle={{objectFit: "scale-down"}} fluid={data[image].childImageSharp.fluid}/>
+  }
 }
 
 export default Image
