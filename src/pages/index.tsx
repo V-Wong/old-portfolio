@@ -8,8 +8,6 @@ import Footer from "../components/footer"
 
 import favicon from "../images/favicon.ico"
 import linkUpProjectImage from "../images/linkup.svg"
-import cubeProjectImage from "../images/cube.webp"
-import huffmanProjectImage from "../images/huffman.webp"
 import rubikSocImage from "../images/rubiksoc.webp"
 import compCubeImage from "../images/comp-cube.svg"
 
@@ -50,7 +48,7 @@ const IndexPage = () => (
           title="CubeSim"
           subheading="Rubiks Cube Simulater and Solver"
           link2={{ url: "https://github.com/V-Wong/CubeSim", title: "Repository" }}
-          image={cubeProjectImage}
+          image="cubesim"
           dotpoints={["Renders a two-dimensional Rubik's cube that can be controlled by the user with keyboard controls.",
                       "Generates solutions for any given state of the cube specified using the standard beginner's method.",
                       "Built in Python with Pygame for visuals and controls."]}
@@ -63,7 +61,7 @@ const IndexPage = () => (
           subheading="Huffman Encoding Visualisation Tool"
           link1={{ url: "https://vwong.dev/Huffman-Encoding", title: "Live Demo" }}
           link2={{ url: "https://github.com/V-Wong/Huffman-Encoding", title: "Repository" }}
-          image={huffmanProjectImage}
+          image="huffman"
           dotpoints={["Generates and renders a binary Huffman tree based on the user input of symbol probabilities in a given text. ",
                       "Draws the traceback encoding path for a certain symbol when a specific symbol is selected by the user.",
                       "Built in Javascript with HTML5 Canvas for visuals."]}

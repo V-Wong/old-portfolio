@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "./image"
 
 const LongCard = (props: {
   title: string,
@@ -52,7 +53,7 @@ const ShortCard = (props: {
     <h4 className="project-subheading">{props.subheading}</h4>
     {props.link1 ? <a className="demo-link underline" href={props.link1.url} target="_blank" rel="noopener noreferrer">{props.link1.title}</a> : null}
     {props.link2 ? <a className="repo-link underline" href={props.link2.url} target="_blank" rel="noopener noreferrer">{props.link2.title}</a> : null}
-    {props.image ? <img className="image" src={props.image}/> : null}
+    {props.image ? <Image image={props.image}/> : null}
     <ul>
       {props.dotpoints.map(point => (
         <li>
