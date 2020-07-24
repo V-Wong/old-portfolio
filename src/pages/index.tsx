@@ -68,9 +68,7 @@ const IndexPage = () => (
           tags={[{ link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", title: "Javascript" },
           { link: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API", title: "Canvas" }]}
         />
-      </TwoColumn>
 
-      <TwoColumn title="Development Tools">
         <ShortCard
           title="Full Stack Starter"
           subheading="Web Development Workflow Automator"
@@ -116,7 +114,7 @@ const IndexPage = () => (
         </div>
       </SingleColumn>
 
-      <div className="two-column" style={{ marginTop: "1.5rem"}}>
+      <div className="two-column" style={{ marginTop: "1%"}}>
         <div className="card" style={{ paddingBottom: "2%" }}>
           <h3>Web Development Skillset</h3>
           <h4 className="project-subheading">Frontend</h4>
