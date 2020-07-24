@@ -94,7 +94,7 @@ const IndexPage = () => (
         />
       </TwoColumn>
 
-      <SingleColumn title="Experience and Education">
+      <SingleColumn title="Experience and Skillset">
         <div className="basic-card" style={{ paddingBottom: "2%" }}>
           <h3>Employment</h3>
           <h4 className="project-subheading">Visionstream - Junior Developer (2019 - Present)</h4>
@@ -116,7 +116,7 @@ const IndexPage = () => (
         </div>
       </SingleColumn>
 
-      <TwoColumn title="Skillset">
+      <div className="two-column" style={{ marginTop: "1.5rem"}}>
         <div className="card" style={{ paddingBottom: "2%" }}>
           <h3>Web Development Skillset</h3>
           <h4 className="project-subheading">Frontend</h4>
@@ -148,7 +148,7 @@ const IndexPage = () => (
             <li><b>Hypothesis</b>: property based testing library for Python.</li>
           </ul>
         </div>
-      </TwoColumn>
+      </div>
 
       <TwoColumn title="Algorithmic Interests">
         <ShortCard
