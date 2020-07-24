@@ -94,6 +94,28 @@ const IndexPage = () => (
         />
       </TwoColumn>
 
+      <SingleColumn title="Experience and Education">
+        <div className="basic-card" style={{ paddingBottom: "2%" }}>
+          <h3>Employment</h3>
+          <h4 className="project-subheading">Visionstream - Junior Developer (2019 - Present)</h4>
+          <ul style={{ marginTop: "1vh" }}>
+            <li>
+              Developed Python tools for financial scraping and workflow automation of repetitive tasks. 
+            </li>
+            <li>
+              Integrated features into the Oracle-based financial tracking software using a combination of PL/SQL and Javascript.
+            </li>
+          </ul>
+          <h3>Education</h3>
+          <h4 className="project-subheading">University of New South Wales - BS in Computer Science, Mathematics and Statistics (2019 - 2022)</h4>
+          <ul style={{ marginTop: "1vh" }}>
+            <li>
+              Highly commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
+            </li>
+          </ul>
+        </div>
+      </SingleColumn>
+
       <TwoColumn title="Skillset">
         <div className="card" style={{ paddingBottom: "2%" }}>
           <h3>Web Development Skillset</h3>

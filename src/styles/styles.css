@@ -259,6 +259,18 @@ footer .footer-links .link-container a {
   color: #3ff61d;
 }
 
+.basic-card {
+  background-color: #fff;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  transition: transform .2s;
+  position: relative;
+}
+
 @media (min-width: 960px) {
   .container {
     margin: auto;
