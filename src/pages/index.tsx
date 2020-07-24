@@ -110,6 +110,9 @@ const IndexPage = () => (
             <li>
               Highly commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
             </li>
+            <li>
+              Taking a mix of theoretical and applied courses to learn how to develop useful, powerful and reliable software.
+            </li>
           </ul>
         </div>
       </SingleColumn>
