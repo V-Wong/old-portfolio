@@ -166,7 +166,7 @@ footer .footer-links .link-container a {
 
 .card {
   background-color: #fff;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   padding: 1rem;
   font-size: 14px;
   border-radius: 6px;
@@ -261,7 +261,7 @@ footer .footer-links .link-container a {
 
 .basic-card {
   background-color: #fff;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   padding: 1rem;
   font-size: 14px;
   border-radius: 6px;
@@ -288,7 +288,6 @@ footer .footer-links .link-container a {
     grid-template-columns: 1fr 5fr;
     padding: 1%;
     padding-bottom: 2rem;
-    margin-top: 0;
   }
   .single-column .image-container {
     grid-row-start: 1;
@@ -338,7 +337,6 @@ footer .footer-links .link-container a {
     height: auto;
     padding-bottom: 3rem;
     grid-row: auto;
-    margin-top: 0.25vh;
     position: relative;
   }
   .two-column .card .image {

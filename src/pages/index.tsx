@@ -40,7 +40,7 @@ const IndexPage = () => (
         />
       </SingleColumn>
 
-      <TwoColumn title="Personal Projects">
+      <TwoColumn styles={{paddingBottom: "0.85%"}} title="Personal Projects">
         <ShortCard
           title="CubeSim"
           subheading="Rubiks Cube Simulater and Solver"

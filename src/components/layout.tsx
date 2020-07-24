@@ -8,12 +8,13 @@ const Layout = ({ children }) => (
 
 const SingleColumn = (props: {
   title: string,
+  styles?: object,
   children: React.ReactNode
 }) => (
   <>
     <h2 className="section-heading">{props.title}</h2>
     <hr/>
-    <section className="single-column">
+    <section style={ props.styles } className="single-column">
       {props.children}
     </section>
   </>
@@ -21,12 +22,13 @@ const SingleColumn = (props: {
 
 const TwoColumn = (props: {
   title: string,
+  styles?: object,
   children: React.ReactNode
 }) => (
   <>
     <h2 className="section-heading">{props.title}</h2>
     <hr/>
-    <section className="two-column">
+    <section style={ props.styles } className="two-column">
       {props.children}
     </section>
   </>
