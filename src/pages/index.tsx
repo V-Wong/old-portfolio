@@ -134,7 +134,7 @@ const IndexPage = () => (
           subheading="Extended Algorithms and Programming Techniques"
           link2={{ url: "https://github.com/V-Wong/COMP3821", title: "Repository" }}
           dotpoints={["Python implementation of common algorithms.",
-                      "Utilises techniques from various programming paradigmssuch as brute force, divide and conquer, greedy method, linear and dynamic programming.",
+                      "Utilises techniques from various programming paradigms such as brute force, divide and conquer, greedy method, linear and dynamic programming.",
                       "Documents my studies in common algorithms from within the fields of Computer Science and Mathematics."]}
           tags={[{ link: "https://www.python.org/", title: "Python" },
           { link: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821", title: "Programming Techniques" }]}
@@ -150,6 +150,31 @@ const IndexPage = () => (
                       "Documents my practice in problem solving and ability to write and explain code in easy and simple language. "]}
           tags={[{ link: "https://www.python.org/", title: "Python" },
           { link: "https://leetcode.com/", title: "Problem Solving" }]}
+        />
+      </TwoColumn>
+
+      <TwoColumn title="Other Programming Activities">
+        <ShortCard
+          title="COMP3141"
+          subheading="Software System Design and Implementation"
+          link1={{ url: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3141", title: "Course Outline" }}
+          link2={{ url: "https://github.com/V-Wong/Haskell-Practice", title: "Repository"}}
+          dotpoints={["Formal and semi-formal methods for software design. ",
+                      "Specify and test programs in terms of logical properties and functional correctness.",
+                      "Introduced me to functional programming in Haskell and the skills to specify, test and reason about programs."]}
+          tags={[{ link: "https://www.haskell.org/", title: "Haskell" }]}
+        />
+
+        <ShortCard
+          title="COMP1521"
+          subheading="Computer Systems Fundamentals"
+          link1={{ url: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP1521", title: "Course Outline" }}
+          link2={{ url: "https://github.com/V-Wong/COMP1521", title: "Repository"}}
+          dotpoints={["Foundations on the structure of computer systems",
+                      "Write low level MIPs assembly code to understand the processes that occur when high level programs execute.",
+                      "Developed my understanding of the operations of a computer and improved my ability to write efficient code."]}
+          tags={[{ link: "https://en.wikipedia.org/wiki/MIPS_architecture", title: "MIPS" },
+                 { link: "https://en.wikipedia.org/wiki/C_(programming_language)", title: "C"}]}
         />
       </TwoColumn>
 
