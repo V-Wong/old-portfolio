@@ -23,9 +23,7 @@ const LongCard = (props: {
     <div className="dotpoints">
       <ul>
         {props.dotpoints.map(point => (
-          <li>
-            {point}
-          </li>
+          <li>{point}</li>
         ))}
       </ul>
     </div>
@@ -56,9 +54,7 @@ const ShortCard = (props: {
     {props.image ? <Image image={props.image}/> : null}
     <ul>
       {props.dotpoints.map(point => (
-        <li>
-          {point}
-        </li>
+        <li>{point}</li>
       ))}
     </ul>
     <div className="tags">
