@@ -7,9 +7,6 @@ import { LongCard, ShortCard } from "../components/card"
 import Footer from "../components/footer"
 
 import favicon from "../images/favicon.ico"
-import linkUpProjectImage from "../images/linkup.svg"
-import rubikSocImage from "../images/rubiksoc.webp"
-import compCubeImage from "../images/comp-cube.svg"
 
 import "../styles/styles.css"
 
