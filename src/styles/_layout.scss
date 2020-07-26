@@ -99,8 +99,10 @@
     }
 }
 
-.card + .card, .basic-card + .basic-card, .basic-card + .card, .card + .basic-card {
-    margin-top: 0.75rem;
+.single-column {
+    .card + .card, .basic-card + .basic-card, .basic-card + .card, .card + .basic-card {
+        margin-top: 0.75rem;
+    }
 }
 
 .section-heading {

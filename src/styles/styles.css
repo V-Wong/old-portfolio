@@ -353,7 +353,7 @@ footer .footer-links .link-container a {
   }
 }
 
-.card + .card, .basic-card + .basic-card, .basic-card + .card, .card + .basic-card {
+.single-column .card + .card, .single-column .basic-card + .basic-card, .single-column .basic-card + .card, .single-column .card + .basic-card {
   margin-top: 0.75rem;
 }
 
