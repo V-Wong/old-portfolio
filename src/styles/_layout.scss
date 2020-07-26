@@ -60,7 +60,7 @@
         }
 
         .card + .card {
-            margin-top: 1.5%;
+            margin-top: 0.75rem;
         }
     }
 
@@ -68,8 +68,8 @@
     .two-column {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 1%;
-        row-gap: 1%;
+        column-gap: 0.75rem;
+        row-gap: 0.75rem;
         grid-row: auto;
 
         .card {
@@ -99,8 +99,13 @@
     }
 }
 
+.card + .card, .basic-card + .basic-card, .basic-card + .card, .card + .basic-card {
+    margin-top: 0.75rem;
+}
+
 .section-heading {
     font-family: Lato, arial, verdana, helvetica, sans-serif;
-    margin-top: 1.5rem;
     font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }

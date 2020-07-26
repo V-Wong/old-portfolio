@@ -40,7 +40,7 @@ const IndexPage = () => (
         />
       </SingleColumn>
 
-      <TwoColumn styles={{paddingBottom: "0.85%"}} title="Personal Projects">
+      <TwoColumn title="Personal Projects">
         <ShortCard
           title="CubeSim"
           subheading="Rubiks Cube Simulater and Solver"
@@ -90,7 +90,7 @@ const IndexPage = () => (
       </TwoColumn>
 
       <SingleColumn title="Experience and Skillset">
-        <div className="basic-card" style={{ paddingBottom: "2%" }}>
+        <div className="basic-card" style={{ paddingBottom: "1%" }}>
           <h3>Employment</h3>
           <h4 className="project-subheading">Visionstream - Junior Developer (2019 - Present)</h4>
           <ul style={{ marginTop: "1vh" }}>
@@ -114,7 +114,7 @@ const IndexPage = () => (
         </div>
       </SingleColumn>
 
-      <div className="two-column" style={{ marginTop: "1%"}}>
+      <section className="two-column" style={{ marginTop: "0.75rem"}}>
         <div className="card" style={{ paddingBottom: "2%" }}>
           <h3>Web Development Skillset</h3>
           <h4 className="project-subheading">Frontend</h4>
@@ -146,9 +146,9 @@ const IndexPage = () => (
             <li><b>Hypothesis</b>: property based testing library for Python.</li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <TwoColumn title="Algorithmic Interests">
+      <TwoColumn title="Other Programming Activities">
         <ShortCard
           title="COMP3821"
           subheading="Extended Algorithms and Programming Techniques"
@@ -171,9 +171,7 @@ const IndexPage = () => (
           tags={[{ link: "https://www.python.org/", title: "Python" },
           { link: "https://leetcode.com/", title: "Problem Solving" }]}
         />
-      </TwoColumn>
 
-      <TwoColumn title="Other Programming Activities">
         <ShortCard
           title="COMP3141"
           subheading="Software System Design and Implementation"
