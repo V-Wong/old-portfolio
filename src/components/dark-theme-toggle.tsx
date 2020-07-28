@@ -20,16 +20,14 @@ const DarkThemeToggle = () => {
 const toggleDarkTheme = (isDarkTheme: boolean) => {
   document.body.classList.toggle("dark");
   document.getElementsByClassName("profile")[0].classList.toggle("dark");
-  for (let element of document.querySelectorAll(".card, a, .social-icon")) {
+  for (let element of document.querySelectorAll(".card, a, .social-icon, .basic-card")) {
     element.classList.toggle("dark");
   }
 
   const darkThemeToggleButton = document.getElementById("dark-theme-button");
   const darkThemeButtonText = darkThemeToggleButton.children[1];
-  darkThemeToggleButton.children[0].src = 
-      isDarkTheme ? moonImage : sunImage;
-  darkThemeButtonText.innerText = 
-      isDarkTheme ? "Dark" : "Light";
+  darkThemeToggleButton.children[0].src = isDarkTheme ? moonImage : sunImage;
+  darkThemeButtonText.innerText = isDarkTheme ? "Dark" : "Light";
 }
 
 export default DarkThemeToggle

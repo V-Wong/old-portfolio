@@ -185,11 +185,12 @@ footer .footer-links .link-container a {
 }
 
 .card .demo-link {
-  transition: border 250ms ease-in-out;
   font-size: 18px;
   font-weight: 600;
   color: #5fc383;
   border-bottom: dashed 1px;
+  transition-property: color;
+  transition: color 250ms ease-in-out;
 }
 
 .card .repo-link {
@@ -197,6 +198,8 @@ footer .footer-links .link-container a {
   font-weight: 600;
   color: #68b0f1;
   border-bottom: dashed 1px;
+  transition-property: color;
+  transition: color 250ms ease-in-out;
 }
 
 .card .demo-link + .repo-link {
@@ -267,6 +270,12 @@ footer .footer-links .link-container a {
   box-shadow: none;
   transition: transform .2s;
   position: relative;
+}
+
+.basic-card.dark {
+  background-color: #242424;
+  color: white;
+  border: 1px solid rgba(55, 55, 55, 0.9);
 }
 
 @media (min-width: 960px) {

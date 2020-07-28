@@ -16,11 +16,13 @@
     }
 
     .demo-link {
-        transition: border 250ms ease-in-out;
         font-size: 18px;
         font-weight: 600;
         color: $green;
         border-bottom: dashed 1px;
+
+        transition-property: color;
+        transition: color 250ms ease-in-out;
     }
 
     .repo-link {
@@ -28,6 +30,9 @@
         font-weight: 600;
         color: $blue;
         border-bottom: dashed 1px;
+
+        transition-property: color;
+        transition: color 250ms ease-in-out;
     }
 
     .demo-link + .repo-link {
@@ -103,4 +108,10 @@
     box-shadow: none;
     transition: transform .2s;
     position: relative;
+}
+
+.basic-card.dark {
+    background-color: $light-black;
+    color: white;
+    border: 1px solid rgba(55, 55, 55, 0.9);
 }
