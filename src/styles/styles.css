@@ -278,6 +278,12 @@ footer .footer-links .link-container a {
   border: 1px solid rgba(55, 55, 55, 0.9);
 }
 
+@media (max-width: 960px) {
+  .card + .card {
+    margin-top: 0.75rem;
+  }
+}
+
 @media (min-width: 960px) {
   .container {
     margin: auto;

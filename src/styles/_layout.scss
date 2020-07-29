@@ -1,3 +1,9 @@
+@media (max-width: $tablet-breakpoint) {
+    .card + .card {
+        margin-top: 0.75rem;
+    }
+}
+
 @media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;
