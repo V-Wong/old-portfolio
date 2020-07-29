@@ -14,16 +14,25 @@
             border: none;
             outline: none;
             cursor: pointer;
-            font-size: 20px;
+            font-size: 18px;
             justify-content: center;
             align-items: center;
             height: 100%;
         
             img {
-                height: 20px;
+                height: 18px;
                 transition-property: filter;
                 transition: 250ms ease-in-out;
             }
+        }
+    }
+
+    .about-me {
+        margin: 0;
+        margin-top: 1.5rem;
+
+        p {
+            font-size: 17px;
         }
     }
 
@@ -44,12 +53,8 @@
                 display: none;
             }
         }
-    }
 
-    .about-me {
-        margin: 0;
-        margin-top: 1.5rem;
-        p {
+        .about-me > p{
             font-size: 24px;
         }
     }

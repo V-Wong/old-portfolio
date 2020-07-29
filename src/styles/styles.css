@@ -114,16 +114,25 @@ footer .footer-links .link-container a {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
 .profile .links-container .link-container img {
-  height: 20px;
+  height: 18px;
   transition-property: filter;
   transition: 250ms ease-in-out;
+}
+
+.profile .about-me {
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.profile .about-me p {
+  font-size: 17px;
 }
 
 @media (min-width: 960px) {
@@ -141,15 +150,9 @@ footer .footer-links .link-container a {
   .profile .top-bar h2 {
     display: none;
   }
-}
-
-.profile .about-me {
-  margin: 0;
-  margin-top: 1.5rem;
-}
-
-.profile .about-me p {
-  font-size: 24px;
+  .profile .about-me > p {
+    font-size: 24px;
+  }
 }
 
 .dark-theme-button.dark img {
