@@ -180,6 +180,17 @@ footer .footer-links .link-container a {
   transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
 
+@media (max-width: 960px) {
+  .card ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+  }
+  .card ul li + li {
+    margin-top: 0.5rem;
+  }
+}
+
 .card .image {
   display: block;
   margin: auto;
@@ -187,22 +198,20 @@ footer .footer-links .link-container a {
   max-height: 50vw;
 }
 
-.card .demo-link {
-  font-size: 18px;
+.card .project-link {
+  font-size: 17px;
   font-weight: 600;
-  color: #5fc383;
   border-bottom: dashed 1px;
   transition-property: color;
   transition: color 250ms ease-in-out;
 }
 
+.card .demo-link {
+  color: #5fc383;
+}
+
 .card .repo-link {
-  font-size: 18px;
-  font-weight: 600;
   color: #68b0f1;
-  border-bottom: dashed 1px;
-  transition-property: color;
-  transition: color 250ms ease-in-out;
 }
 
 .card .demo-link + .repo-link {
@@ -273,6 +282,17 @@ footer .footer-links .link-container a {
   box-shadow: none;
   transition: transform .2s;
   position: relative;
+}
+
+@media (max-width: 960px) {
+  .basic-card ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+  }
+  .basic-card ul li + li {
+    margin-top: 0.5rem;
+  }
 }
 
 .basic-card.dark {
