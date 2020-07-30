@@ -1,3 +1,13 @@
+body {
+    font-size: 14px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+    body {
+        font-size: 16px;
+    }
+}
+
 a, p, h1, h2, h3, h4, h5, h6, li {
     transition-property: color;
     transition: 250ms ease-in-out;

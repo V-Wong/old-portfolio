@@ -1,7 +1,6 @@
 .card {
     background-color: $white;
     padding: 1rem;
-    font-size: 14px;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: none;
@@ -42,7 +41,6 @@
 
     .tag {
         font-weight: 400;
-        font-size: 16px;
         border-radius: 3px;
         vertical-align: text-top;
         display: inline-block;
@@ -115,7 +113,6 @@
 .basic-card {
     background-color: $white;
     padding: 1rem;
-    font-size: 14px;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: none;

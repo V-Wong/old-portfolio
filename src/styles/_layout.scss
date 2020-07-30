@@ -11,10 +11,6 @@
         max-width: $tablet-breakpoint;
     }
 
-    #extracurriculars {
-        margin-top: 3.25vh;
-    }
-
     .single-column {
         .card {
             display: grid;
@@ -61,8 +57,7 @@
         .tags {
             grid-row-start: 3;
             grid-column-start: 2;
-            height: 100%; 
-            font-size: 16px;
+            height: 100%;
         }
 
         .card + .card {
@@ -95,7 +90,6 @@
 
             .tags {
                 position: absolute;
-                font-size: 16px;
             }
         }
     }

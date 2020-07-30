@@ -170,7 +170,6 @@ footer .footer-links .link-container a {
 .card {
   background-color: #fff;
   padding: 1rem;
-  font-size: 14px;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: none;
@@ -213,7 +212,6 @@ footer .footer-links .link-container a {
 
 .card .tag {
   font-weight: 400;
-  font-size: 16px;
   border-radius: 3px;
   vertical-align: text-top;
   display: inline-block;
@@ -279,7 +277,6 @@ footer .footer-links .link-container a {
 .basic-card {
   background-color: #fff;
   padding: 1rem;
-  font-size: 14px;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: none;
@@ -403,6 +400,16 @@ footer .footer-links .link-container a {
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+}
+
+body {
+  font-size: 14px;
+}
+
+@media (min-width: 960px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 a, p, h1, h2, h3, h4, h5, h6, li {
