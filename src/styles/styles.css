@@ -180,17 +180,6 @@ footer .footer-links .link-container a {
   transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
 
-@media (max-width: 960px) {
-  .card ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding: 0;
-  }
-  .card ul li + li {
-    margin-top: 0.5rem;
-  }
-}
-
 .card .image {
   display: block;
   margin: auto;
@@ -248,6 +237,20 @@ footer .footer-links .link-container a {
 .card .tag:hover {
   background-color: #d5256c;
   transition: background-color 0.5s ease-out;
+}
+
+@media (max-width: 960px) {
+  .card ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+  }
+  .card ul li + li {
+    margin-top: 0.5rem;
+  }
+  .card .project-link {
+    font-size: 15px;
+  }
 }
 
 .card.dark {

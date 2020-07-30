@@ -8,18 +8,6 @@
     transition: transform .2s;
     position: relative;
 
-    @media (max-width: $tablet-breakpoint) {
-        ul {
-            list-style-type: none;
-            margin-left: 0;
-            padding: 0;
-            
-            li + li {
-                margin-top: 0.5rem;
-            }
-        }
-    }
-
     .image {
         display: block;
         margin: auto;
@@ -83,6 +71,22 @@
 
     transition-property: background, border;
     transition: background 250ms ease-in-out, border 250ms ease-in-out;
+
+    @media (max-width: $tablet-breakpoint) {
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding: 0;
+            
+            li + li {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .project-link {
+            font-size: 15px;
+        }
+    }
 }
 
 .card.dark {
