@@ -26,7 +26,7 @@ const IndexPage = () => (
 
       <SingleColumn title="Collaborative Projects">
         <LongCard
-          title="LinkUp - Australian University Event Tracker"
+          title="LinkUp - University Events Tracker"
           subheading="Full Stack Developer"
           link1={{ url: "https://linkup.website", title: "Live Demo" }}
           image="linkup"
@@ -102,7 +102,7 @@ const IndexPage = () => (
             </li>
           </ul>
           <h3>Education</h3>
-          <h4 className="project-subheading">University of New South Wales - BS in Computer Science, Mathematics and Statistics (2019 - 2022)</h4>
+          <h4 className="project-subheading">UNSW - BS. Computer Science, Mathematics and Statistics (2019 - 2022)</h4>
           <ul style={{ marginTop: "1vh" }}>
             <li>
               Highly commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
@@ -151,7 +151,7 @@ const IndexPage = () => (
       <TwoColumn title="Other Programming Activities">
         <ShortCard
           title="COMP3821"
-          subheading="Extended Algorithms and Programming Techniques"
+          subheading="Extended Algorithms"
           link2={{ url: "https://github.com/V-Wong/COMP3821", title: "Repository" }}
           dotpoints={["Python implementation of common algorithms.",
                       "Utilises techniques from various programming paradigms such as brute force, divide and conquer, greedy method, linear and dynamic programming.",
@@ -174,7 +174,7 @@ const IndexPage = () => (
 
         <ShortCard
           title="COMP3141"
-          subheading="Software System Design and Implementation"
+          subheading="Software System Design & Implementation"
           link1={{ url: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3141", title: "Course Outline" }}
           link2={{ url: "https://github.com/V-Wong/Haskell-Practice", title: "Repository"}}
           dotpoints={["Formal and semi-formal methods for software design. ",
@@ -211,7 +211,7 @@ const IndexPage = () => (
         />
 
         <LongCard
-          title="Competitive Rubik's Cube Speedsolver"
+          title="Competitive Speedsolver"
           subheading="Participant in WCA competitions"
           link1={{ url: "https://www.worldcubeassociation.org/persons/2014WONG08", title: "WCA Profile" }}
           image="compcube"
