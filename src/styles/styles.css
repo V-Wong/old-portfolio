@@ -206,7 +206,7 @@ footer .footer-links .link-container a {
 }
 
 .card .demo-link + .repo-link {
-  margin-left: 0.5vw;
+  margin-left: 1rem;
 }
 
 .card .tag + .tag {
@@ -439,19 +439,27 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 18px;
-}
-
-p {
-  margin: auto;
-  font-size: 18px;
-}
-
-li {
   font-size: 16px;
+}
+
+p, li {
+  margin: auto;
+  font-size: 14px;
+}
+
+@media (min-width: 960px) {
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p, li {
+    font-size: 16px;
+  }
 }
