@@ -207,7 +207,7 @@ footer .footer-links .link-container a {
   border: none;
 }
 .card .tag:hover {
-  background-color: #d5256c;
+  background-color: #c34a47;
   transition: background-color 0.5s ease-out;
 }
 @media (max-width: 960px) {
@@ -247,7 +247,7 @@ footer .footer-links .link-container a {
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border-top: 2px solid #dc635f;
+  border-top: 2px solid #0275d8;
   transition: transform 0.2s;
   position: relative;
 }
