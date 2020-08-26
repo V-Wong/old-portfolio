@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #F5F5F5;
   color: black;
   transition-property: background;
@@ -38,7 +38,6 @@ footer {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-
 @media (max-width: 960px) {
   footer p {
     text-align: center;
@@ -47,24 +46,20 @@ footer {
     margin-top: 0.5rem;
   }
 }
-
 @media (min-width: 960px) {
   footer {
     grid-template-columns: 4fr 2fr;
   }
 }
-
 footer p a {
   border-bottom: none;
   color: #007bff;
 }
-
 footer .footer-links {
   float: right;
   display: flex;
   justify-content: space-evenly;
 }
-
 footer .footer-links .link-container a {
   border-bottom: none;
   line-height: unset;
@@ -79,36 +74,30 @@ footer .footer-links .link-container a {
     max-width: 540px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
-
 .profile .image {
   max-height: 100px;
   max-width: 100px;
 }
-
 .profile .links-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .profile .links-container .link-container {
   display: flex;
   border: none;
@@ -119,22 +108,18 @@ footer .footer-links .link-container a {
   align-items: center;
   height: 100%;
 }
-
 .profile .links-container .link-container img {
   height: 18px;
   transition-property: filter;
   transition: 250ms ease-in-out;
 }
-
 .profile .about-me {
   margin: 0;
   margin-top: 1.5rem;
 }
-
 .profile .about-me p {
   font-size: 17px;
 }
-
 @media (min-width: 960px) {
   .profile {
     padding-top: 1rem;
@@ -172,19 +157,17 @@ footer .footer-links .link-container a {
   padding: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-top: 2px solid #0275d8;
-  transition: transform .2s;
+  transition: transform 0.2s;
   position: relative;
   transition-property: background, border;
   transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
-
 .card .image {
   display: block;
   margin: auto;
   margin-top: 1rem;
   max-height: 50vw;
 }
-
 .card .project-link {
   font-size: 17px;
   font-weight: 600;
@@ -192,23 +175,18 @@ footer .footer-links .link-container a {
   transition-property: color;
   transition: color 250ms ease-in-out;
 }
-
 .card .demo-link {
   color: #5cb85c;
 }
-
 .card .repo-link {
   color: #5bc0de;
 }
-
 .card .demo-link + .repo-link {
   margin-left: 1rem;
 }
-
 .card .tag + .tag {
   margin-left: 0.75rem;
 }
-
 .card .tag {
   font-weight: 400;
   vertical-align: text-top;
@@ -220,7 +198,6 @@ footer .footer-links .link-container a {
   transition-property: background;
   transition: background 250ms ease-in-out;
 }
-
 .card .tag a {
   display: block;
   height: 100%;
@@ -229,12 +206,10 @@ footer .footer-links .link-container a {
   color: white;
   border: none;
 }
-
 .card .tag:hover {
   background-color: #d5256c;
   transition: background-color 0.5s ease-out;
 }
-
 @media (max-width: 960px) {
   .card ul {
     list-style-type: none;
@@ -254,20 +229,16 @@ footer .footer-links .link-container a {
   color: white;
   border-top: 2px solid red;
 }
-
 .card.dark .tag {
   background-color: red;
 }
-
 .card.dark .tag:hover {
   background-color: #a01300;
   transition: background-color 0.5s ease-out;
 }
-
 .card.dark .repo-link {
   color: #00ebeb;
 }
-
 .card.dark .demo-link {
   color: #3ff61d;
 }
@@ -277,10 +248,9 @@ footer .footer-links .link-container a {
   padding: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-top: 2px solid #dc635f;
-  transition: transform .2s;
+  transition: transform 0.2s;
   position: relative;
 }
-
 @media (max-width: 960px) {
   .basic-card ul {
     list-style-type: none;
@@ -303,13 +273,13 @@ footer .footer-links .link-container a {
     margin-top: 0.75rem;
   }
 }
-
 @media (min-width: 960px) {
   .container {
     margin: auto;
     min-width: 936px;
     max-width: 960px;
   }
+
   .single-column .card {
     display: grid;
     grid-auto-flow: column;
@@ -354,6 +324,7 @@ footer .footer-links .link-container a {
   .single-column .card + .card {
     margin-top: 0.75rem;
   }
+
   .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -378,11 +349,11 @@ footer .footer-links .link-container a {
   .two-column .card .tags {
     position: absolute;
   }
+
   hr {
     height: 5px;
   }
 }
-
 .single-column .card + .card, .single-column .basic-card + .basic-card, .single-column .basic-card + .card, .single-column .card + .basic-card {
   margin-top: 0.75rem;
 }
@@ -403,7 +374,6 @@ body {
     font-size: 16px;
   }
 }
-
 a, p, h1, h2, h3, h4, h5, h6, li {
   transition-property: color;
   transition: 250ms ease-in-out;
@@ -436,7 +406,6 @@ p a {
   color: black;
   border-bottom: dashed 1px;
 }
-
 p a.dark {
   color: white;
 }
@@ -478,9 +447,11 @@ p, li {
   h3 {
     font-size: 20px;
   }
+
   h4 {
     font-size: 18px;
   }
+
   p, li {
     font-size: 16px;
   }
