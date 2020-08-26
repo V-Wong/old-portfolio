@@ -8,7 +8,7 @@ body {
 }
 
 body.dark {
-  background-color: #080808;
+  background-color: #101010;
   color: #F5F5F5;
 }
 
@@ -170,9 +170,8 @@ footer .footer-links .link-container a {
 .card {
   background-color: #fff;
   padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #ea86ae;
   transition: transform .2s;
   position: relative;
   transition-property: background, border;
@@ -207,12 +206,11 @@ footer .footer-links .link-container a {
 }
 
 .card .tag + .tag {
-  margin-left: 5px;
+  margin-left: 0.75rem;
 }
 
 .card .tag {
   font-weight: 400;
-  border-radius: 3px;
   vertical-align: text-top;
   display: inline-block;
   white-space: nowrap;
@@ -254,7 +252,7 @@ footer .footer-links .link-container a {
 .card.dark {
   background-color: #242424;
   color: white;
-  border: 1px solid rgba(55, 55, 55, 0.9);
+  border-top: 2px solid red;
 }
 
 .card.dark .tag {
@@ -277,9 +275,8 @@ footer .footer-links .link-container a {
 .basic-card {
   background-color: #fff;
   padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #ea86ae;
   transition: transform .2s;
   position: relative;
 }
@@ -312,9 +309,6 @@ footer .footer-links .link-container a {
     margin: auto;
     min-width: 936px;
     max-width: 960px;
-  }
-  #extracurriculars {
-    margin-top: 3.25vh;
   }
   .single-column .card {
     display: grid;
@@ -356,7 +350,6 @@ footer .footer-links .link-container a {
     grid-row-start: 3;
     grid-column-start: 2;
     height: 100%;
-    font-size: 16px;
   }
   .single-column .card + .card {
     margin-top: 0.75rem;
@@ -384,7 +377,6 @@ footer .footer-links .link-container a {
   }
   .two-column .card .tags {
     position: absolute;
-    font-size: 16px;
   }
   hr {
     height: 5px;

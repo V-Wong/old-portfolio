@@ -1,9 +1,8 @@
 .card {
     background-color: $white;
     padding: 1rem;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: none;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+    border-top: 2px solid $pink;
     transition: transform .2s;
     position: relative;
 
@@ -36,12 +35,11 @@
     }
 
     .tag + .tag {
-        margin-left: 5px;
+        margin-left: 0.75rem;
     }
 
     .tag {
         font-weight: 400;
-        border-radius: 3px;
         vertical-align: text-top;
         display: inline-block;
         white-space: nowrap;
@@ -90,7 +88,7 @@
 .card.dark {
     background-color: $light-black;
     color: white;
-    border: 1px solid rgba(55, 55, 55, 0.9);
+    border-top: 2px solid red;
 
     .tag {
         background-color: red;
@@ -113,9 +111,8 @@
 .basic-card {
     background-color: $white;
     padding: 1rem;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: none;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+    border-top: 2px solid $pink;
     transition: transform .2s;
     position: relative;
 
