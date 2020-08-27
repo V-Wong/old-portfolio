@@ -252,7 +252,7 @@ footer .footer-links .link-container a {
 .card.dark {
   background-color: #242424;
   color: white;
-  border-top: 2px solid red;
+  border-top: 2px solid #2727ff;
 }
 
 .card.dark .tag {
