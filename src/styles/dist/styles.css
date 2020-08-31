@@ -176,10 +176,10 @@ footer .footer-links .link-container a {
   transition: color 250ms ease-in-out;
 }
 .card .demo-link {
-  color: #5cb85c;
+  color: #38dd1a;
 }
 .card .repo-link {
-  color: #5bc0de;
+  color: #00D3D3;
 }
 .card .demo-link + .repo-link {
   margin-left: 1rem;
@@ -237,10 +237,10 @@ footer .footer-links .link-container a {
   transition: background-color 0.5s ease-out;
 }
 .card.dark .repo-link {
-  color: #00ebeb;
+  color: #00D3D3;
 }
 .card.dark .demo-link {
-  color: #3ff61d;
+  color: #38dd1a;
 }
 
 .basic-card {
