@@ -65,28 +65,6 @@ const IndexPage = () => (
           tags={[{ link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", title: "Javascript" },
           { link: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API", title: "Canvas" }]}
         />
-
-        <ShortCard
-          title="Full Stack Starter"
-          subheading="Web Development Workflow Automator"
-          link2={{ url: "https://github.com/V-Wong/full-stack-starter", title: "Repository" }}
-          dotpoints={["A portable set of tools to standardise and automate the creation of full stack web development projects.",
-                      "Creates a template project with the necessary files and workflow integration entirely from the command line.",
-                      "Built in Perl and Shell while utilising the GitHub API."]}
-          tags={[{ link: "https://www.perl.org/", title: "Perl" },
-          { link: "https://developer.github.com/v3/", title: "GitHub API" }]}
-        />
-
-        <ShortCard
-          title="Reusable Components"
-          subheading="Generic Cross Project React Components"
-          link2={{ url: "https://github.com/V-Wong/reusable-components", title: "Repository" }}
-          dotpoints={["A set of common and simple generic React components designed to be easily reused across different projects.",
-                      "Speeds up user interface development by modifying existing components rather than rewriting from scratch.",
-                      "Written in Typescript with React-Bootstrap for styling."]}
-          tags={[{ link: "https://reactjs.org/", title: "React" },
-          { link: "https://getbootstrap.com/", title: "Bootstrap" }]}
-        />
       </TwoColumn>
 
       <SingleColumn title="Experience and Skillset">
