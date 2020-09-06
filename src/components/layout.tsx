@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useRef, useEffect } from "react"
 
 import Slider from "react-slick";
 import useCurrentWidth from "./use-width";
@@ -32,10 +32,11 @@ const TwoColumn = (props: {
   children: React.ReactNode
 }) => {
   const width = useCurrentWidth();
+  const trackRef = useRef(null);
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     mobileFirst: true,
     slidesToScroll: 1,

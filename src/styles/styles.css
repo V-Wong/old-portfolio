@@ -492,5 +492,5 @@ p, li {
 
 .slick-list {
   margin: 0 -0.375rem;
-  overflow: -moz-hidden-unscrollable;
+  overflow: visible;
 }
