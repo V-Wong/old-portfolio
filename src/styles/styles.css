@@ -12,6 +12,10 @@ body.dark {
   color: #F5F5F5;
 }
 
+#gatsby-focus-wrapper {
+  overflow-x: hidden !important;
+}
+
 header {
   text-align: center;
 }
