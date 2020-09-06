@@ -5,6 +5,8 @@ const getWidth = () => window.innerWidth
   || document.body.clientWidth;
 
 function useCurrentWidth() {
+  if (typeof window === 'undefined') return;
+
   // save current window width in the state object
   let [width, setWidth] = useState(getWidth());
 
