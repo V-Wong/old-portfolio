@@ -37,6 +37,7 @@ const TwoColumn = (props: {
   const settings = {
     dots: true,
     infinite: false,
+    arrows: false,
     speed: 500,
     mobileFirst: true,
     slidesToScroll: 1,
