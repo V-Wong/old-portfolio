@@ -32,7 +32,6 @@ const TwoColumn = (props: {
   children: React.ReactNode
 }) => {
   const width = useCurrentWidth();
-  const [numSlides, setNumSlides] = useState(width);
 
   const settings = {
     dots: true,
@@ -42,15 +41,28 @@ const TwoColumn = (props: {
     slidesToScroll: 1,
   };
 
-  return (
-    <>
-      <h2 className="section-heading">{props.title}</h2>
-      <hr/>
-      <Slider {...settings} slidesToShow={width >= 960 ? 2 : 1}>
-        {props.children}
-      </Slider>
-    </>
-  )
+  if (width <= 960) {
+    return (
+      <>
+        <h2 className="section-heading">{props.title}</h2>
+        <hr/>
+        <Slider {...settings}>
+          {props.children}
+        </Slider>
+      </>
+    )
+  } else {
+    return (
+      <>
+        <h2 className="section-heading">{props.title}</h2>
+        <hr/>
+        <section style={ props.styles } className="two-column">
+          {props.children}
+        </section>
+      </>
+    );
+  }
+
 }
 
 export { Layout, SingleColumn, TwoColumn }
