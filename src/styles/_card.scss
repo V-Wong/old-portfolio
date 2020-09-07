@@ -1,4 +1,7 @@
 .card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $white;
     padding: 1rem;
     box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
@@ -69,6 +72,8 @@
     transition: background 250ms ease-in-out, border 250ms ease-in-out;
 
     @media (max-width: $tablet-breakpoint) {
+        width: 90%;
+
         ul {
             list-style-type: none;
             margin-left: 0;
@@ -109,6 +114,9 @@
 }
 
 .basic-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $white;
     padding: 1rem;
     box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
@@ -117,6 +125,8 @@
     position: relative;
 
     @media (max-width: $tablet-breakpoint) {
+        width: 90%;
+
         ul {
             list-style-type: none;
             margin-left: 0;

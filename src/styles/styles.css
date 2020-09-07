@@ -172,6 +172,9 @@ footer .footer-links .link-container a {
 }
 
 .card {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -240,6 +243,9 @@ footer .footer-links .link-container a {
 }
 
 @media (max-width: 960px) {
+  .card {
+    width: 90%;
+  }
   .card ul {
     list-style-type: none;
     margin-left: 0;
@@ -277,6 +283,9 @@ footer .footer-links .link-container a {
 }
 
 .basic-card {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -286,6 +295,9 @@ footer .footer-links .link-container a {
 }
 
 @media (max-width: 960px) {
+  .basic-card {
+    width: 90%;
+  }
   .basic-card ul {
     list-style-type: none;
     margin-left: 0;
