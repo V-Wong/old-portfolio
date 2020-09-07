@@ -46,7 +46,7 @@ const IndexPage = () => (
           subheading="Rubiks Cube Simulater and Solver"
           link2={{ url: "https://github.com/V-Wong/CubeSim", title: "Repository" }}
           image="cubesim"
-          dotpoints={["Renders a two-dimensional Rubik's cube that can be controlled by the user with keyboard controls.",
+          dotpoints={["Renders a two-dimensional Rubik's cube with keyboard controls and automatic scramble generation.",
                       "Generates solutions for any given state of the cube specified using the standard beginner's method.",
                       "Built in Python with Pygame for visuals and controls."]}
           tags={[{ link: "https://www.python.org/", title: "Python" },
@@ -59,8 +59,8 @@ const IndexPage = () => (
           link1={{ url: "https://vwong.dev/Huffman-Encoding", title: "Live Demo" }}
           link2={{ url: "https://github.com/V-Wong/Huffman-Encoding", title: "Repository" }}
           image="huffman"
-          dotpoints={["Generates and renders a binary Huffman tree based on the user input of symbol probabilities in a given text. ",
-                      "Draws the traceback encoding path for a certain symbol when a specific symbol is selected by the user.",
+          dotpoints={["Generates and renders a binary Huffman tree based on the user input of symbol probabilities.",
+                      "Draws the traceback encoding path for a symbol when a specific symbol is selected by the user.",
                       "Built in Javascript with HTML5 Canvas for visuals."]}
           tags={[{ link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", title: "Javascript" },
           { link: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API", title: "Canvas" }]}
@@ -128,17 +128,6 @@ const IndexPage = () => (
 
       <TwoColumn title="Other Programming Activities">
         <ShortCard
-          title="COMP3821"
-          subheading="Extended Algorithms"
-          link2={{ url: "https://github.com/V-Wong/COMP3821", title: "Repository" }}
-          dotpoints={["Python implementation of common algorithms.",
-                      "Utilises techniques from various programming paradigms such as brute force, divide and conquer, greedy method, linear and dynamic programming.",
-                      "Documents my studies in common algorithms from within the fields of Computer Science and Mathematics."]}
-          tags={[{ link: "https://www.python.org/", title: "Python" },
-          { link: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821", title: "Programming Techniques" }]}
-        />
-
-        <ShortCard
           title="LeetCode"
           subheading="Competitive Programming"
           link1={{ url: "https://leetcode.com/v-wong/", title: "LeetCode Profile" }}
@@ -148,6 +137,17 @@ const IndexPage = () => (
                       "Documents my practice in problem solving and ability to write and explain code in easy and simple language. "]}
           tags={[{ link: "https://www.python.org/", title: "Python" },
           { link: "https://leetcode.com/", title: "Problem Solving" }]}
+        />
+
+        <ShortCard
+          title="COMP3821"
+          subheading="Extended Algorithms"
+          link2={{ url: "https://github.com/V-Wong/COMP3821", title: "Repository" }}
+          dotpoints={["Python implementation of common algorithms.",
+                      "Utilises techniques from various programming paradigms such as brute force, divide and conquer, greedy method, linear and dynamic programming.",
+                      "Documents my studies in common algorithms from within the fields of Computer Science and Mathematics."]}
+          tags={[{ link: "https://www.python.org/", title: "Python" },
+          { link: "https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821", title: "Programming Techniques" }]}
         />
 
         <ShortCard
