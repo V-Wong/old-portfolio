@@ -20,10 +20,10 @@ const LongCard = (props: {
         <h3>{title}</h3>
         <h4 className="project-subheading">{subheading}</h4>
         {link1
-          ? <a className="project-link demo-link underline" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a>
+          ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a>
           : null}
         {link2
-          ? <a className="project-link repo-link underline" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a>
+          ? <a className="project-link repo-link" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a>
           : null}
       </div>
       <div className="image-container">
@@ -64,9 +64,10 @@ const ShortCard = (props: {
     <div className="basic-card card">
       <h3>{title}</h3>
       <h4 className="project-subheading">{subheading}</h4>
-      {link1 ? <a className="project-link demo-link underline" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
-      {link2 ? <a className="project-link repo-link underline" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a> : null}
+      {link1 ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
+      {link2 ? <a className="project-link repo-link" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a> : null}
       {image ? <Image image={image} /> : null}
+      <hr />
       <ul>
         {dotpoints.map((point) => (
           <li>{point}</li>

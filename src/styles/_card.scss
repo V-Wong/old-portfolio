@@ -26,17 +26,26 @@
 }
 
 .card {
+    hr {
+        height: 0px;
+    }
+
+    .image + hr {
+        height: 0.5rem;
+    }
+
     .image {
         display: block;
         margin: auto;
-        margin-top: 1rem;
+        margin-top: 0.3rem;
         max-height: 50vw;
     }
 
     .project-link {
-        font-size: 17px;
+        font-family: "Open Sans", helvetica, arial, sans-serif;
+        font-size: 16px;
         font-weight: 600;
-        border-bottom: dashed 1px;
+        text-transform: uppercase;
 
         transition-property: color;
         transition: color 250ms ease-in-out;
@@ -52,6 +61,10 @@
 
     .demo-link + .repo-link {
         margin-left: 1rem;
+    }
+
+    ul {
+        margin-top: 0.25rem;
     }
 
     .tag + .tag {

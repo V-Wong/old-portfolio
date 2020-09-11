@@ -204,17 +204,26 @@ footer .footer-links .link-container a {
   transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
 
+.card hr {
+  height: 0px;
+}
+
+.card .image + hr {
+  height: 0.5rem;
+}
+
 .card .image {
   display: block;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   max-height: 50vw;
 }
 
 .card .project-link {
-  font-size: 17px;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-size: 16px;
   font-weight: 600;
-  border-bottom: dashed 1px;
+  text-transform: uppercase;
   transition-property: color;
   transition: color 250ms ease-in-out;
 }
@@ -229,6 +238,10 @@ footer .footer-links .link-container a {
 
 .card .demo-link + .repo-link {
   margin-left: 1rem;
+}
+
+.card ul {
+  margin-top: 0.25rem;
 }
 
 .card .tag + .tag {
@@ -318,7 +331,7 @@ footer .footer-links .link-container a {
   .single-column .card {
     display: grid;
     grid-auto-flow: column;
-    height: 210px;
+    height: 200px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 5fr;
     padding: 1%;
@@ -375,8 +388,8 @@ footer .footer-links .link-container a {
   }
   .two-column .card .image {
     display: block;
-    margin: auto;
-    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
     max-height: 325px;
   }
