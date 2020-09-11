@@ -1,38 +1,42 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef, useEffect } from 'react';
 
-import Slider from "react-slick";
-import useCurrentWidth from "./use-width";
+import Slider from 'react-slick';
+import useCurrentWidth from './use-width';
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Layout = ({ children }) => (
   <div className="container">
     {children}
   </div>
-)
+);
 
 const SingleColumn = (props: {
   title: string,
   styles?: object,
   children: React.ReactNode
-}) => (
-  <>
-    <h2 className="section-heading">{props.title}</h2>
-    <hr/>
-    <section style={ props.styles } className="single-column">
-      {props.children}
-    </section>
-  </>
-)
+}) => {
+  const { title, styles, children } = props;
+
+  return (
+    <>
+      <h2 className="section-heading">{title}</h2>
+      <hr />
+      <section style={styles} className="single-column">
+        {children}
+      </section>
+    </>
+  );
+};
 
 const TwoColumn = (props: {
   title: string,
   styles?: object,
   children: React.ReactNode
 }) => {
+  const { title, styles, children } = props;
   const width = useCurrentWidth();
-  const trackRef = useRef(null);
 
   const settings = {
     dots: true,
@@ -47,24 +51,22 @@ const TwoColumn = (props: {
     return (
       <>
         <h2 className="section-heading">{props.title}</h2>
-        <hr/>
+        <hr />
         <Slider {...settings}>
           {props.children}
         </Slider>
       </>
-    )
-  } else {
-    return (
-      <>
-        <h2 className="section-heading">{props.title}</h2>
-        <hr/>
-        <section style={ props.styles } className="two-column">
-          {props.children}
-        </section>
-      </>
     );
   }
+  return (
+    <>
+      <h2 className="section-heading">{title}</h2>
+      <hr />
+      <section style={styles} className="two-column">
+        {children}
+      </section>
+    </>
+  );
+};
 
-}
-
-export { Layout, SingleColumn, TwoColumn }
+export { Layout, SingleColumn, TwoColumn };
