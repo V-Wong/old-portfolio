@@ -96,7 +96,7 @@ const IndexPage = () => (
       </SingleColumn>
 
       <section className="two-column" style={{ marginTop: '0.75rem' }}>
-        <div className="card" style={{ paddingBottom: '2%' }}>
+        <div className="basic-card card" style={{ paddingBottom: '2%' }}>
           <h3>Web Development Skillset</h3>
           <h4 className="project-subheading">Frontend</h4>
           <ul style={{ marginTop: '1vh' }}>
@@ -130,7 +130,7 @@ const IndexPage = () => (
           </ul>
         </div>
 
-        <div className="card" style={{ paddingBottom: '2%' }}>
+        <div className="basic-card card" style={{ paddingBottom: '2%' }}>
           <h3>Other Skillset</h3>
           <h4 className="project-subheading">Languages</h4>
           <ul style={{ marginTop: '1vh' }}>

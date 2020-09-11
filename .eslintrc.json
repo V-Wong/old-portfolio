@@ -25,9 +25,10 @@
     ],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
-        "max-len": [2, 130, 4], 
+        "max-len": [2, 150, 4], 
         "no-use-before-define": [0],
         "@typescript-eslint/no-use-before-define": [1],
-        "react/require-default-props": "off"
+        "react/require-default-props": "off",
+        "object-curly-spacing": [2, "always"]
     }
 }
