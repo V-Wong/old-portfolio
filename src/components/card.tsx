@@ -1,5 +1,5 @@
-import React from "react"
-import Image from "./image"
+import React from 'react';
+import Image from './image';
 
 const LongCard = (props: {
   title: string,
@@ -9,33 +9,43 @@ const LongCard = (props: {
   image?: string,
   dotpoints: Array<string>,
   tags: Array<{link: string, title: string}>
-}) => (
-  <div className="card">
-    <div className="description">
-      <h3>{props.title}</h3>
-      <h4 className="project-subheading">{props.subheading}</h4>
-      {props.link1 ? <a className="project-link demo-link underline" href={props.link1.url} target="_blank" rel="noopener noreferrer">{props.link1.title}</a> : null}
-      {props.link2 ? <a className="project-link repo-link underline" href={props.link2.url} target="_blank" rel="noopener noreferrer">{props.link2.title}</a> : null}
-    </div>
-    <div className="image-container">
-      <Image image={props.image}/>
-    </div>
-    <div className="dotpoints">
-      <ul>
-        {props.dotpoints.map(point => (
-          <li>{point}</li>
+}) => {
+  const {
+    title, subheading, link1, link2, image, dotpoints, tags,
+  } = props;
+
+  return (
+    <div className="basic-card card">
+      <div className="description">
+        <h3>{title}</h3>
+        <h4 className="project-subheading">{subheading}</h4>
+        {link1
+          ? <a className="project-link demo-link underline" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a>
+          : null}
+        {link2
+          ? <a className="project-link repo-link underline" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a>
+          : null}
+      </div>
+      <div className="image-container">
+        <Image image={image} />
+      </div>
+      <div className="dotpoints">
+        <ul>
+          {dotpoints.map((point) => (
+            <li>{point}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="tags">
+        {tags.map((tag) => (
+          <span className="tag">
+            <a href={tag.link} target="_blank" rel="noopener noreferrer">{tag.title}</a>
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
-    <div className="tags">
-      {props.tags.map(tag => (   
-        <span className="tag">
-          <a href={tag.link} target="_blank" rel="noopener noreferrer">{tag.title}</a>
-        </span>
-      ))}
-    </div>
-  </div>
-)
+  );
+};
 
 const ShortCard = (props: {
   title: string,
@@ -45,26 +55,32 @@ const ShortCard = (props: {
   image?: string,
   dotpoints: Array<string>,
   tags: Array<{link: string, title: string}>
-}) => (
-  <div className="card">
-    <h3>{props.title}</h3>
-    <h4 className="project-subheading">{props.subheading}</h4>
-    {props.link1 ? <a className="project-link demo-link underline" href={props.link1.url} target="_blank" rel="noopener noreferrer">{props.link1.title}</a> : null}
-    {props.link2 ? <a className="project-link repo-link underline" href={props.link2.url} target="_blank" rel="noopener noreferrer">{props.link2.title}</a> : null}
-    {props.image ? <Image image={props.image}/> : null}
-    <ul>
-      {props.dotpoints.map(point => (
-        <li>{point}</li>
-      ))}
-    </ul>
-    <div className="tags">
-      {props.tags.map(tag => (   
-        <span className="tag">
-          <a href={tag.link} target="_blank" rel="noopener noreferrer">{tag.title}</a>
-        </span>
-      ))}
-    </div>
-  </div>
-)
+}) => {
+  const {
+    title, subheading, link1, link2, image, dotpoints, tags,
+  } = props;
 
-export { LongCard, ShortCard }
+  return (
+    <div className="basic-card card">
+      <h3>{title}</h3>
+      <h4 className="project-subheading">{subheading}</h4>
+      {link1 ? <a className="project-link demo-link underline" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
+      {link2 ? <a className="project-link repo-link underline" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a> : null}
+      {image ? <Image image={image} /> : null}
+      <ul>
+        {dotpoints.map((point) => (
+          <li>{point}</li>
+        ))}
+      </ul>
+      <div className="tags">
+        {tags.map((tag) => (
+          <span className="tag">
+            <a href={tag.link} target="_blank" rel="noopener noreferrer">{tag.title}</a>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export { LongCard, ShortCard };

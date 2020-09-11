@@ -171,13 +171,35 @@ footer .footer-links .link-container a {
   filter: invert(100);
 }
 
-.card {
+.basic-card {
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-top: 2px solid #0275d8;
   transition: transform .2s;
   position: relative;
+}
+
+@media (max-width: 960px) {
+  .basic-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .basic-card ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+.basic-card.dark {
+  background-color: #242424;
+  color: white;
+  border: 1px solid rgba(55, 55, 55, 0.9);
+}
+
+.card {
   transition-property: background, border;
   transition: background 250ms ease-in-out, border 250ms ease-in-out;
 }
@@ -279,37 +301,6 @@ footer .footer-links .link-container a {
 
 .card.dark .demo-link {
   color: #38dd1a;
-}
-
-.basic-card {
-  background-color: #fff;
-  padding: 1rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border-top: 2px solid #0275d8;
-  transition: transform .2s;
-  position: relative;
-}
-
-@media (max-width: 960px) {
-  .basic-card {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .basic-card ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding: 0;
-  }
-  .basic-card ul li + li {
-    margin-top: 0.5rem;
-  }
-}
-
-.basic-card.dark {
-  background-color: #242424;
-  color: white;
-  border: 1px solid rgba(55, 55, 55, 0.9);
 }
 
 @media (max-width: 960px) {
