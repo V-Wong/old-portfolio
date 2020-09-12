@@ -35,7 +35,11 @@ const toggleDarkTheme = (isDarkTheme: boolean) => {
   document.body.classList.toggle('dark');
   document.getElementsByClassName('profile')[0].classList.toggle('dark');
   for (const element of document.querySelectorAll('.card, a, .social-icon, .basic-card')) {
-    element.classList.toggle('dark');
+    if (!isDarkTheme) {
+      element.classList.add('dark');
+    } else {
+      element.classList.remove('dark');
+    }
   }
 };
 
