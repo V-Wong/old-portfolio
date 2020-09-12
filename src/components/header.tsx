@@ -31,7 +31,6 @@ const Header = () => (
           <img className="social-icon" src={linkedinImage} alt="Black and white LinkIn logo icon" />
           <a className="underline" href="https://www.linkedin.com/in/vincent-wc-wong/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-        <DarkThemeToggle />
       </nav>
     </div>
     <blockquote className="about-me">
