@@ -15,7 +15,7 @@ const LongCard = (props: {
   } = props;
 
   return (
-    <div className={`basic-card card ${typeof window !== 'undefined' && localStorage.getItem('v-wong') === 'true' ? '' : 'dark'}`}>
+    <div className="basic-card card">
       <div className="description">
         <h3>{title}</h3>
         <h4 className="project-subheading">{subheading}</h4>
@@ -62,7 +62,7 @@ const ShortCard = (props: {
   } = props;
 
   return (
-    <div className={`basic-card card ${typeof window !== 'undefined' && localStorage.getItem('v-wong') === 'true' ? '' : 'dark'}`}>
+    <div className="basic-card card">
       <h3>{title}</h3>
       <h4 className="project-subheading">{subheading}</h4>
       {link1 ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
