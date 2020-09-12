@@ -288,6 +288,9 @@ footer .footer-links .link-container a {
   .card ul li + li {
     margin-top: 0.5rem;
   }
+  .card hr {
+    height: 0.5rem;
+  }
   .card .project-link {
     font-size: 15px;
   }

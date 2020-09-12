@@ -29,6 +29,7 @@ const LongCard = (props: {
       <div className="image-container">
         <Image image={image} />
       </div>
+      <hr />
       <div className="dotpoints">
         <ul>
           {dotpoints.map((point) => (
