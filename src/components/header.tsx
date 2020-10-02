@@ -34,9 +34,9 @@ const Header = () => (
       </nav>
     </div>
     <blockquote className="about-me">
-      <p>Hi, I'm Vincent Wong.</p>
-      <p>I'm a Computer Science and Mathematics student at UNSW.</p>
-      <p>This website is a showcase of my personal projects and studies.</p>
+      <p>Hi there, I'm Vincent Wong from Sydney, Australia.</p>
+      <p>I'm a Computer Science + Mathematics student at UNSW.</p>
+      <p>This website is a showcase of my personal projects.</p>
     </blockquote>
   </header>
 );
