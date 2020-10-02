@@ -17,7 +17,7 @@ const IndexPage = () => (
       <meta
         name="description"
         content="Full stack software engineer based in Sydney, Australia.
-                                        Current student of Computer Science and Mathematics at UNSW."
+                 Current student of Computer Science and Mathematics at UNSW."
       />
       <meta name="author" content="Vincent Wong" />
       <meta name="keywords" content="vwong, VWong, v-wong, V-Wong" />
@@ -33,13 +33,13 @@ const IndexPage = () => (
           subheading="Full Stack Developer"
           link1={{ url: 'https://linkup.website', title: 'Live Demo' }}
           image="linkup"
-          dotpoints={['Centralised source of events across Australian universities including UNSW, USyd and UniMelb.',
-            'Helps students discover new societies and consequently allows societies to gain exposure.',
+          dotpoints={['A centralised source of events across Australian universities including UNSW, USyd and UniMelb.',
+            'Aims to help students discover new societies and also allows societies to gain exposure.',
             'Actively working with UNSW societies to better support student academic and social life.',
             'Development team consists of UNSW Computer Science and Software Engineering students.']}
           tags={[{ link: 'https://reactjs.org/', title: 'React' },
-            { link: 'https://getbootstrap.com/', title: 'Bootstrap' },
-            { link: 'https://expressjs.com/', title: 'Express.js' }]}
+          { link: 'https://getbootstrap.com/', title: 'Bootstrap' },
+          { link: 'https://expressjs.com/', title: 'Express.js' }]}
         />
       </SingleColumn>
 
@@ -49,11 +49,10 @@ const IndexPage = () => (
           subheading="Rubiks Cube Simulater and Solver"
           link2={{ url: 'https://github.com/V-Wong/CubeSim', title: 'Repository' }}
           image="cubesim"
-          dotpoints={["Renders a two-dimensional Rubik's cube with keyboard controls and automatic scramble generation.",
-            "Generates solutions for any given state of the cube specified using the standard beginner's method.",
+          dotpoints={["A program that renders a 2D Rubik's cube with keyboard controls and automatic solution generation.",
             'Built in Python with Pygame for visuals and controls.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
-            { link: 'https://www.pygame.org/news', title: 'Pygame' }]}
+          { link: 'https://www.pygame.org/news', title: 'Pygame' }]}
         />
 
         <ShortCard
@@ -62,11 +61,10 @@ const IndexPage = () => (
           link1={{ url: 'https://vwong.dev/Huffman-Encoding', title: 'Live Demo' }}
           link2={{ url: 'https://github.com/V-Wong/Huffman-Encoding', title: 'Repository' }}
           image="huffman"
-          dotpoints={['Generates and renders a binary Huffman tree based on the user input of symbol probabilities.',
-            'Draws the traceback encoding path for a symbol when a specific symbol is selected by the user.',
+          dotpoints={['A web app that generates and renders a binary Huffman tree based on user symbol input.',
             'Built in Javascript with HTML5 Canvas for visuals.']}
           tags={[{ link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', title: 'Javascript' },
-            { link: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API', title: 'Canvas' }]}
+          { link: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API', title: 'Canvas' }]}
         />
       </TwoColumn>
 
@@ -79,7 +77,7 @@ const IndexPage = () => (
               Developed Python tools for financial scraping and workflow automation of repetitive tasks.
             </li>
             <li>
-              Integrated features into the Oracle-based financial tracking software using a combination of PL/SQL and Javascript.
+              Integrated features into the company financial tracking software using a combination of PL/SQL and Javascript.
             </li>
           </ul>
           <h3>Education</h3>
@@ -171,22 +169,20 @@ const IndexPage = () => (
           subheading="Competitive Programming"
           link1={{ url: 'https://leetcode.com/v-wong/', title: 'LeetCode Profile' }}
           link2={{ url: 'https://github.com/V-Wong/LeetCode-Practice', title: 'Repository' }}
-          dotpoints={['Python solutions to various LeetCode problems.',
-            'Includes a wide variety of problems involving common algorithms and manipulation of common data structures such as arrays, hashmaps, graphs, trees and heaps.',
-            'Documents my practice in problem solving and ability to write and explain code in easy and simple language. ']}
+          dotpoints={['My repo of Python solutions to some LeetCode problems.',
+            'Allowed me to apply my understanding of data structures and algorithms to interesting programming problems.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
-            { link: 'https://leetcode.com/', title: 'Problem Solving' }]}
+          { link: 'https://leetcode.com/', title: 'Problem Solving' }]}
         />
 
         <ShortCard
           title="COMP3821"
           subheading="Extended Algorithms"
           link2={{ url: 'https://github.com/V-Wong/COMP3821', title: 'Repository' }}
-          dotpoints={['Python implementation of common algorithms.',
-            'Utilises techniques from various programming paradigms such as brute force, divide and conquer, greedy method, linear and dynamic programming.',
-            'Documents my studies in common algorithms from within the fields of Computer Science and Mathematics.']}
+          dotpoints={['My repo of common algorithm implementations in Python.',
+            'Taught me the essential programming techniques and algorithms to efficiently tackle common problems.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
-            { link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Programming Techniques' }]}
+          { link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Programming Techniques' }]}
         />
 
         <ShortCard
@@ -194,8 +190,7 @@ const IndexPage = () => (
           subheading="Software System Design & Implementation"
           link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3141', title: 'Course Outline' }}
           link2={{ url: 'https://github.com/V-Wong/Haskell-Practice', title: 'Repository' }}
-          dotpoints={['Formal and semi-formal methods for software design. ',
-            'Specify and test programs in terms of logical properties and functional correctness.',
+          dotpoints={['My notes on formal methods of software design. ',
             'Introduced me to functional programming in Haskell and the skills to specify, test and reason about programs.']}
           tags={[{ link: 'https://www.haskell.org/', title: 'Haskell' }]}
         />
@@ -205,11 +200,10 @@ const IndexPage = () => (
           subheading="Computer Systems Fundamentals"
           link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP1521', title: 'Course Outline' }}
           link2={{ url: 'https://github.com/V-Wong/COMP1521', title: 'Repository' }}
-          dotpoints={['Foundations on the structure of computer systems',
-            'Write low level MIPs assembly code to understand the processes that occur when high level programs execute.',
+          dotpoints={['My notes on computer systems and low level architecture.',
             'Developed my understanding of the operations of a computer and improved my ability to write efficient code.']}
           tags={[{ link: 'https://en.wikipedia.org/wiki/MIPS_architecture', title: 'MIPS' },
-            { link: 'https://en.wikipedia.org/wiki/C_(programming_language)', title: 'C' }]}
+          { link: 'https://en.wikipedia.org/wiki/C_(programming_language)', title: 'C' }]}
         />
       </TwoColumn>
 
@@ -219,12 +213,12 @@ const IndexPage = () => (
           subheading="Executive - Events Director"
           link1={{ url: 'https://www.facebook.com/UNSWRubikSoc/', title: 'Society Page' }}
           image="rubiksoc"
-          dotpoints={["Help organise Rubik's Cube tutorials and unofficial competitions at UNSW in Sydney.",
-            "Encourage students to find an interest and hobby in Rubik's Cubes and speedsolving.",
-            'Help existing speedcubers to improve and optimise their solves by hosting workshops.',
-            'Currently working with the World Cube Association to organise official competitions.']}
+          dotpoints={["I helped organise Rubik's Cube tutorials and unofficial competitions at UNSW in Sydney.",
+            "I encouraged students to find an interest and hobby in Rubik's Cubes and speedsolving.",
+            'I helped existing speedcubers to improve and optimise their solves by hosting workshops.',
+            'We are currently working with the World Cube Association to organise official competitions.']}
           tags={[{ link: 'https://www.rubiks.com/en-us/', title: 'Rubiks Cubes' },
-            { link: 'https://www.worldcubeassociation.org/', title: 'Speedcubing' }]}
+          { link: 'https://www.worldcubeassociation.org/', title: 'Speedcubing' }]}
         />
 
         <LongCard
@@ -232,12 +226,12 @@ const IndexPage = () => (
           subheading="Participant in WCA competitions"
           link1={{ url: 'https://www.worldcubeassociation.org/persons/2014WONG08', title: 'WCA Profile' }}
           image="compcube"
-          dotpoints={['Actively participated in speedcubing competitions across Australia since 2014.',
-            'Held numerous Sydney and Australian national championship podium titles.',
-            "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
-            'Developed video resources to teach viewers solving techniques and how to improve.']}
+          dotpoints={['I have actively participated in speedcubing competitions across Australia since 2014.',
+            'I have held numerous Sydney and Australian national championship podium titles.',
+            "I once held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
+            'I regularly develop resources to teach solvers solving techniques and how to improve.']}
           tags={[{ link: 'https://www.rubiks.com/en-us/', title: 'Rubiks Cubes' },
-            { link: 'https://www.worldcubeassociation.org/', title: 'Speedcubing' }]}
+          { link: 'https://www.worldcubeassociation.org/', title: 'Speedcubing' }]}
         />
       </SingleColumn>
 
