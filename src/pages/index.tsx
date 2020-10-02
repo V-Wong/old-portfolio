@@ -81,7 +81,7 @@ const IndexPage = () => (
             </li>
           </ul>
           <h3>Education</h3>
-          <h4 className="project-subheading">UNSW - BS. Computer Science, Mathematics and Statistics (2019 - 2022)</h4>
+          <h4 className="project-subheading">UNSW - BS. Computer Science and Mathematics (2019 - 2022)</h4>
           <ul style={{ marginTop: '1vh' }}>
             <li>
               Highly commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
