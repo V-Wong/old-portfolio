@@ -68,7 +68,9 @@ const IndexPage = () => (
         />
       </TwoColumn>
 
-      <SingleColumn title="Experience and Skillset">
+      <h2 className="section-heading">Experience and Skillset</h2>
+      <hr />
+      <section className="single-column">
         <div className="basic-card" style={{ paddingBottom: '1%' }}>
           <h3>Employment</h3>
           <h4 className="project-subheading">Visionstream - Junior Developer (2019 - Present)</h4>
@@ -91,7 +93,7 @@ const IndexPage = () => (
             </li>
           </ul>
         </div>
-      </SingleColumn>
+      </section>
 
       <TwoColumn title="Other Programming Activities">
         <ShortCard
