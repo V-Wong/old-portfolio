@@ -191,6 +191,9 @@ footer .footer-links .link-container a {
     margin-left: 0;
     padding: 0;
   }
+  .basic-card ul li + li {
+    margin-top: 0.5rem;
+  }
 }
 
 .basic-card.dark {
@@ -280,14 +283,6 @@ footer .footer-links .link-container a {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
-  .card ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding: 0;
-  }
-  .card ul li + li {
-    margin-top: 0.5rem;
   }
   .card hr {
     height: 0.5rem;
