@@ -74,20 +74,20 @@ const IndexPage = () => (
           <h4 className="project-subheading">Visionstream - Junior Developer (2019 - Present)</h4>
           <ul style={{ marginTop: '1vh' }}>
             <li>
-              Developed Python tools for financial scraping and workflow automation of repetitive tasks.
+              I created Python programs for financial scraping and workflow automation of repetitive tasks.
             </li>
             <li>
-              Integrated features into the company financial tracking software using a combination of PL/SQL and Javascript.
+              I integrated features into the company's financial tracking software using Javascript and Pl/SQL.
             </li>
           </ul>
           <h3>Education</h3>
           <h4 className="project-subheading">UNSW - BS. Computer Science and Mathematics (2019 - 2022)</h4>
           <ul style={{ marginTop: '1vh' }}>
             <li>
-              Highly commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
+              I was commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
             </li>
             <li>
-              Taking a mix of theoretical and applied courses to learn how to develop useful, powerful and reliable software.
+              I am taking a mix of theoretical and applied courses to learn how to develop useful, powerful and reliable software.
             </li>
           </ul>
         </div>
