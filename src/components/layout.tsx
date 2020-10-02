@@ -31,7 +31,7 @@ const SingleColumn = (props: {
 };
 
 const TwoColumn = (props: {
-  title: string,
+  title?: string,
   styles?: object,
   children: React.ReactNode
 }) => {
@@ -50,8 +50,8 @@ const TwoColumn = (props: {
   if (width <= 960) {
     return (
       <>
-        <h2 className="section-heading">{props.title}</h2>
-        <hr />
+        {title ? <h2 className="section-heading">{props.title}</h2> : null}
+        {title ? <hr /> : null}
         <Slider {...settings}>
           {props.children}
         </Slider>
@@ -60,8 +60,8 @@ const TwoColumn = (props: {
   }
   return (
     <>
-      <h2 className="section-heading">{title}</h2>
-      <hr />
+      {title ? <h2 className="section-heading">{title}</h2> : null}
+      {title ? <hr /> : null}
       <section style={styles} className="two-column">
         {children}
       </section>
