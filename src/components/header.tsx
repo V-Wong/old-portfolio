@@ -34,9 +34,9 @@ const Header = () => (
       </nav>
     </div>
     <blockquote className="about-me">
-      <p>Computer Science, Mathematics and Statistics student at UNSW in Sydney.</p>
-      <p>Active in full stack web development and native mobile app development.</p>
-      <p>Interested in algorithms, theoretical computer science and pure maths.</p>
+      <p>Hi, I'm Vincent Wong.</p>
+      <p>I'm a Computer Science and Mathematics student at UNSW.</p>
+      <p>This website is a showcase of my personal projects and studies.</p>
     </blockquote>
   </header>
 );
