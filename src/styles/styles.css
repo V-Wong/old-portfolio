@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #F5F5F5;
+  background-color: #f6f8fa;
   color: black;
   transition-property: background;
   transition: background 250ms ease-in-out;
@@ -9,7 +9,7 @@ body {
 
 body.dark {
   background-color: #101010;
-  color: #F5F5F5;
+  color: #f6f8fa;
 }
 
 #gatsby-focus-wrapper {
