@@ -43,7 +43,7 @@ footer {
   padding-bottom: 1rem;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   footer p {
     text-align: center;
   }
@@ -52,7 +52,7 @@ footer {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   footer {
     grid-template-columns: 4fr 2fr;
   }
@@ -139,7 +139,7 @@ footer .footer-links .link-container a {
   font-size: 17px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   .profile {
     padding-top: 1rem;
   }
@@ -173,14 +173,14 @@ footer .footer-links .link-container a {
 
 .basic-card {
   background-color: #fff;
-  padding: 1rem;
+  padding: 16px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-top: 2px solid #0275d8;
   transition: transform .2s;
   position: relative;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   .basic-card {
     width: 90%;
     margin-left: auto;
@@ -278,7 +278,7 @@ footer .footer-links .link-container a {
   transition: background-color 0.5s ease-out;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   .card {
     width: 90%;
     margin-left: auto;
@@ -315,17 +315,17 @@ footer .footer-links .link-container a {
   color: #38dd1a;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   .card + .card {
     margin-top: 0.75rem;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   .container {
     margin: auto;
-    min-width: 936px;
-    max-width: 960px;
+    min-width: 975px;
+    max-width: 1000px;
   }
   .single-column .card {
     display: grid;
@@ -333,7 +333,6 @@ footer .footer-links .link-container a {
     height: 200px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 5fr;
-    padding: 1%;
     padding-bottom: 2rem;
   }
   .single-column .image-container {
@@ -415,7 +414,7 @@ body {
   font-size: 14px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   body {
     font-size: 16px;
   }
@@ -491,7 +490,7 @@ p, li {
   font-size: 14px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   h3 {
     font-size: 20px;
   }
