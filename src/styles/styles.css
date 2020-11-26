@@ -180,20 +180,14 @@ footer .footer-links .link-container a {
   position: relative;
 }
 
-@media (max-width: 1000px) {
-  .basic-card {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .basic-card ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding: 0;
-  }
-  .basic-card ul li + li {
-    margin-top: 0.5rem;
-  }
+.basic-card ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.basic-card ul li + li {
+  margin-top: 0.5rem;
 }
 
 .basic-card.dark {
@@ -330,10 +324,8 @@ footer .footer-links .link-container a {
   .single-column .card {
     display: grid;
     grid-auto-flow: column;
-    height: 200px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 5fr;
-    padding-bottom: 2rem;
+    grid-auto-rows: min-content min-content min-content;
+    grid-template-columns: 1.25fr 5fr;
   }
   .single-column .image-container {
     grid-row-start: 1;
@@ -343,7 +335,6 @@ footer .footer-links .link-container a {
   .single-column .image {
     position: relative;
     top: 10%;
-    height: 100%;
     max-height: 60%;
     margin: auto;
     margin-top: 1rem;
@@ -357,10 +348,6 @@ footer .footer-links .link-container a {
     grid-row-start: 2;
     grid-column-start: 2;
     height: 100%;
-  }
-  .single-column .dotpoints ul {
-    padding-left: 2%;
-    padding-right: 2%;
   }
   .single-column .tags {
     grid-row-start: 3;
