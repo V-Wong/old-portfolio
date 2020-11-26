@@ -73,23 +73,26 @@ const IndexPage = () => (
       <section className="single-column">
         <div className="basic-card" style={{ paddingBottom: '1%' }}>
           <h3>Employment</h3>
-          <h4 className="project-subheading">Visionstream - Junior Developer (2019 - Present)</h4>
+          <h4 className="project-subheading">Visionstream in Sydney - Junior Developer (2019 - Present)</h4>
           <ul style={{ marginTop: '1vh' }}>
             <li>
-              I created Python programs for financial scraping and workflow automation of repetitive tasks.
+              Junior Software Developer in the Engineering and Technology team; involved in developing financial services software.
             </li>
             <li>
-              I integrated features into the company's financial tracking software using Javascript and Pl/SQL.
+              Developed functionality in the company's management software to aid in financial analysis of over 15,000 work order.
+            </li>
+            <li>
+              Created Python programs for financial scraping and workflow automation to support financial staff nationwide.
             </li>
           </ul>
           <h3>Education</h3>
           <h4 className="project-subheading">UNSW - BS. Computer Science and Mathematics (2019 - 2022)</h4>
           <ul style={{ marginTop: '1vh' }}>
             <li>
-              I was commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
+              Commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
             </li>
             <li>
-              I am taking a mix of theoretical and applied courses to learn how to develop useful, powerful and reliable software.
+              Taking a mix of theoretical and applied courses to learn how to develop useful, powerful and reliable software.
             </li>
           </ul>
         </div>
@@ -101,7 +104,7 @@ const IndexPage = () => (
           subheading="Competitive Programming"
           link1={{ url: 'https://leetcode.com/v-wong/', title: 'LeetCode Profile' }}
           link2={{ url: 'https://github.com/V-Wong/LeetCode-Practice', title: 'Repository' }}
-          dotpoints={['My repo of Python solutions to some LeetCode problems.',
+          dotpoints={['Repository of Python solutions to some LeetCode problems.',
             'Allowed me to apply my understanding of data structures and algorithms to interesting programming problems.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
           { link: 'https://leetcode.com/', title: 'Problem Solving' }]}
@@ -111,8 +114,8 @@ const IndexPage = () => (
           title="COMP3821"
           subheading="Extended Algorithms"
           link2={{ url: 'https://github.com/V-Wong/COMP3821', title: 'Repository' }}
-          dotpoints={['My repo of common algorithm implementations in Python.',
-            'Taught me the essential programming techniques and algorithms to efficiently tackle common problems.']}
+          dotpoints={['Repository of common algorithm implementations in Python.',
+            'Showcases various important algorithms throughout Computer Science and Mathematics with simple Python implementations.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
           { link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Programming Techniques' }]}
         />
@@ -122,8 +125,8 @@ const IndexPage = () => (
           subheading="Software System Design & Implementation"
           link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3141', title: 'Course Outline' }}
           link2={{ url: 'https://github.com/V-Wong/Haskell-Practice', title: 'Repository' }}
-          dotpoints={['My notes on formal methods of software design. ',
-            'Introduced me to functional programming in Haskell and the skills to specify, test and reason about programs.']}
+          dotpoints={['Notes on formal and semi-formal methods of software design.',
+            'Displays various techniques to rigorously analyse, implement and test software systems with mathematical methods.']}
           tags={[{ link: 'https://www.haskell.org/', title: 'Haskell' }]}
         />
 
@@ -132,8 +135,8 @@ const IndexPage = () => (
           subheading="Computer Systems Fundamentals"
           link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP1521', title: 'Course Outline' }}
           link2={{ url: 'https://github.com/V-Wong/COMP1521', title: 'Repository' }}
-          dotpoints={['My notes on computer systems and low level architecture.',
-            'Developed my understanding of the operations of a computer and improved my ability to write efficient code.']}
+          dotpoints={['Notes on computer systems and low level architecture.',
+            'Provides a view on how computer system\'s execute programs from high level code to low level instructions.']}
           tags={[{ link: 'https://en.wikipedia.org/wiki/MIPS_architecture', title: 'MIPS' },
           { link: 'https://en.wikipedia.org/wiki/C_(programming_language)', title: 'C' }]}
         />
@@ -145,10 +148,10 @@ const IndexPage = () => (
           subheading="Executive - Events Director"
           link1={{ url: 'https://www.facebook.com/UNSWRubikSoc/', title: 'Society Page' }}
           image="rubiksoc"
-          dotpoints={["I helped organise Rubik's Cube tutorials and unofficial competitions at UNSW in Sydney.",
-            "I encouraged students to find an interest and hobby in Rubik's Cubes and speedsolving.",
-            'I helped existing speedcubers to improve and optimise their solves by hosting workshops.',
-            'We are currently working with the World Cube Association to organise official competitions.']}
+          dotpoints={["Helped organise Rubik's Cube tutorials and unofficial competitions at UNSW in Sydney.",
+            "Encouraged students to find an interest and hobby in Rubik's Cubes and speedsolving.",
+            'Helped existing speedcubers to improve and optimise their solves by hosting workshops.',
+            'Currently working with the World Cube Association to organise official competitions.']}
           tags={[{ link: 'https://www.rubiks.com/en-us/', title: 'Rubiks Cubes' },
           { link: 'https://www.worldcubeassociation.org/', title: 'Speedcubing' }]}
         />
@@ -158,10 +161,10 @@ const IndexPage = () => (
           subheading="Participant in WCA competitions"
           link1={{ url: 'https://www.worldcubeassociation.org/persons/2014WONG08', title: 'WCA Profile' }}
           image="compcube"
-          dotpoints={['I have actively participated in speedcubing competitions across Australia since 2014.',
-            'I have held numerous Sydney and Australian national championship podium titles.',
-            "I once held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
-            'I regularly develop resources to teach solvers solving techniques and how to improve.']}
+          dotpoints={['Actively participated in speedcubing competitions across Australia since 2014.',
+            'Held numerous Sydney and Australian national championship podium titles.',
+            "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
+            'Regularly develop resources to teach solvers solving techniques and how to improve.']}
           tags={[{ link: 'https://www.rubiks.com/en-us/', title: 'Rubiks Cubes' },
           { link: 'https://www.worldcubeassociation.org/', title: 'Speedcubing' }]}
         />
