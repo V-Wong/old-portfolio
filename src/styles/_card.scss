@@ -1,6 +1,6 @@
 .basic-card {
     background-color: $white;
-    padding: 16px;
+    padding: 18px;
     box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
     border-top: 2px solid #0275d8;
     transition: transform .2s;
@@ -13,7 +13,7 @@
         padding: 0;
         
         li + li {
-            margin-top: 0.5rem;
+            margin-top: 0.2rem;
         }
     }
 
@@ -27,18 +27,11 @@
 }
 
 .card {
-    hr {
-        height: 0px;
-    }
-
-    .image + hr {
-        height: 0.5rem;
-    }
-
     .image {
         display: block;
         margin: auto;
-        margin-top: 0.3rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
         max-height: 50vw;
     }
 

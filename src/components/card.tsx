@@ -29,7 +29,6 @@ const LongCard = (props: {
       <div className="image-container">
         <Image image={image} />
       </div>
-      <hr />
       <div className="dotpoints">
         <ul>
           {dotpoints.map((point) => (
@@ -68,7 +67,6 @@ const ShortCard = (props: {
       {link1 ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
       {link2 ? <a className="project-link repo-link" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a> : null}
       {image ? <Image image={image} /> : null}
-      <hr />
       <ul>
         {dotpoints.map((point) => (
           <li>{point}</li>

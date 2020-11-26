@@ -49,7 +49,7 @@ const IndexPage = () => (
           subheading="Rubiks Cube Simulater and Solver"
           link2={{ url: 'https://github.com/V-Wong/CubeSim', title: 'Repository' }}
           image="cubesim"
-          dotpoints={["A program that renders a 2D Rubik's cube with keyboard controls and automatic solution generation.",
+          dotpoints={["A program that renders a 2D Rubik's cube with keyboard controls and programmatic solution generation.",
             'Built in Python with Pygame for visuals and controls.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
           { link: 'https://www.pygame.org/news', title: 'Pygame' }]}
@@ -61,7 +61,7 @@ const IndexPage = () => (
           link1={{ url: 'https://vwong.dev/Huffman-Encoding', title: 'Live Demo' }}
           link2={{ url: 'https://github.com/V-Wong/Huffman-Encoding', title: 'Repository' }}
           image="huffman"
-          dotpoints={['A web app that generates and renders a binary Huffman tree based on user symbol input.',
+          dotpoints={['A single page web app that generates and renders a binary Huffman tree based on the Huffman encoding algorithm.',
             'Built in Javascript with HTML5 Canvas for visuals.']}
           tags={[{ link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', title: 'Javascript' },
           { link: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API', title: 'Canvas' }]}
