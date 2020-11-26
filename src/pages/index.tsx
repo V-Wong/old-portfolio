@@ -100,24 +100,13 @@ const IndexPage = () => (
 
       <TwoColumn title="Other Programming Activities">
         <ShortCard
-          title="LeetCode"
-          subheading="Competitive Programming"
-          link1={{ url: 'https://leetcode.com/v-wong/', title: 'LeetCode Profile' }}
-          link2={{ url: 'https://github.com/V-Wong/LeetCode-Practice', title: 'Repository' }}
-          dotpoints={['Repository of Python solutions to some LeetCode problems.',
-            'Allowed me to apply my understanding of data structures and algorithms to interesting programming problems.']}
-          tags={[{ link: 'https://www.python.org/', title: 'Python' },
-          { link: 'https://leetcode.com/', title: 'Problem Solving' }]}
-        />
-
-        <ShortCard
-          title="COMP3821"
-          subheading="Extended Algorithms"
-          link2={{ url: 'https://github.com/V-Wong/COMP3821', title: 'Repository' }}
-          dotpoints={['Repository of common algorithm implementations in Python.',
-            'Showcases various important algorithms throughout Computer Science and Mathematics with simple Python implementations.']}
-          tags={[{ link: 'https://www.python.org/', title: 'Python' },
-          { link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Programming Techniques' }]}
+          title="COMP2511"
+          subheading="Object Oriented Programming"
+          link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP2511', title: 'Course Outline' }}
+          link2={{ url: 'https://github.com/V-Wong/COMP2511', title: 'Repository' }}
+          dotpoints={['Notes and implementation of design patterns and principles.',
+            'Demonstrates the various design techniques for creating flexible, maintainable and resusable software systems.']}
+          tags={[{ link: 'https://www.java.com/en/', title: 'Java' }]}
         />
 
         <ShortCard
@@ -128,6 +117,17 @@ const IndexPage = () => (
           dotpoints={['Notes on formal and semi-formal methods of software design.',
             'Displays various techniques to rigorously analyse, implement and test software systems with mathematical methods.']}
           tags={[{ link: 'https://www.haskell.org/', title: 'Haskell' }]}
+        />
+
+
+        <ShortCard
+          title="COMP3821"
+          subheading="Extended Algorithms"
+          link2={{ url: 'https://github.com/V-Wong/COMP3821', title: 'Repository' }}
+          dotpoints={['Repository of common algorithm implementations in Python.',
+            'Showcases various important algorithms throughout Computer Science and Mathematics with simple Python implementations.']}
+          tags={[{ link: 'https://www.python.org/', title: 'Python' },
+          { link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Programming Techniques' }]}
         />
 
         <ShortCard
