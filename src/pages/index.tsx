@@ -114,8 +114,8 @@ const IndexPage = () => (
           subheading="Software System Design & Implementation"
           link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3141', title: 'Course Outline' }}
           link2={{ url: 'https://github.com/V-Wong/Haskell-Practice', title: 'Repository' }}
-          dotpoints={['Notes on formal and semi-formal methods of software design.',
-            'Displays various techniques to rigorously analyse, implement and test software systems with mathematical methods.']}
+          dotpoints={['Notes on formal and informal methods of software design.',
+            'Displays various techniques to analyse, implement and test software systems with mathematical methods.']}
           tags={[{ link: 'https://www.haskell.org/', title: 'Haskell' }]}
         />
 
@@ -125,7 +125,7 @@ const IndexPage = () => (
           subheading="Extended Algorithms"
           link2={{ url: 'https://github.com/V-Wong/COMP3821', title: 'Repository' }}
           dotpoints={['Repository of common algorithm implementations in Python.',
-            'Showcases various important algorithms throughout Computer Science and Mathematics with simple Python implementations.']}
+            'Showcases various important algorithms throughout Computer Science with simple Python implementations.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
           { link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Programming Techniques' }]}
         />

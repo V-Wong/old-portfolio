@@ -7,7 +7,7 @@ import linkedinImage from '../images/linkedin.svg';
 const Footer = () => (
   <footer>
     <p>
-      I am looking for software roles. Email me at
+      Am looking for software roles. Email me at
       <a href="mailto:vincent@vwong.dev"> vincent@vwong.dev </a>
       :)
     </p>

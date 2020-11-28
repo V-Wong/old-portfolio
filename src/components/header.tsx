@@ -1,7 +1,5 @@
 import React from 'react';
 
-import DarkThemeToggle from './dark-theme-toggle';
-
 import githubImage from '../images/github.svg';
 import resumeImage from '../images/resume.svg';
 import linkedinImage from '../images/linkedin.svg';
