@@ -79,17 +79,17 @@ const IndexPage = () => (
               Junior Software Developer in the Engineering and Technology team; involved in developing financial services software.
             </li>
             <li>
-              Developed functionality in the company's management software to aid in financial analysis of over 15,000 work order.
+              Developed functionality in the company's management software to aid in financial analysis of over 15,000 work orders.
             </li>
             <li>
-              Created Python programs for financial scraping and workflow automation to support financial staff nationwide.
+              Created and maintained data scraping and workflow automation programs used by company employees across Australia.
             </li>
           </ul>
           <h3>Education</h3>
           <h4 className="project-subheading">UNSW - BS. Computer Science and Mathematics (2019 - 2022)</h4>
           <ul style={{ marginTop: '1vh' }}>
             <li>
-              Commended on the 2019 faculty of Faculty of Engineering Dean's List for high undergraduate achievement.
+              Commended on the 2019 Faculty of Engineering Dean's List for high undergraduate achievement (85+ WAM).
             </li>
             <li>
               Taking a mix of theoretical and applied courses to learn how to develop useful, powerful and reliable software.

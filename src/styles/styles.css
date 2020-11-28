@@ -324,6 +324,7 @@ footer .footer-links .link-container a {
     grid-row-start: 1;
     grid-row-end: 4;
     height: 100%;
+    padding-right: 18px;
   }
   .single-column .image {
     position: relative;
