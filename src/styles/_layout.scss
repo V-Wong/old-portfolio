@@ -1,3 +1,7 @@
+.single-column, .two-column {
+    padding: 1%;
+}
+
 @media (min-width: $tablet-breakpoint) {
     .container {
         margin: auto;
@@ -6,8 +10,6 @@
     }
 
     .single-column {
-        padding: 1%;
-
         .card {
             display: grid;
             grid-auto-flow: column;
@@ -60,8 +62,6 @@
         column-gap: 0.75rem;
         row-gap: 0.75rem;
         grid-row: auto;
-        padding-left: 1%;
-        padding-right: 1%;
 
         .card {
             align-items: center;
