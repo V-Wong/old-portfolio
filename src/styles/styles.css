@@ -172,6 +172,7 @@ footer .footer-links .link-container a {
 }
 
 .basic-card {
+  height: 100%;
   background-color: #fff;
   padding: 18px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -267,7 +268,6 @@ footer .footer-links .link-container a {
 
 @media (max-width: 1000px) {
   .card {
-    width: 88%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -279,33 +279,27 @@ footer .footer-links .link-container a {
   }
 }
 
-.card.dark {
+.card .dark {
   background-color: #242424;
   color: white;
   border-top: 2px solid #2727ff;
 }
 
-.card.dark .tag {
+.card .dark .tag {
   background-color: red;
 }
 
-.card.dark .tag:hover {
+.card .dark .tag:hover {
   background-color: #a01300;
   transition: background-color 0.5s ease-out;
 }
 
-.card.dark .repo-link {
+.card .dark .repo-link {
   color: #00D3D3;
 }
 
-.card.dark .demo-link {
+.card .dark .demo-link {
   color: #38dd1a;
-}
-
-@media (max-width: 1000px) {
-  .card + .card {
-    margin-top: 0.75rem;
-  }
 }
 
 @media (min-width: 1000px) {
@@ -313,6 +307,9 @@ footer .footer-links .link-container a {
     margin: auto;
     min-width: 975px;
     max-width: 1000px;
+  }
+  .single-column {
+    padding: 1%;
   }
   .single-column .card {
     display: grid;
@@ -357,6 +354,8 @@ footer .footer-links .link-container a {
     column-gap: 0.75rem;
     row-gap: 0.75rem;
     grid-row: auto;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   .two-column .card {
     align-items: center;
