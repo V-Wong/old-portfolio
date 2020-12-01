@@ -31,7 +31,7 @@ const IndexPage = () => (
         <LongCard
           title="LinkUp - University Events Tracker"
           subheading="Full Stack Developer"
-          link1={{ url: 'https://linkup.website', title: 'Live Demo' }}
+          link1={{ url: 'https://linkupevents.com.au', title: 'Live Demo' }}
           image="linkup"
           dotpoints={['A centralised source of events across Australian universities including UNSW, USyd and UniMelb.',
             'Aims to help students discover new societies and also allows societies to gain exposure.',
@@ -46,7 +46,7 @@ const IndexPage = () => (
       <TwoColumn title="Personal Projects">
         <ShortCard
           title="CubeSim"
-          subheading="Rubiks Cube Simulater and Solver"
+          subheading="Rubiks Cube Simulator and Solver"
           link2={{ url: 'https://github.com/V-Wong/CubeSim', title: 'Repository' }}
           image="cubesim"
           dotpoints={["A program that renders a 2D Rubik's cube with keyboard controls and programmatic solution generation.",
