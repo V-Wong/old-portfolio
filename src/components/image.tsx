@@ -23,7 +23,7 @@ const Image = ({ image }) => {
           }
         }
       },
-      huffman: file(relativePath: { eq: "huffman2.webp" }) {
+      huffman: file(relativePath: { eq: "huffman.webp" }) {
         childImageSharp {
           fluid(maxWidth: 2400) {
             ...GatsbyImageSharpFluid
