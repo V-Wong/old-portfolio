@@ -205,10 +205,9 @@ footer .footer-links .link-container a {
 
 .card .image {
   display: block;
-  margin: auto;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  max-height: 50vw;
+  max-height: 70vw;
+  margin: -18px -18px 0.75rem -18px;
+  border-radius: 6px 6px 0 0;
 }
 
 .card .project-link {
@@ -362,13 +361,6 @@ footer .footer-links .link-container a {
     padding-bottom: 3rem;
     grid-row: auto;
     position: relative;
-  }
-  .two-column .card .image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    max-height: 325px;
   }
   .two-column .card .tags {
     position: absolute;

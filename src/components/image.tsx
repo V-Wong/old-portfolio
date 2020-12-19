@@ -49,7 +49,7 @@ const Image = ({ image }) => {
   `)
 
   if (data[image].extension === "svg") {
-    return <img className="image" src={data[image].publicURL}/>
+    return <img className="image" style={{margin: "auto", maxHeight: "30vh", marginBottom: "0.75rem"}} src={data[image].publicURL}/>
   } else {
     return <Img className="image" imgStyle={{objectFit: "scale-down"}} fluid={data[image].childImageSharp.fluid}/>
   }
