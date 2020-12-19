@@ -4,11 +4,11 @@ import Image from './image';
 const LongCard = (props: {
   title: string,
   subheading: string,
-  link1?: {url: string, title: string},
-  link2?: {url: string, title: string},
+  link1?: { url: string, title: string },
+  link2?: { url: string, title: string },
   image?: string,
   dotpoints: Array<string>,
-  tags: Array<{link: string, title: string}>
+  tags: Array<{ link: string, title: string }>
 }) => {
   const {
     title, subheading, link1, link2, image, dotpoints, tags,
@@ -16,6 +16,9 @@ const LongCard = (props: {
 
   return (
     <div className="basic-card card">
+      <div className="image-container">
+        <Image image={image} />
+      </div>
       <div className="description">
         <h3>{title}</h3>
         <h4 className="project-subheading">{subheading}</h4>
@@ -25,9 +28,6 @@ const LongCard = (props: {
         {link2
           ? <a className="project-link repo-link" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a>
           : null}
-      </div>
-      <div className="image-container">
-        <Image image={image} />
       </div>
       <div className="dotpoints">
         <ul>
@@ -50,11 +50,11 @@ const LongCard = (props: {
 const ShortCard = (props: {
   title: string,
   subheading: string,
-  link1?: {url: string, title: string},
-  link2?: {url: string, title: string},
+  link1?: { url: string, title: string },
+  link2?: { url: string, title: string },
   image?: string,
   dotpoints: Array<string>,
-  tags: Array<{link: string, title: string}>
+  tags: Array<{ link: string, title: string }>
 }) => {
   const {
     title, subheading, link1, link2, image, dotpoints, tags,
@@ -62,11 +62,11 @@ const ShortCard = (props: {
 
   return (
     <div className="basic-card card">
+      {image ? <Image image={image} /> : null}
       <h3>{title}</h3>
       <h4 className="project-subheading">{subheading}</h4>
       {link1 ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
       {link2 ? <a className="project-link repo-link" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a> : null}
-      {image ? <Image image={image} /> : null}
       <ul>
         {dotpoints.map((point) => (
           <li>{point}</li>

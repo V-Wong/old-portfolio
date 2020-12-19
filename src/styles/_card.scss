@@ -29,10 +29,9 @@
 .card {
     .image {
         display: block;
-        margin: auto;
-        margin-top: 0.75rem;
-        margin-bottom: 0.75rem;
-        max-height: 50vw;
+        max-height: 55vw;
+        margin: -18px -18px 0.75rem -18px;
+        border-radius: 6px 6px 0 0;
     }
 
     .project-link {
