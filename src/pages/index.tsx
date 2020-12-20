@@ -5,6 +5,7 @@ import Header from '../components/header';
 import { Layout, SingleColumn, TwoColumn } from '../components/layout';
 import { LongCard, ShortCard } from '../components/card';
 import Footer from '../components/footer';
+import Image from '../components/image';
 
 import favicon from '../images/favicon.ico';
 
@@ -32,7 +33,7 @@ const IndexPage = () => (
           title="LinkUp - University Events Tracker"
           subheading="Full Stack Developer"
           link1={{ url: 'https://linkupevents.com.au', title: 'Live Demo' }}
-          image="linkup"
+          image={<Image image="linkup" className="non-edgeless-image" />}
           dotpoints={['A centralised source of events across Australian universities including UNSW, USyd and UniMelb.',
             'Aims to help students discover new societies and also allows societies to gain exposure.',
             'Actively working with UNSW societies to better support student academic and social life.',
@@ -48,7 +49,7 @@ const IndexPage = () => (
           title="CubeSim"
           subheading="Rubiks Cube Simulator and Solver"
           link2={{ url: 'https://github.com/V-Wong/CubeSim', title: 'Repository' }}
-          image="cubesim"
+          image={<Image image="cubesim" />}
           dotpoints={["A program that renders a 2D Rubik's cube with keyboard controls and programmatic solution generation.",
             'Built in Python with Pygame for visuals and controls.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
@@ -60,7 +61,7 @@ const IndexPage = () => (
           subheading="Huffman Encoding Visualisation Tool"
           link1={{ url: 'https://vwong.dev/Huffman-Encoding', title: 'Live Demo' }}
           link2={{ url: 'https://github.com/V-Wong/Huffman-Encoding', title: 'Repository' }}
-          image="huffman"
+          image={<Image image="huffman" />}
           dotpoints={['A single page web app that generates and renders a binary Huffman tree based on the Huffman encoding algorithm.',
             'Built in Javascript with HTML5 Canvas for visuals.']}
           tags={[{ link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', title: 'Javascript' },
@@ -147,7 +148,7 @@ const IndexPage = () => (
           title="UNSW Rubik Society"
           subheading="Executive - Events Director"
           link1={{ url: 'https://www.facebook.com/UNSWRubikSoc/', title: 'Society Page' }}
-          image="rubiksoc"
+          image={<Image image="rubiksoc" className="non-edgeless-image" />}
           dotpoints={["Helped organise Rubik's Cube tutorials and unofficial competitions at UNSW in Sydney.",
             "Encouraged students to find an interest and hobby in Rubik's Cubes and speedsolving.",
             'Helped existing speedcubers to improve and optimise their solves by hosting workshops.',
@@ -160,7 +161,7 @@ const IndexPage = () => (
           title="Competitive Speedsolver"
           subheading="Participant in WCA competitions"
           link1={{ url: 'https://www.worldcubeassociation.org/persons/2014WONG08', title: 'WCA Profile' }}
-          image="compcube"
+          image={<Image image="compcube" className="non-edgeless-image" />}
           dotpoints={['Actively participated in speedcubing competitions across Australia since 2014.',
             'Held numerous Sydney and Australian national championship podium titles.',
             "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",

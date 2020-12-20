@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = ({ image }) => {
+const Image = ({ image, className }) => {
   const data = useStaticQuery(graphql`
     query {
       cubesim: file(relativePath: { eq: "cube.webp" }) {
@@ -46,12 +46,12 @@ const Image = ({ image }) => {
         }
       },
     }
-  `)
+  `);
 
   if (data[image].extension === "svg") {
-    return <img className="image" style={{margin: "auto", maxHeight: "30vh", marginBottom: "0.75rem"}} src={data[image].publicURL}/>
+    return <img className={`vec ${className}`} src={data[image].publicURL}/>
   } else {
-    return <Img className="image" imgStyle={{objectFit: "scale-down"}} fluid={data[image].childImageSharp.fluid}/>
+    return <Img className={`${className}`} imgStyle={{objectFit: "scale-down"}} fluid={data[image].childImageSharp.fluid}/>
   }
 }
 
