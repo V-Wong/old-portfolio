@@ -27,11 +27,18 @@
 }
 
 .card {
-    .image {
+    .image-container {
         display: block;
-        max-height: 55vw;
         margin: -18px -18px 0.75rem -18px;
-        border-radius: 6px 6px 0 0;
+
+        .gatsby-image-wrapper, img {
+            border-radius: 6px 6px 0 0;
+        }
+
+        .vec {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     .project-link {
@@ -128,5 +135,12 @@
 
     .demo-link {
         color: $light-green;
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .non-edgeless-image {
+        margin: 2rem;
+        max-height: 12rem;
     }
 }
