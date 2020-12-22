@@ -77,13 +77,13 @@ const IndexPage = () => (
           <h4 className="project-subheading">Visionstream in Sydney - Junior Developer (2019 - Present)</h4>
           <ul style={{ marginTop: '1vh' }}>
             <li>
-              Junior Software Developer in the Engineering and Technology team; involved in developing financial services software.
+              Wrote automated PL/SQL procedures and a Javascript frontend to extract and view data in forms submitted by contractors.
             </li>
             <li>
-              Developed functionality in the company's management software to aid in financial analysis of over 15,000 work orders.
+              Implemented backend functionality in PL/SQL to model and analyse work orders in the company’s management system.
             </li>
             <li>
-              Created and maintained data scraping and workflow automation programs used by company employees across Australia.
+              Created Python programs with Beautiful Soup and SQLAlchemy to scrape and store data from incoming work orders.
             </li>
           </ul>
           <h3>Education</h3>
@@ -93,7 +93,7 @@ const IndexPage = () => (
               Commended on the 2019 Faculty of Engineering Dean's List for high undergraduate achievement (85+ WAM).
             </li>
             <li>
-              Taking a mix of theoretical and applied courses to learn how to develop useful, powerful and reliable software.
+              Majoring in general Computer Science and Pure Mathematics with a focus on algorithm and verification courses.
             </li>
           </ul>
         </div>
