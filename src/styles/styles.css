@@ -244,7 +244,8 @@ footer .footer-links .link-container a {
 }
 
 .card ul {
-  margin-top: 1vh;
+  margin-top: 0.50rem;
+  margin-bottom: 0.75rem;
 }
 
 .card .tag + .tag {
@@ -327,13 +328,6 @@ footer .footer-links .link-container a {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.54);
-}
-
-@media (max-width: 1000px) {
-  .container {
-    margin-left: 14px;
-    margin-right: 14px;
-  }
 }
 
 @media (min-width: 1000px) {

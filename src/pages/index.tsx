@@ -73,9 +73,9 @@ const IndexPage = () => (
       <hr />
       <section className="single-column">
         <div className="basic-card" style={{ paddingBottom: '1%' }}>
-          <h3>Employment</h3>
+          <h3 className="project-heading">Employment</h3>
           <h4 className="project-subheading">Visionstream in Sydney - Junior Developer (2019 - Present)</h4>
-          <ul style={{ marginTop: '1vh' }}>
+          <ul style={{ marginTop: '0.5rem' }}>
             <li>
               Wrote automated PL/SQL procedures and a Javascript frontend to extract and view data in forms submitted by contractors.
             </li>
@@ -86,9 +86,9 @@ const IndexPage = () => (
               Created Python programs with Beautiful Soup and SQLAlchemy to scrape and store data from incoming work orders.
             </li>
           </ul>
-          <h3>Education</h3>
+          <h3 className="project-heading">Education</h3>
           <h4 className="project-subheading">UNSW - BS. Computer Science and Mathematics (2019 - 2022)</h4>
-          <ul style={{ marginTop: '1vh' }}>
+          <ul style={{ marginTop: '0.5rem' }}>
             <li>
               Commended on the 2019 Faculty of Engineering Dean's List for high undergraduate achievement (85+ WAM).
             </li>
