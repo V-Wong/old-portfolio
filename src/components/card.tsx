@@ -20,7 +20,7 @@ const LongCard = (props: {
         {image}
       </div>
       <div className="description">
-        <h3>{title}</h3>
+        <h3 className="project-heading">{title}</h3>
         <h4 className="project-subheading">{subheading}</h4>
         {link1
           ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a>
@@ -65,7 +65,7 @@ const ShortCard = (props: {
       <div className="image-container">
         {image || null}
       </div>
-      <h3>{title}</h3>
+      <h3 className="project-heading">{title}</h3>
       <h4 className="project-subheading">{subheading}</h4>
       {link1 ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
       {link2 ? <a className="project-link repo-link" href={link2.url} target="_blank" rel="noopener noreferrer">{link2.title}</a> : null}

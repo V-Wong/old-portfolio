@@ -14,7 +14,6 @@
             border: none;
             outline: none;
             cursor: pointer;
-            font-size: 18px;
             justify-content: center;
             align-items: center;
             height: 100%;
@@ -23,6 +22,14 @@
                 height: 18px;
                 transition-property: filter;
                 transition: 250ms ease-in-out;
+            }
+
+            a {
+                font-size: 1rem;
+                font-weight: 400;
+                letter-spacing: 0.02857em;
+                text-transform: uppercase;
+                line-height: 1.75;
             }
         }
     }
@@ -46,7 +53,6 @@
 
             h1 {
                 margin-left: 0;
-                font-size: 30px;
             }
 
             h2 {
