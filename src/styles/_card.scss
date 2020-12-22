@@ -42,13 +42,9 @@
     }
 
     .project-link {
-        font-family: "Open Sans", helvetica, arial, sans-serif;
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 1rem;
+        font-weight: 400;
         text-transform: uppercase;
-
-        transition-property: color;
-        transition: color 250ms ease-in-out;
     }
 
     .demo-link {
@@ -64,7 +60,7 @@
     }
 
     ul {
-        margin-top: 0.25rem;
+        margin-top: 1vh;
     }
 
     .tag + .tag {
@@ -108,10 +104,6 @@
         hr {
             height: 0.5rem;
         }
-
-        .project-link {
-            font-size: 15px;
-        }
     }
 }
 
@@ -143,4 +135,16 @@
         margin: 2rem;
         max-height: 12rem;
     }
+}
+
+.project-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    leter-spacing: 0;
+}
+
+.project-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
 }

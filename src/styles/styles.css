@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 body {
-  font-family: 'Nunito', sans-serif;
   background-color: #f6f8fa;
-  color: black;
-  transition-property: background;
-  transition: background 250ms ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 body.dark {
@@ -118,7 +120,6 @@ footer .footer-links .link-container a {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 18px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -128,6 +129,14 @@ footer .footer-links .link-container a {
   height: 18px;
   transition-property: filter;
   transition: 250ms ease-in-out;
+}
+
+.profile .links-container .link-container a {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  line-height: 1.75;
 }
 
 .profile .about-me {
@@ -149,7 +158,6 @@ footer .footer-links .link-container a {
   }
   .profile .top-bar h1 {
     margin-left: 0;
-    font-size: 30px;
   }
   .profile .top-bar h2 {
     display: none;
@@ -218,12 +226,9 @@ footer .footer-links .link-container a {
 }
 
 .card .project-link {
-  font-family: "Open Sans", helvetica, arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   text-transform: uppercase;
-  transition-property: color;
-  transition: color 250ms ease-in-out;
 }
 
 .card .demo-link {
@@ -239,7 +244,7 @@ footer .footer-links .link-container a {
 }
 
 .card ul {
-  margin-top: 0.25rem;
+  margin-top: 1vh;
 }
 
 .card .tag + .tag {
@@ -280,9 +285,6 @@ footer .footer-links .link-container a {
   .card hr {
     height: 0.5rem;
   }
-  .card .project-link {
-    font-size: 15px;
-  }
 }
 
 .card .dark {
@@ -313,6 +315,18 @@ footer .footer-links .link-container a {
     margin: 2rem;
     max-height: 12rem;
   }
+}
+
+.project-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  leter-spacing: 0;
+}
+
+.project-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 @media (max-width: 1000px) {
@@ -386,26 +400,12 @@ footer .footer-links .link-container a {
 }
 
 .section-heading {
-  font-family: Lato, arial, verdana, helvetica, sans-serif;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-}
-
-body {
-  font-size: 14px;
-}
-
-@media (min-width: 1000px) {
-  body {
-    font-size: 16px;
-  }
-}
-
-a, p, h1, h2, h3, h4, h5, h6, li {
-  transition-property: color;
-  transition: 250ms ease-in-out;
-  opacity: 0.95;
 }
 
 a {
@@ -440,27 +440,12 @@ p a.dark {
 }
 
 h1 {
-  font-family: Lato, arial, verdana, helvetica, sans-serif;
+  font-size: 40px;
 }
 
 h1, h2, h3, h4 {
   margin: auto;
-  font-weight: 150;
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 24px;
   font-weight: 400;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 600;
 }
 
 h4 {
@@ -470,18 +455,6 @@ h4 {
 p, li {
   margin: auto;
   font-size: 14px;
-}
-
-@media (min-width: 1000px) {
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 18px;
-  }
-  p, li {
-    font-size: 16px;
-  }
 }
 
 .slick-slide > div {
