@@ -6,7 +6,7 @@ const LongCard = (props: {
   subheading: string,
   link1?: { url: string, title: string },
   link2?: { url: string, title: string },
-  image?: string,
+  image: any,
   dotpoints: Array<string>,
   tags: Array<{ link: string, title: string }>
 }) => {
@@ -17,7 +17,7 @@ const LongCard = (props: {
   return (
     <div className="basic-card card">
       <div className="image-container">
-        <Image image={image} />
+        {image}
       </div>
       <div className="description">
         <h3>{title}</h3>
@@ -52,7 +52,7 @@ const ShortCard = (props: {
   subheading: string,
   link1?: { url: string, title: string },
   link2?: { url: string, title: string },
-  image?: string,
+  image?: any,
   dotpoints: Array<string>,
   tags: Array<{ link: string, title: string }>
 }) => {
@@ -62,7 +62,9 @@ const ShortCard = (props: {
 
   return (
     <div className="basic-card card">
-      {image ? <Image image={image} /> : null}
+      <div className="image-container">
+        {image || null}
+      </div>
       <h3>{title}</h3>
       <h4 className="project-subheading">{subheading}</h4>
       {link1 ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}

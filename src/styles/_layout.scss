@@ -23,17 +23,11 @@
             grid-row-start: 1;
             grid-row-end: 4;
             height: 100%;
-            padding-right: 18px;
+            margin-left: 18px;
+            margin-right: 30px;
+            margin-top: 25%;
         }
     
-        .image {
-            position: relative;
-            top: 10%;
-            max-height: 60%;
-            margin: auto;
-            margin-top: 1rem;
-        }
-
         .description {
             grid-row-start: 1;
             grid-column-start: 2;
