@@ -30,7 +30,7 @@ const IndexPage = () => (
 
       <SingleColumn title="Collaborative Projects">
         <LongCard
-          title="LinkUp - University Events Tracker"
+          title="LinkUp - Events Tracker"
           subheading="Full Stack Developer"
           link1={{ url: 'https://linkupevents.com.au', title: 'Live Demo' }}
           image={<Image image="linkup" className="non-edgeless-image" />}
@@ -47,7 +47,7 @@ const IndexPage = () => (
       <TwoColumn title="Personal Projects">
         <ShortCard
           title="CubeSim"
-          subheading="Rubiks Cube Simulator and Solver"
+          subheading="Rubik's Cube Simulator and Solver"
           link2={{ url: 'https://github.com/V-Wong/CubeSim', title: 'Repository' }}
           image={<Image image="cubesim" />}
           dotpoints={["A program that renders a 2D Rubik's cube with keyboard controls and programmatic solution generation.",
@@ -99,7 +99,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <TwoColumn title="Other Programming Activities">
+      <TwoColumn title="Course Notes">
         <ShortCard
           title="COMP2511"
           subheading="Object Oriented Programming"
@@ -124,11 +124,12 @@ const IndexPage = () => (
         <ShortCard
           title="COMP3821"
           subheading="Extended Algorithms"
+          link1={{url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Course Outline'}}
           link2={{ url: 'https://github.com/V-Wong/COMP3821', title: 'Repository' }}
           dotpoints={['Repository of common algorithm implementations in Python.',
             'Showcases various important algorithms throughout Computer Science with simple Python implementations.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
-          { link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Programming Techniques' }]}
+          { link: 'https://en.wikipedia.org/wiki/Algorithm', title: 'Algorithms' }]}
         />
 
         <ShortCard
