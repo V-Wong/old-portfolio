@@ -29,7 +29,7 @@
 .card {
     .image-container {
         display: block;
-        margin: -18px -18px 0.75rem -18px;
+        margin: -18px -18px 18px -18px;
 
         .gatsby-image-wrapper, img {
             border-radius: 6px 6px 0 0;
@@ -142,6 +142,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     leter-spacing: 0;
+    margin-top: -5px;
 }
 
 .project-subheading {

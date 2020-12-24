@@ -74,7 +74,7 @@ const IndexPage = () => (
       <section className="single-column">
         <div className="basic-card" style={{ paddingBottom: '1%' }}>
           <h3 className="project-heading">Employment</h3>
-          <h4 className="project-subheading">Visionstream in Sydney - Junior Developer (2019 - Present)</h4>
+          <h4 className="project-subheading">Visionstream, Sydney - Junior Developer (2019 - Present)</h4>
           <ul style={{ marginTop: '0.5rem' }}>
             <li>
               Wrote automated PL/SQL procedures and a Javascript frontend to extract and view data in forms submitted by contractors.
