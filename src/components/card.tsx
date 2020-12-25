@@ -62,9 +62,13 @@ const ShortCard = (props: {
 
   return (
     <div className="basic-card card">
-      <div className="image-container">
-        {image || null}
-      </div>
+      {image
+        ? (
+          <div className="image-container">
+            {image}
+          </div>
+        )
+        : null}
       <h3 className="project-heading">{title}</h3>
       <h4 className="project-subheading">{subheading}</h4>
       {link1 ? <a className="project-link demo-link" href={link1.url} target="_blank" rel="noopener noreferrer">{link1.title}</a> : null}
