@@ -3,21 +3,8 @@ a {
     text-decoration: none; 
 }
 
-a:hover {
-    text-decoration: none; 
-    border-bottom: solid 1px;
-}
-
 a.dark {
     color: white;
-}
-
-a.underline {
-    border-bottom: dashed 1px;
-}
-
-a.underline:hover {
-    border-bottom: solid 1px;
 }
 
 p {
@@ -38,7 +25,6 @@ h1, h2, h3, h4 {
     margin: auto;
     font-weight: 400;
 }
-
 
 h4 {
     font-size: 16px;

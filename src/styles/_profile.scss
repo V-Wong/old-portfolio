@@ -7,6 +7,7 @@
     .links-container {
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         flex-wrap: wrap;
 
         .link-container {
@@ -16,8 +17,9 @@
             cursor: pointer;
             justify-content: center;
             align-items: center;
-            height: 100%;
-        
+            height: min-content;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
             img {
                 height: 18px;
                 transition-property: filter;
@@ -30,7 +32,13 @@
                 letter-spacing: 0.02857em;
                 text-transform: uppercase;
                 line-height: 1.75;
-            }
+
+            }        
+        }
+
+        .link-container:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+            border-radius: 3px;
         }
     }
 
