@@ -76,6 +76,7 @@
         background-color: $pink;
         color: $white;
         cursor: pointer;
+        border-radius: 6px;
 
         a {
             display: block;
@@ -85,18 +86,12 @@
             color: white;
             border: none;
         }
-
-        transition-property: background;
-        transition: background 250ms ease-in-out;
     }
     
     .tag:hover {
         background-color: $dark-pink;
         transition: background-color 0.5s ease-out;
     }
-
-    transition-property: background, border;
-    transition: background 250ms ease-in-out, border 250ms ease-in-out;
 
     @media (max-width: $tablet-breakpoint) {
         margin-left: auto;
