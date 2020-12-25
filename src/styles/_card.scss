@@ -85,7 +85,7 @@
         background-color: $pink;
         color: $white;
         cursor: pointer;
-        border-radius: 6px;
+        border-radius: 4px;
 
         a {
             display: block;
@@ -95,11 +95,12 @@
             color: white;
             border: none;
         }
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     }
     
     .tag:hover {
-        background-color: $dark-pink;
-        transition: background-color 0.5s ease-out;
+        background-color: darken($pink, 10%);
     }
 
     @media (max-width: $tablet-breakpoint) {
