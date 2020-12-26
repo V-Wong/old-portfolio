@@ -50,7 +50,8 @@ const IndexPage = () => (
           subheading="Rubik's Cube Simulator and Solver"
           link2={{ url: 'https://github.com/V-Wong/CubeSim', title: 'Repository' }}
           image={<Image image="cubesim" />}
-          dotpoints={["A program that renders a 2D Rubik's cube with keyboard controls and programmatic solution generation.",
+          dotpoints={[`A program that renders a 2D Rubik's cube with keyboard controls
+                      and generates solutions based on the beginner's method.`,
             'Built in Python with Pygame for visuals and controls.']}
           tags={[{ link: 'https://www.python.org/', title: 'Python' },
           { link: 'https://www.pygame.org/news', title: 'Pygame' }]}
@@ -120,11 +121,10 @@ const IndexPage = () => (
           tags={[{ link: 'https://www.haskell.org/', title: 'Haskell' }]}
         />
 
-
         <ShortCard
           title="COMP3821"
           subheading="Extended Algorithms"
-          link1={{url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Course Outline'}}
+          link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3821', title: 'Course Outline' }}
           link2={{ url: 'https://github.com/V-Wong/COMP3821', title: 'Repository' }}
           dotpoints={['Repository of common algorithm implementations in Python.',
             'Showcases various important algorithms throughout Computer Science with simple Python implementations.']}
