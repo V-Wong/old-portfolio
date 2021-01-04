@@ -153,10 +153,12 @@ footer .footer-links .link-container a {
 .profile .about-me {
   margin: 0;
   margin-top: 1.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
-.profile .about-me p {
-  font-size: 17px;
+.profile .about-me p + p {
+  margin-top: 0.25rem;
 }
 
 @media (min-width: 1000px) {
@@ -173,8 +175,8 @@ footer .footer-links .link-container a {
   .profile .top-bar h2 {
     display: none;
   }
-  .profile .about-me > p {
-    font-size: 24px;
+  .profile .about-me p {
+    font-size: 22px;
   }
 }
 
