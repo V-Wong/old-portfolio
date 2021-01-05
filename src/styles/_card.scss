@@ -103,7 +103,7 @@
         background-color: darken($pink, 10%);
     }
 
-    @media (max-width: $tablet-breakpoint) {
+    @media (max-width: $tablet-breakpoint - 1) {
         margin-left: auto;
         margin-right: auto;
 
@@ -136,7 +136,7 @@
     }
 }
 
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: $tablet-breakpoint - 1) {
     .non-edgeless-image {
         margin: 2rem;
         max-height: 12rem;

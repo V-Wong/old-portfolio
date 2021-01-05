@@ -2,6 +2,7 @@
     .container {
         min-width: 0.975 * $tablet-breakpoint;
         max-width: $tablet-breakpoint;
+        padding-left: 20px;
     }
 
     .single-column {

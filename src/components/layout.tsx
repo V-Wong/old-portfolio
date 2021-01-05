@@ -29,7 +29,7 @@ const SingleColumn = (props: {
     slidesToScroll: 1,
   };
 
-  if (width <= 960) {
+  if (width < 1000) {
     return (
       <>
         <h2 className="section-heading">{title}</h2>
@@ -71,7 +71,7 @@ const TwoColumn = (props: {
     slidesToScroll: 1,
   };
 
-  if (width <= 960) {
+  if (width < 1000) {
     return (
       <>
         {title ? <h2 className="section-heading">{props.title}</h2> : null}
