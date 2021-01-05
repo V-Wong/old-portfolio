@@ -102,16 +102,6 @@ const IndexPage = () => (
 
       <TwoColumn title="Course Notes">
         <ShortCard
-          title="COMP2511"
-          subheading="Object Oriented Programming"
-          link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP2511', title: 'Course Outline' }}
-          link2={{ url: 'https://github.com/V-Wong/COMP2511', title: 'Repository' }}
-          dotpoints={['Notes and implementation of design patterns and principles.',
-            'Demonstrates the various design techniques for creating flexible, maintainable and resusable software systems.']}
-          tags={[{ link: 'https://www.java.com/en/', title: 'Java' }]}
-        />
-
-        <ShortCard
           title="COMP3141"
           subheading="Software System Design & Implementation"
           link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP3141', title: 'Course Outline' }}
@@ -119,6 +109,17 @@ const IndexPage = () => (
           dotpoints={['Notes on formal and informal methods of software design.',
             'Displays various techniques to analyse, implement and test software systems with mathematical methods.']}
           tags={[{ link: 'https://www.haskell.org/', title: 'Haskell' }]}
+        />
+
+
+        <ShortCard
+          title="COMP2511"
+          subheading="Object Oriented Programming"
+          link1={{ url: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP2511', title: 'Course Outline' }}
+          link2={{ url: 'https://github.com/V-Wong/COMP2511', title: 'Repository' }}
+          dotpoints={['Notes and implementation of design patterns and principles.',
+            'Demonstrates the various design techniques for creating flexible, maintainable and resusable software systems.']}
+          tags={[{ link: 'https://www.java.com/en/', title: 'Java' }]}
         />
 
         <ShortCard
