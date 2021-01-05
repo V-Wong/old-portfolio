@@ -41,14 +41,29 @@
         }
     }
 
+    .responsive-break {
+        display: none;
+    }
+
+
     .about-me {
-        margin: 0;
-        margin-top: 1.5rem;
-        margin-left: 0.25rem;
-        margin-right: 0.25rem;
+        font-size: 17px;
 
         p + p {
             margin-top: 0.25rem;
+        }
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+        .responsive-break {
+            display: block;
+        }
+
+        .about-me {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 22px;
         }
     }
 

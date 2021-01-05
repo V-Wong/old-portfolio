@@ -144,15 +144,28 @@ footer .footer-links .link-container a {
   border-radius: 3px;
 }
 
+.profile .responsive-break {
+  display: none;
+}
+
 .profile .about-me {
-  margin: 0;
-  margin-top: 1.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  font-size: 17px;
 }
 
 .profile .about-me p + p {
   margin-top: 0.25rem;
+}
+
+@media (min-width: 1000px) {
+  .profile .responsive-break {
+    display: block;
+  }
+  .profile .about-me {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 1000px) {
