@@ -1,4 +1,20 @@
 .profile {
+    padding-top: 30px;
+
+    .profile-image {
+        margin: auto;
+        border-radius: 50%;
+        width: 9rem;
+    }
+
+    .name-title {
+        font-size: 1.8rem;
+    }
+
+    .description-title {
+        font-size: 1.1rem;
+    }
+
     .image {
         max-height: 100px;
         max-width: 100px;
@@ -31,7 +47,6 @@
                 font-weight: 400;
                 letter-spacing: 0.02857em;
                 line-height: 1.75;
-
             }        
         }
 
@@ -44,7 +59,6 @@
     .responsive-break {
         display: none;
     }
-
 
     .about-me {
         font-size: 17px;
@@ -72,16 +86,20 @@
     @media (min-width: $tablet-breakpoint) {
         padding-top: 1rem;
 
+        .profile-image {
+            width: 4rem;
+        }
+
+        .title-holder {
+            text-align: left;
+        }
+
         .top-bar {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0.20fr 1fr 1fr;
 
             h1 {
                 margin-left: 0;
-            }
-
-            h2 {
-                display: none;
             }
         }
 
@@ -89,6 +107,16 @@
             p {
                 font-size: 22px;
             }
+        }
+    }
+
+    @media (max-width: $tablet-breakpoint - 1) {
+        .description-title {
+            margin-top: 5px;
+        }
+
+        .links-container {
+            margin-top: 5px;
         }
     }
 }

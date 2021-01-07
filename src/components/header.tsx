@@ -7,8 +7,13 @@ import linkedinImage from '../images/linkedin.svg';
 const Header = () => (
   <header className="profile">
     <div className="top-bar">
-      <h1>Vincent Wong</h1>
-      <h2>Full Stack Software Engineer</h2>
+      <img className="profile-image"
+        src="https://media-exp1.licdn.com/dms/image/C5603AQHkdicteOi9aw/profile-displayphoto-shrink_400_400/0/1604127546096?e=1615420800&v=beta&t=Pjbws8OMGTQPrduO-9eOmiFbllA4SgS-8pJdFITK2N4"
+      />
+      <div className="title-holder">
+        <h1 className="name-title">Vincent Wong</h1>
+        <h2 className="description-title">Full Stack Software Engineer</h2>
+      </div>
       <nav className="links-container">
         <div className="link-container">
           <img className="social-icon" src={githubImage} alt="Black and white GitHub logo icon" />
@@ -32,9 +37,9 @@ const Header = () => (
     </div>
     <blockquote className="about-me">
       Hi there! I'm Vincent Wong and I'm a full stack software developer from Sydney, Australia. &nbsp;
-      <br className="responsive-break"/>
+      <br className="responsive-break" />
       I currently study Computer Science & Mathematics at the University of New South Wales. &nbsp;
-      <br className="responsive-break"/>
+      <br className="responsive-break" />
       This website presents the various personal and collaborative projects I have worked on.
     </blockquote>
   </header>

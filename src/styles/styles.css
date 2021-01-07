@@ -104,6 +104,24 @@ footer .footer-links .link-container a {
   }
 }
 
+.profile {
+  padding-top: 30px;
+}
+
+.profile .profile-image {
+  margin: auto;
+  border-radius: 50%;
+  width: 9rem;
+}
+
+.profile .name-title {
+  font-size: 1.8rem;
+}
+
+.profile .description-title {
+  font-size: 1.1rem;
+}
+
 .profile .image {
   max-height: 100px;
   max-width: 100px;
@@ -174,18 +192,30 @@ footer .footer-links .link-container a {
   .profile {
     padding-top: 1rem;
   }
+  .profile .profile-image {
+    width: 4rem;
+  }
+  .profile .title-holder {
+    text-align: left;
+  }
   .profile .top-bar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.20fr 1fr 1fr;
   }
   .profile .top-bar h1 {
     margin-left: 0;
   }
-  .profile .top-bar h2 {
-    display: none;
-  }
   .profile .about-me p {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 999px) {
+  .profile .description-title {
+    margin-top: 5px;
+  }
+  .profile .links-container {
+    margin-top: 5px;
   }
 }
 
