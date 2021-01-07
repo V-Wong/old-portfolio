@@ -83,6 +83,7 @@ footer .footer-links .link-container a {
 
 .container {
   margin: auto;
+  padding: 10px;
 }
 
 @media (min-width: 576px) {
@@ -150,6 +151,10 @@ footer .footer-links .link-container a {
 
 .profile .about-me {
   font-size: 17px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5625em;
 }
 
 .profile .about-me p + p {
@@ -161,9 +166,6 @@ footer .footer-links .link-container a {
     display: block;
   }
   .profile .about-me {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 22px;
   }
 }
