@@ -41,8 +41,9 @@ hr {
 
 footer {
     display: grid;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e5e5;
 
     @media (max-width: $tablet-breakpoint) {
         p {

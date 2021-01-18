@@ -1,5 +1,10 @@
 .profile {
     padding-top: 30px;
+    
+    .top-bar {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
 
     .profile-image {
         margin: auto;
@@ -23,7 +28,7 @@
     .links-container {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-end;
         flex-wrap: wrap;
 
         .link-container {
