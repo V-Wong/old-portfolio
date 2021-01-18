@@ -179,7 +179,7 @@ footer .footer-links .link-container a {
   font-size: 17px;
   line-height: 1.5625em;
   padding: 1rem;
-  border-radius: 6px;
+  border-radius: .25rem;
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -248,7 +248,7 @@ footer .footer-links .link-container a {
   transition: transform .2s;
   position: relative;
   border: 1px solid #e1e4e8;
-  border-radius: 6px;
+  border-radius: .25rem;
 }
 
 .basic-card ul {
@@ -274,7 +274,7 @@ footer .footer-links .link-container a {
 }
 
 .card .image-container .gatsby-image-wrapper, .card .image-container img {
-  border-radius: 6px 6px 0 0;
+  border-radius: .25rem .25rem 0 0;
 }
 
 .card .image-container .vec {
@@ -326,7 +326,7 @@ footer .footer-links .link-container a {
   background-color: #dc635f;
   color: #fff;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: .25rem;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 

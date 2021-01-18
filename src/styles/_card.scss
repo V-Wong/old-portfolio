@@ -5,7 +5,7 @@
     transition: transform .2s;
     position: relative;
     border: 1px solid #e1e4e8;
-    border-radius: 6px;
+    border-radius: .25rem;
 
     ul {
         list-style-type: none;
@@ -32,7 +32,7 @@
         margin: -18px -18px 18px -18px;
 
         .gatsby-image-wrapper, img {
-            border-radius: 6px 6px 0 0;
+            border-radius: .25rem .25rem 0 0;
         }
 
         .vec {
@@ -85,7 +85,7 @@
         background-color: $pink;
         color: $white;
         cursor: pointer;
-        border-radius: 4px;
+        border-radius: .25rem;
 
         a {
             display: block;
