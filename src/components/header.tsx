@@ -36,11 +36,11 @@ const Header = () => (
       </nav>
     </div>
     <blockquote className="about-me">
-      Hi there! I'm Vincent Wong and I'm a full stack software developer from Sydney, Australia. &nbsp;
+      Hi there! I'm Vincent Wong, a full stack software developer from Sydney, Australia. &nbsp;
       <br className="responsive-break" />
       I currently study Computer Science & Mathematics at the University of New South Wales. &nbsp;
       <br className="responsive-break" />
-      This website presents the various personal and collaborative projects I have worked on.
+      This website shows the various personal and collaborative projects I have worked on.
     </blockquote>
   </header>
 );
