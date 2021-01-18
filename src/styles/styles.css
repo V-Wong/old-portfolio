@@ -85,6 +85,8 @@ footer .footer-links .link-container a {
 .container {
   margin: auto;
   padding: 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 576px) {
@@ -400,7 +402,6 @@ footer .footer-links .link-container a {
   .container {
     min-width: 975px;
     max-width: 1000px;
-    padding-left: 20px;
   }
   .single-column .card {
     display: grid;
