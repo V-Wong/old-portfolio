@@ -70,12 +70,12 @@ const IndexPage = () => (
         />
       </TwoColumn>
 
-      <h2 className="section-heading">Experience and Skillset</h2>
+      <h2 className="section-heading">Experience</h2>
       <hr />
       <section className="single-column">
-        <div className="basic-card" style={{ paddingBottom: '1%' }}>
+        <div className="basic-card" style={{ paddingBottom: 0 }}>
           <h3 className="project-heading">Employment</h3>
-          <h4 className="project-subheading">Visionstream, Sydney - Junior Developer (2019 - Present)</h4>
+          <h4 className="project-subheading">Visionstream, Sydney - Junior Developer (2020 - Present)</h4>
           <ul style={{ marginTop: '0.5rem' }}>
             <li>
               Wrote automated PL/SQL procedures and a Javascript frontend to extract and view data in forms submitted by contractors.
@@ -87,6 +87,9 @@ const IndexPage = () => (
               Created Python programs with Beautiful Soup and SQLAlchemy to scrape and store data from incoming work orders.
             </li>
           </ul>
+        </div>
+
+        <div className="basic-card" style={{ paddingBottom: 0 }}>
           <h3 className="project-heading">Education</h3>
           <h4 className="project-subheading">UNSW - BS. Computer Science and Mathematics (2019 - 2022)</h4>
           <ul style={{ marginTop: '0.5rem' }}>
@@ -94,7 +97,10 @@ const IndexPage = () => (
               Commended on the 2019 Faculty of Engineering Dean's List for high undergraduate achievement (85+ WAM).
             </li>
             <li>
-              Majoring in general Computer Science and Pure Mathematics with a focus on algorithm and verification courses.
+              Taking general Computer Science major with a focus on algorithm and formal verification courses.
+            </li>
+            <li>
+              Majoring in Mathematics with an emphasis on pure courses including abstract algebra and analysis.
             </li>
           </ul>
         </div>
