@@ -176,8 +176,7 @@ footer .footer-links .link-container a {
 }
 
 .profile .about-me {
-  background-color: #333;
-  color: white;
+  border: solid #dc635f 1px;
   font-size: 17px;
   line-height: 1.5625em;
   padding: 1rem;
