@@ -1,5 +1,6 @@
 import React from 'react';
 
+import profileImage from '../images/profile.jpeg'
 import githubImage from '../images/github.svg';
 import resumeImage from '../images/resume.svg';
 import linkedinImage from '../images/linkedin.svg';
@@ -7,9 +8,7 @@ import linkedinImage from '../images/linkedin.svg';
 const Header = () => (
   <header className="profile">
     <div className="top-bar">
-      <img className="profile-image"
-        src="https://media-exp1.licdn.com/dms/image/C5603AQHkdicteOi9aw/profile-displayphoto-shrink_400_400/0/1604127546096?e=1615420800&v=beta&t=Pjbws8OMGTQPrduO-9eOmiFbllA4SgS-8pJdFITK2N4"
-      />
+      <img className="profile-image" src={profileImage} />
       <div className="title-holder">
         <h1 className="name-title">Vincent Wong</h1>
         <h2 className="description-title">Full Stack Software Engineer</h2>
